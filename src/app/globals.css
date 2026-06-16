@@ -2,26 +2,242 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+/* ────────────────────────────────────────────────────────────
+   DESIGN TOKENS — CSS CUSTOM PROPERTIES
+   All HSL channel values (used with hsl() in tailwind.config)
+──────────────────────────────────────────────────────────── */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* shadcn/ui semantic tokens — mapped to brand palette */
+    --background:          36 27% 96%;   /* #F7F5F2 warm white */
+    --foreground:           0  0% 18%;   /* #2D2D2D text */
+    --card:                 0  0% 100%;
+    --card-foreground:      0  0% 18%;
+    --popover:              0  0% 100%;
+    --popover-foreground:   0  0% 18%;
+    --primary:            198 82% 23%;   /* #0B4F6C deep teal */
+    --primary-foreground:  36 27% 96%;
+    --secondary:          198 30% 92%;   /* teal-muted tint */
+    --secondary-foreground: 198 82% 18%;
+    --muted:               36 16% 92%;
+    --muted-foreground:     0  0% 42%;
+    --accent:              30 79% 57%;   /* #E8923A warm amber */
+    --accent-foreground:  240 28% 14%;  /* #1A1A2E dark */
+    --destructive:          0 72% 51%;
+    --destructive-foreground: 36 27% 96%;
+    --border:              36 14% 88%;
+    --input:               36 14% 88%;
+    --ring:               198 82% 23%;
+    --radius:             0.625rem;
+
+    /* Charts */
+    --chart-1:            198 82% 23%;
+    --chart-2:             30 79% 57%;
+    --chart-3:            198 40% 55%;
+    --chart-4:             30 40% 72%;
+    --chart-5:            240 28% 55%;
+
+    /* Sidebar */
+    --sidebar:             36 20% 94%;
+    --sidebar-foreground:   0  0% 18%;
+    --sidebar-primary:    198 82% 23%;
+    --sidebar-primary-foreground: 36 27% 96%;
+    --sidebar-accent:      36 24% 90%;
+    --sidebar-accent-foreground:  0  0% 18%;
+    --sidebar-border:      36 14% 88%;
+    --sidebar-ring:       198 82% 23%;
+
+    /* ── Animation timing */
+    --ease-editorial:   cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-spring:      cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-smooth:      cubic-bezier(0.4, 0, 0.2, 1);
+    --duration-fast:    150ms;
+    --duration-base:    250ms;
+    --duration-slow:    600ms;
+    --duration-reveal:  800ms;
+
+    /* ── Elevation */
+    --shadow-card:       0 1px 3px 0 rgb(0 0 0 / 0.04), 0 4px 12px -2px rgb(0 0 0 / 0.06);
+    --shadow-card-hover: 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 16px 32px -4px rgb(0 0 0 / 0.12);
+    --shadow-nav:        0 1px 0 0 rgb(0 0 0 / 0.06);
+  }
+
+  .dark {
+    --background:         240 28% 10%;
+    --foreground:          36 20% 92%;
+    --card:               240 22% 13%;
+    --card-foreground:     36 20% 92%;
+    --popover:            240 22% 13%;
+    --popover-foreground:  36 20% 92%;
+    --primary:            198 70% 52%;
+    --primary-foreground: 240 28% 10%;
+    --secondary:          240 20% 19%;
+    --secondary-foreground: 36 20% 82%;
+    --muted:              240 18% 17%;
+    --muted-foreground:    36 10% 58%;
+    --accent:              30 75% 60%;
+    --accent-foreground:  240 28% 10%;
+    --destructive:          0 62% 50%;
+    --destructive-foreground: 36 20% 92%;
+    --border:             240 16% 22%;
+    --input:              240 16% 22%;
+    --ring:               198 70% 52%;
+
+    --chart-1:            198 70% 52%;
+    --chart-2:             30 75% 60%;
+    --chart-3:            198 40% 45%;
+    --chart-4:             30 40% 55%;
+    --chart-5:            240 28% 55%;
+
+    --sidebar:            240 22% 12%;
+    --sidebar-foreground:  36 20% 92%;
+    --sidebar-primary:    198 70% 52%;
+    --sidebar-primary-foreground: 240 28% 10%;
+    --sidebar-accent:     240 20% 19%;
+    --sidebar-accent-foreground: 36 20% 82%;
+    --sidebar-border:     240 16% 22%;
+    --sidebar-ring:       198 70% 52%;
+  }
+
+  /* ── Reset defaults */
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* ────────────────────────────────────────────────────────────
+   TYPOGRAPHY — Editorial scale
+──────────────────────────────────────────────────────────── */
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-balance;
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1;
+  }
+  h1 { @apply text-display-2xl font-normal; }
+  h2 { @apply text-display-xl font-normal; }
+  h3 { @apply text-display-lg font-normal; }
+  h4 { @apply text-display-md font-medium; }
+
+  p {
+    @apply text-body-md leading-relaxed;
+  }
+
+  /* Accent label — mono uppercase */
+  .label-mono {
+    @apply font-mono text-label-md uppercase tracking-widest text-muted-foreground;
+  }
+
+  /* Prose refinements */
+  .prose-editorial {
+    @apply max-w-prose;
+  }
+  .prose-editorial p {
+    @apply text-body-lg mb-6 text-foreground/80;
+  }
+  .prose-editorial h2 {
+    @apply text-display-lg mt-14 mb-6;
+  }
+  .prose-editorial h3 {
+    @apply text-display-md mt-10 mb-4;
+  }
 }
 
+/* ────────────────────────────────────────────────────────────
+   UTILITY CLASSES — Design system shortcuts
+──────────────────────────────────────────────────────────── */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  /* Text */
+  .text-balance { text-wrap: balance; }
+  .text-pretty  { text-wrap: pretty;  }
+
+  /* Section rhythm */
+  .section-padding {
+    @apply px-6 py-section sm:px-10 lg:px-16;
   }
+  .section-padding-sm {
+    @apply px-6 py-section-sm sm:px-10 lg:px-16;
+  }
+
+  /* Container */
+  .container-editorial {
+    @apply mx-auto w-full max-w-6xl;
+  }
+  .container-prose {
+    @apply mx-auto w-full max-w-3xl;
+  }
+
+  /* Focus ring — keyboard-only, never on mouse click */
+  .focus-ring {
+    @apply outline-none;
+  }
+  .focus-ring:focus-visible {
+    @apply ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Gradient overlays */
+  .gradient-teal {
+    background: linear-gradient(135deg, #0B4F6C 0%, #1A7DA8 100%);
+  }
+  .gradient-dark {
+    background: linear-gradient(180deg, #1A1A2E 0%, #0B1728 100%);
+  }
+  .gradient-warm {
+    background: linear-gradient(135deg, #F7F5F2 0%, #F0EAE0 100%);
+  }
+
+  /* Card interaction base */
+  .card-interactive {
+    @apply transition-all duration-350 ease-smooth shadow-card;
+  }
+  .card-interactive:hover {
+    @apply shadow-card-hover -translate-y-1;
+  }
+
+  /* Backdrop nav */
+  .nav-blur {
+    @apply backdrop-blur-md bg-background/80 border-b border-border/60;
+  }
+
+  /* LPPR code tag */
+  .code-lppr {
+    @apply font-mono text-label-sm px-1.5 py-0.5 rounded bg-secondary
+           text-secondary-foreground border border-border;
+  }
+
+  /* ── Animated film grain */
+  .grain-texture {
+    position: relative;
+    isolation: isolate;
+  }
+  .grain-texture::before {
+    content: '';
+    position: absolute;
+    inset: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 128px 128px;
+    opacity: 0.038;
+    pointer-events: none;
+    animation: grain-shift 0.9s steps(3) infinite;
+    z-index: 0;
+  }
+}
+
+@keyframes grain-shift {
+  0%   { background-position:    0px   0px; }
+  33%  { background-position: -12px  -9px; }
+  66%  { background-position:   8px  14px; }
+  100% { background-position:    0px   0px; }
 }
