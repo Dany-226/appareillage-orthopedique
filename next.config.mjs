@@ -8,6 +8,20 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/pathologie/avc-hemiplegie",
+        destination: "/pathologie/avc",
+        permanent: true,
+      },
+      {
+        source: "/pathologie/sep-sla",
+        destination: "/pathologie/sep",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

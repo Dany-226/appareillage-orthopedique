@@ -121,25 +121,25 @@ export const pathologies: Pathologie[] = [
     ],
   },
   {
-    slug: 'avc-hemiplegie',
-    name: 'AVC et hémiplégie',
-    metaTitle: 'Appareillage après AVC - orthèses, fauteuils et aides techniques',
-    metaDescription: 'Guide de l\'appareillage après AVC ou hémiplégie. Orthèses de cheville AFO, releveur de pied, fauteuil roulant et aides techniques.',
+    slug: 'avc',
+    name: 'AVC',
+    metaTitle: 'Appareillage après un AVC - orthèses, fauteuils et aides techniques',
+    metaDescription: 'Guide complet de l\'appareillage après un AVC. Orthèses, fauteuil roulant, aides techniques et parcours de rééducation pour retrouver l\'autonomie.',
     heroLabel: 'PATHOLOGIE',
-    heroTitle: 'Appareillage après AVC et hémiplégie',
-    heroSubtitle: 'Les dispositifs orthopédiques pour retrouver la mobilité après un accident vasculaire cérébral - orthèses, aides techniques et parcours de rééducation.',
+    heroTitle: 'Appareillage après un AVC',
+    heroSubtitle: 'Les dispositifs orthopédiques pour accompagner la rééducation après un accident vasculaire cérébral - séquelles motrices, sensitives et cognitives.',
     publishedAt: '2026-05-01',
     updatedAt: '2026-06-01',
     devices: [
       { label: 'Orthèse cheville AFO', href: '/ortheses/membre-inferieur/orthese-cheville-afo', pilier: 'Orthèses', description: 'Releveur de pied spastique' },
       { label: 'Releveur de pied', href: '/ortheses/membre-inferieur/releveur-de-pied', pilier: 'Orthèses', description: 'Pied tombant post-AVC' },
-      { label: 'Cannes et déambulateurs', href: '/aides-techniques/mobilite', pilier: 'Aides techniques', description: "Aide à la marche hémiplégie" },
+      { label: 'Cannes et déambulateurs', href: '/aides-techniques/mobilite', pilier: 'Aides techniques', description: "Aide à la marche post-AVC" },
       { label: 'Fauteuil roulant manuel', href: '/fauteuils-roulants/manuel', pilier: 'Fauteuils', description: 'Phase aigue et subaigue' },
     ],
     blocks: [
       {
         type: 'paragraph',
-        content: "Après un AVC, les séquelles motrices touchent souvent un côté du corps - c'est l'hémiplégie. La récupération fonctionnelle dépend de nombreux facteurs, mais l'appareillage joue un rôle central dès les premières semaines : maintenir les bonnes positions, compenser les déficits, et accompagner la rééducation.",
+        content: "Un AVC peut entraîner des séquelles très variées - hémiplégie, troubles sensitifs, difficultés de communication ou de déglutition. La récupération fonctionnelle dépend de nombreux facteurs, mais l'appareillage joue un rôle central dès les premières semaines : maintenir les bonnes positions, compenser les déficits moteurs, et accompagner la rééducation.",
       },
       {
         type: 'h2',
@@ -178,13 +178,13 @@ export const pathologies: Pathologie[] = [
     ],
   },
   {
-    slug: 'sep-sla',
-    name: 'SEP et SLA',
-    metaTitle: 'Appareillage SEP et SLA - fauteuils électriques et aides techniques',
-    metaDescription: 'Guide de l\'appareillage pour les patients SEP et SLA. Fauteuil roulant électrique, positionnement, aides techniques et droits MDPH.',
+    slug: 'sep',
+    name: 'Sclérose en plaques (SEP)',
+    metaTitle: 'Appareillage sclérose en plaques (SEP) - fauteuils électriques et aides techniques',
+    metaDescription: 'Guide de l\'appareillage pour les patients atteints de sclérose en plaques. Fauteuil roulant électrique, positionnement, aides techniques et droits MDPH.',
     heroLabel: 'PATHOLOGIE',
-    heroTitle: 'Appareillage pour la SEP et la SLA',
-    heroSubtitle: "Fauteuils électriques, systèmes de positionnement et aides techniques pour accompagner l'évolution de la sclérose en plaques et de la SLA.",
+    heroTitle: 'Appareillage et sclérose en plaques',
+    heroSubtitle: "Fauteuils électriques, systèmes de positionnement et aides techniques pour accompagner l'évolution de la sclérose en plaques.",
     publishedAt: '2026-05-01',
     updatedAt: '2026-06-01',
     devices: [
@@ -195,7 +195,7 @@ export const pathologies: Pathologie[] = [
     blocks: [
       {
         type: 'paragraph',
-        content: "La sclérose en plaques et la SLA évoluent de façon très différente, mais partagent un besoin commun : adapter l'appareillage à l'évolution des capacités. L'anticipation est ici aussi importante que la réaction - se préparer aux prochaines étapes évite les ruptures de mobilité.",
+        content: "La sclérose en plaques évolue par poussées ou de façon progressive, avec des besoins d'appareillage qui changent au fil du temps. L'anticipation est ici aussi importante que la réaction - se préparer aux prochaines étapes évite les ruptures de mobilité.",
       },
       {
         type: 'h2',
