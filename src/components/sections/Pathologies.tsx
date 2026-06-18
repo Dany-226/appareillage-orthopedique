@@ -6,16 +6,12 @@ import { ChevronRight } from "lucide-react";
 import { motionVariants, viewport } from "@/components/ui/design-tokens";
 
 const pathologies = [
-  { label: "Amputation",        slug: "amputation",       featured: true  },
-  { label: "AVC",               slug: "avc",              featured: false },
-  { label: "SEP",               slug: "sep",              featured: false },
-  { label: "IMC",               slug: "imc",              featured: false },
-  { label: "Arthrose",          slug: "arthrose",         featured: false },
-  { label: "Lésion médullaire", slug: "lesion-medullaire",featured: true  },
-  { label: "Diabète",           slug: "diabete",          featured: false },
-  { label: "Polyarthrite",      slug: "polyarthrite",     featured: false },
-  { label: "Spina Bifida",      slug: "spina-bifida",     featured: false },
-  { label: "Paralysie cérébrale",slug: "paralysie-cerebrale", featured: false },
+  { label: "Amputation",          slug: "amputation",          featured: true  },
+  { label: "AVC",                 slug: "avc-hemiplegie",      featured: false },
+  { label: "SEP",                 slug: "sep-sla",             featured: false },
+  { label: "Arthrose",            slug: "arthrose",            featured: false },
+  { label: "Lésion médullaire",   slug: "lesion-medullaire",   featured: true  },
+  { label: "Paralysie cérébrale", slug: "paralysie-cerebrale", featured: false },
 ];
 
 export default function Pathologies() {
