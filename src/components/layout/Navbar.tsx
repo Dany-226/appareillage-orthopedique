@@ -6,11 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const PILIER_LINKS = [
-  { label: "Orthèses",         href: "/ortheses" },
-  { label: "Prothèses",        href: "/protheses" },
-  { label: "Fauteuils",        href: "/fauteuils" },
-  { label: "Aides techniques", href: "/aides-techniques" },
-  { label: "Positionnement",   href: "/positionnement" },
+  { label: "Orthèses",  href: "/ortheses" },
+  { label: "Prothèses", href: "/protheses" },
+  { label: "Fauteuils", href: "/fauteuils" },
 ];
 
 const ALL_NAV_LINKS = [

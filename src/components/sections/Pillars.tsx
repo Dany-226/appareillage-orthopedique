@@ -26,20 +26,6 @@ export const pillars = [
       "Manuel ou électrique, actif ou de confort : choisir, ajuster et entretenir son fauteuil.",
     href: "/fauteuils",
   },
-  {
-    num:  "04",
-    title: "Aides techniques",
-    description:
-      "Cannes, déambulateurs, lève-personnes, aides à la préhension — le panorama complet.",
-    href: "/aides-techniques",
-  },
-  {
-    num:  "05",
-    title: "Positionnement",
-    description:
-      "Coussins anti-escarre, systèmes de maintien postural, assises sur mesure.",
-    href: "/positionnement",
-  },
 ];
 
 const cardVariant = {
