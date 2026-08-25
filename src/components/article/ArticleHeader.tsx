@@ -230,9 +230,6 @@ function HubFormatHeader({ category, readingTime, h1, author }: HubProps) {
             <circle cx="8.5" cy="8.5" r="1.5" />
             <path d="m21 15-5-5L5 21" />
           </svg>
-          <p className="font-mono text-xs text-brand-teal/40 uppercase tracking-widest">
-            [Photo article {category}]
-          </p>
         </div>
       </div>
     </header>

@@ -58,7 +58,7 @@ export default function FeaturedArticle() {
           whileHover={{ y: -4, boxShadow: shadows.cardHover, transition: { duration: 0.22, ease: [0.4, 0, 0.2, 1] } }}
         >
           <Link
-            href="/protheses/hub-protheses-membres-inferieurs"
+            href="/protheses"
             className="group block overflow-hidden rounded-3xl bg-card shadow-card
                        border border-border/60 focus-ring"
           >

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { pillars } from "@/components/sections/Pillars";
 
 // ── H1 line definitions ──────────────────────────────────────────────────────
 const H1_LINES = [
@@ -13,9 +14,9 @@ const H1_LINES = [
 ];
 
 const MICRO_STATS = [
-  { value: "65%",       label: "des patients mal informés" },
-  { value: "53%",       label: "ont raté un renouvellement" },
-  { value: "5 piliers", label: "thématiques couverts" },
+  { value: "65%", label: "des patients mal informés" },
+  { value: "53%", label: "ont raté un renouvellement" },
+  { value: `${pillars.length} piliers`, label: "thématiques couverts" },
 ];
 
 // ── Framer Motion variants ───────────────────────────────────────────────────

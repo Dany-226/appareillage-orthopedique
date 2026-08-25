@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { motionVariants, viewport } from "@/components/ui/design-tokens";
 
-const pillars = [
+export const pillars = [
   {
     num:  "01",
     title: "Orthèses",
@@ -70,7 +70,7 @@ export default function Pillars() {
             variants={motionVariants.fadeUp}
             className="label-mono text-brand-teal block mb-4"
           >
-            5 piliers éditoriaux
+            {pillars.length} piliers éditoriaux
           </motion.span>
           <motion.h2
             variants={motionVariants.fadeUp}
