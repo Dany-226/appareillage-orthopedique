@@ -41,11 +41,9 @@ export const pathologies: Pathologie[] = [
     publishedAt: '2026-05-01',
     updatedAt: '2026-06-01',
     devices: [
-      { label: 'Prothèses tibiales', href: '/protheses/tibiale', pilier: 'Prothèses', description: 'Amputation sous le genou' },
-      { label: 'Prothèses fémorales', href: '/protheses/femorale', pilier: 'Prothèses', description: 'Amputation au-dessus du genou' },
+      { label: 'Prothèses tibiales', href: '/protheses', pilier: 'Prothèses', description: 'Amputation sous le genou' },
+      { label: 'Prothèses fémorales', href: '/protheses', pilier: 'Prothèses', description: 'Amputation au-dessus du genou' },
       { label: 'Fauteuils roulants actifs', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Phase transitoire ou définitive' },
-      { label: 'Aides à la mobilité', href: '/aides-techniques/mobilite', pilier: 'Aides techniques', description: 'Cannes, déambulateurs' },
-      { label: 'Positionnement assis', href: '/positionnement/assis', pilier: 'Positionnement', description: 'Coussins et systèmes adaptés' },
     ],
     blocks: [
       {
@@ -131,9 +129,8 @@ export const pathologies: Pathologie[] = [
     publishedAt: '2026-05-01',
     updatedAt: '2026-06-01',
     devices: [
-      { label: 'Orthèse cheville AFO', href: '/ortheses/membre-inferieur/orthese-cheville-afo', pilier: 'Orthèses', description: 'Releveur de pied spastique' },
-      { label: 'Releveur de pied', href: '/ortheses/membre-inferieur/releveur-de-pied', pilier: 'Orthèses', description: 'Pied tombant post-AVC' },
-      { label: 'Cannes et déambulateurs', href: '/aides-techniques/mobilite', pilier: 'Aides techniques', description: "Aide à la marche post-AVC" },
+      { label: 'Orthèse cheville AFO', href: '/ortheses', pilier: 'Orthèses', description: 'Releveur de pied spastique' },
+      { label: 'Releveur de pied', href: '/ortheses', pilier: 'Orthèses', description: 'Pied tombant post-AVC' },
       { label: 'Fauteuil roulant manuel', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Phase aigue et subaigue' },
     ],
     blocks: [
@@ -189,8 +186,6 @@ export const pathologies: Pathologie[] = [
     updatedAt: '2026-06-01',
     devices: [
       { label: 'Fauteuil électrique', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Intérieur, extérieur, mixte' },
-      { label: 'Coussin anti-escarre', href: '/positionnement/assis/coussin-anti-escarre', pilier: 'Positionnement', description: 'Prévention escarres' },
-      { label: 'Aides techniques', href: '/aides-techniques', pilier: 'Aides techniques', description: 'Communication, préhension' },
     ],
     blocks: [
       {
@@ -226,9 +221,8 @@ export const pathologies: Pathologie[] = [
     publishedAt: '2026-05-01',
     updatedAt: '2026-06-01',
     devices: [
-      { label: 'Orthèses pédiatriques', href: '/ortheses/membre-inferieur', pilier: 'Orthèses', description: 'AFO, orthèses genou enfant' },
+      { label: 'Orthèses pédiatriques', href: '/ortheses', pilier: 'Orthèses', description: 'AFO, orthèses genou enfant' },
       { label: 'Fauteuil enfant', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Manuel et électrique pédiatrique' },
-      { label: 'Positionnement pédiatrique', href: '/positionnement/pediatrique', pilier: 'Positionnement', description: 'Coques, systèmes assis/couché' },
     ],
     blocks: [
       {
@@ -260,10 +254,9 @@ export const pathologies: Pathologie[] = [
     publishedAt: '2026-05-01',
     updatedAt: '2026-06-01',
     devices: [
-      { label: 'Orthèse genou décharge', href: '/ortheses/membre-inferieur/orthese-genou-decharge', pilier: 'Orthèses', description: 'Gonarthrose compartiment interne' },
-      { label: 'Semelles orthopédiques', href: '/ortheses/membre-inferieur/semelles-orthopediques', pilier: 'Orthèses', description: 'Correction biomécanique' },
-      { label: 'Orthèse de poignet', href: '/ortheses/membre-superieur/orthese-poignet', pilier: 'Orthèses', description: 'Arthrose rhizarthrose' },
-      { label: 'Aides techniques', href: '/aides-techniques', pilier: 'Aides techniques', description: 'Cannes, préhension facilitée' },
+      { label: 'Orthèse genou décharge', href: '/ortheses', pilier: 'Orthèses', description: 'Gonarthrose compartiment interne' },
+      { label: 'Semelles orthopédiques', href: '/ortheses', pilier: 'Orthèses', description: 'Correction biomécanique' },
+      { label: 'Orthèse de poignet', href: '/ortheses', pilier: 'Orthèses', description: 'Arthrose rhizarthrose' },
     ],
     blocks: [
       {
@@ -314,8 +307,6 @@ export const pathologies: Pathologie[] = [
     devices: [
       { label: 'Fauteuil électrique extérieur', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Mixte intérieur/extérieur' },
       { label: 'Fauteuil actif manuel', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Paraplégiques actifs' },
-      { label: 'Coussin anti-escarre', href: '/positionnement/assis/coussin-anti-escarre', pilier: 'Positionnement', description: 'Prévention escarres ischiatiques' },
-      { label: 'Aides techniques', href: '/aides-techniques', pilier: 'Aides techniques', description: 'Transferts, autonomie domicile' },
     ],
     blocks: [
       {
