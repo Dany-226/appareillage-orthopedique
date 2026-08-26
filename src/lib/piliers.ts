@@ -81,7 +81,7 @@ const piliers: Record<string, PilierData> = {
       },
       {
         type: "paragraph",
-        text: "En France, les prothèses de membres sont inscrites à la Liste des Produits et Prestations Remboursables (LPPR). Chaque dispositif porte un code à 11 chiffres déterminant le tarif de remboursement par l'Assurance Maladie. La prise en charge est de 100 % du tarif de base pour les assurés en ALD, et de 60 % pour les autres.",
+        text: "En France, les prothèses de membres sont inscrites à la Liste des Produits et Prestations Remboursables (LPPR). Chaque dispositif porte un code alphanumérique propre à la nomenclature (par exemple PI06SSA63 pour un composant de base, VI4ZE25 pour une variante optionnelle comme un genou à microprocesseur) : le tarif final résulte de l'addition du composant de base et des adjonctions ou variantes retenues. La prise en charge est de 100 % du tarif de base pour les assurés en ALD, et de 60 % pour les autres.",
       },
       {
         type: "info",
