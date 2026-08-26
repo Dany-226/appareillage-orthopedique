@@ -89,15 +89,19 @@ const piliers: Record<string, PilierData> = {
         text: "Depuis 2014, le renouvellement de certaines prothèses peut se faire sans nouvelle prescription médicale, à l'initiative du patient ou de l'orthoprothésiste, au terme du délai minimal de renouvellement. Contactez votre CPAM ou votre orthoprothésiste pour initier la démarche.",
       },
       {
+        type: "paragraph",
+        text: "Les tarifs ci-dessous correspondent aux composants de base tels qu'inscrits à la nomenclature, hors adjonctions et variantes (réglages spécifiques, options, accessoires complémentaires). Le tarif réellement remboursé dépend de la configuration complète prescrite par l'orthoprothésiste, qui peut inclure plusieurs de ces codes combinés.",
+      },
+      {
         type: "table",
-        headers: ["Type de prothèse", "Code LPPR", "Base SS", "Renouvellement"],
+        headers: ["Élément", "Code", "Tarif TTC"],
         rows: [
-          ["Prothèse tibiale simple",       "04.02.01.01.15", "1 320 €",  "3 ans"],
-          ["Prothèse tibiale dynamique",    "04.02.01.02.40", "3 650 €",  "3 ans"],
-          ["Prothèse fémorale mécanique",   "04.02.02.01.10", "4 890 €",  "3 ans"],
-          ["Pied prothétique énergétique",  "04.02.03.10.20", "580 €",    "5 ans"],
-          ["Genou prothétique hydraulique", "04.02.02.05.15", "8 200 €",  "5 ans"],
-          ["Genou à microprocesseur",       "04.02.02.06.11", "13 500 €", "5 ans"],
+          ["Prothèse tibiale, emboîture de contact, pied articulé (base)", "PI06SSA63", "1 065,27 €"],
+          ["Prothèse tibiale, emboîture à suspension, pied articulé (base)", "PI06SSC33", "1 630,73 €"],
+          ["Prothèse fémorale, emboîture résines stratifiées (base)", "PI04SSC23", "1 865,86 €"],
+          ["Genou polycentrique à microprocesseur, régulation pneumatique", "VI4ZE25", "5 497,40 €"],
+          ["Boîtier de programmation genou électronique", "VI4BE01", "982,08 €"],
+          ["Pied à restitution d'énergie classe I", "2707471", "613,59 €"],
         ],
       },
       {
