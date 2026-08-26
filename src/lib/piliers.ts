@@ -186,20 +186,141 @@ const piliers: Record<string, PilierData> = {
   fauteuils: {
     slug: "fauteuils",
     category: "Fauteuils roulants",
-    readingTime: 9,
-    h1: "Fauteuils roulants : choisir, ajuster et vivre avec son fauteuil",
-    author: { name: "Sophie Arnaud", title: "Ergothérapeute — Centre de rééducation de Lyon", updatedAt: "Mis à jour le 8 juin 2026" },
+    readingTime: 14,
+    h1: "Fauteuil roulant : guide complet pour les patients et leurs proches",
+    author: {
+      name: "Sophie Arnaud",
+      title: "Ergothérapeute — Centre de rééducation de Lyon",
+      updatedAt: "Mis à jour en août 2026 — réforme VPH en vigueur depuis le 1er décembre 2025",
+    },
     content: [
-      { type: "paragraph", text: "Le fauteuil roulant est bien plus qu'un dispositif de mobilité : c'est une extension du corps qui conditionne l'autonomie, la participation sociale et la qualité de vie. Bien choisir son fauteuil est une décision technique et personnelle qui mérite une attention particulière." },
-      { type: "h2", id: "types-fauteuils", text: "Manuel ou électrique : comment choisir ?" },
-      { type: "paragraph", text: "Le choix entre fauteuil manuel et électrique dépend de l'état fonctionnel des membres supérieurs, de l'environnement de vie et des activités souhaitées." },
-      { type: "h2", id: "remboursement", text: "Remboursement et nomenclature LPPR" },
-      { type: "paragraph", text: "Les fauteuils roulants sont codifiés dans la nomenclature LPPR, avec des tarifs variables selon le type et les options." },
-      { type: "h2", id: "faq", text: "Questions fréquentes" },
-      { type: "faq", items: [
-        { q: "Peut-on avoir un fauteuil de secours ?", a: "Oui, sous conditions médicales. Un second fauteuil peut être prescrit si le premier est en réparation ou si l'usage le justifie (fauteuil actif + fauteuil de confort)." },
-      ]},
-      { type: "cta", headline: "Trouver un revendeur agréé", sub: "Localisez un revendeur de fauteuils roulants près de chez vous.", btnLabel: "Rechercher", href: "/trouver-praticien" },
+      {
+        type: "paragraph",
+        text: "Depuis le 1er décembre 2025, le terme réglementaire a changé : on ne parle plus de « fauteuil roulant » au sens de l'ancienne nomenclature, mais de VPH — véhicule pour personne en situation de handicap. Ce changement accompagne une refonte complète de la nomenclature, des catégories, des règles de prescription et de la prise en charge par l'Assurance Maladie.",
+      },
+      {
+        type: "h2",
+        id: "quest-ce-quun-vph",
+        text: "Qu'est-ce qu'un VPH ?",
+      },
+      {
+        type: "paragraph",
+        text: "Un VPH est défini réglementairement comme un dispositif médical équipé de roues, conçu pour assurer la mobilité et le soutien du corps d'une personne ne pouvant pas ou peu marcher. Cette définition couvre un champ plus large que le seul fauteuil roulant classique : elle inclut aussi les poussettes adaptées, les bases roulantes, les cycles à roues multiples et les scooters modulaires.",
+      },
+      {
+        type: "info",
+        title: "Conformité obligatoire",
+        text: "Tout VPH pris en charge doit être conforme au règlement européen sur les dispositifs médicaux (MDR 2017/745) et aux normes NF EN 12183 (fauteuils manuels) ou NF EN ISO 12184 (fauteuils électriques), avec un certificat de conformité valable 5 ans.",
+      },
+      {
+        type: "h2",
+        id: "categories-vph",
+        text: "Les catégories de VPH",
+      },
+      {
+        type: "paragraph",
+        text: "La nomenclature distingue les VPH non modulaires (FMP, FMPR), les VPH modulaires à propulsion manuelle (FRM, FRMC, FRMA, FRMS, FRMP, FRMV) et les VPH modulaires à propulsion électrique (FRE, FREP, FREV), ainsi que les poussettes, bases roulantes, cycles et scooters.",
+      },
+      {
+        type: "table",
+        headers: ["Acronyme", "Catégorie", "Particularité"],
+        rows: [
+          ["FMP / FMPR", "Non modulaire, propulsion manuelle ou à pousser", "Besoins standards"],
+          ["FRM", "Modulaire, propulsion manuelle ou à pousser", "Base modulaire"],
+          ["FRMA", "Modulaire actif", "Châssis rigide, poids max 10 kg, usage quotidien"],
+          ["FRMS", "Modulaire sport", "Châssis non pliant, carrossage adapté à la discipline"],
+          ["FRMP", "Modulaire multi-position", "Dossier et assise inclinables"],
+          ["FRMV", "Modulaire verticalisateur", "Verticalisation manuelle progressive"],
+          ["FRE", "Propulsion électrique", "Classes A, B, C selon l'environnement"],
+          ["FREP", "Électrique multi-position", "Inclinaison électrique"],
+          ["FREV", "Électrique verticalisateur", "Verticalisation assistée électriquement"],
+          ["POU_S / POU_MRE", "Poussette standard / modulaire évolutive", "Moins de 18 ans"],
+          ["SCO", "Scooter modulaire", "Classes A+, B, C"],
+        ],
+      },
+      {
+        type: "h2",
+        id: "manuel-ou-electrique",
+        text: "Manuel ou électrique : ce que dit vraiment la réglementation",
+      },
+      {
+        type: "paragraph",
+        text: "L'idée reçue « manuel = handicap léger, électrique = handicap lourd » ne correspond pas à la logique clinique retenue par la nomenclature. Un fauteuil électrique (FRE) n'est pas indiqué du simple fait d'une difficulté à marcher : la prise en charge est assurée pour les personnes dans l'impossibilité de propulser elles-mêmes un fauteuil manuel — en raison de leur déficience ou de leur environnement — et qui ont par ailleurs les capacités cognitives, physiques et visuelles nécessaires pour le maîtriser en sécurité. Deux conditions cumulatives, pas une gradation automatique de sévérité.",
+      },
+      {
+        type: "paragraph",
+        text: "À l'inverse, un fauteuil manuel actif (FRMA) n'est pas un choix de confort : il répond à un besoin fonctionnel précis d'autonomie de déplacement en intérieur et extérieur, pour un utilisateur expérimenté, avec un cahier des charges technique exigeant (châssis rigide non pliant, poids maximal 10 kg).",
+      },
+      {
+        type: "h2",
+        id: "parcours-prescription",
+        text: "Le parcours pour obtenir un fauteuil roulant",
+      },
+      {
+        type: "paragraph",
+        text: "Le parcours suit toujours la même architecture en trois temps : évaluation des besoins, préconisation, puis essai suivi d'une prescription définitive. Qui réalise l'évaluation dépend de la catégorie visée — un médecin ou ergothérapeute pour les catégories simples (FMP, FMPR, FRM), une équipe pluridisciplinaire complète pour les catégories les plus techniques (FRMS, FRMV, FRE, FREP, FREV, POU_MRE, SCO, CYC).",
+      },
+      {
+        type: "info",
+        title: "L'essai est obligatoire",
+        text: "Pour la quasi-totalité des catégories, un essai pratique dans les conditions réelles d'utilisation est requis avant toute prescription définitive : 7 jours à compter de la livraison, réductible à la demande du patient mais jamais en dessous de 48 heures. Aucune facturation ne peut intervenir avant la fin de cette période.",
+      },
+      {
+        type: "h2",
+        id: "renouvellement",
+        text: "Renouvellement et garanties",
+      },
+      {
+        type: "paragraph",
+        text: "Le renouvellement d'un VPH de même catégorie ne peut intervenir avant 5 ans pour un adulte et 3 ans pour un enfant. Un renouvellement à l'identique — même catégorie, même modèle, même configuration — peut être prescrit plus simplement par un médecin généraliste ou un ergothérapeute. En cas d'évolution rapide de la pathologie, un renouvellement anticipé est possible par dérogation. À l'achat d'un fauteuil neuf, une garantie fabricant de 2 ans couvre pièces, main-d'œuvre et transport, sans frais facturable au patient.",
+      },
+      {
+        type: "h2",
+        id: "remboursement",
+        text: "Remboursement",
+      },
+      {
+        type: "paragraph",
+        text: "Les VPH inscrits sur la liste des produits et prestations remboursables (LPP) sont pris en charge intégralement par l'Assurance Maladie depuis le 1er décembre 2025, devenue le financeur et guichet unique. Une période transitoire s'applique jusqu'au 30 novembre 2026 pour les prescriptions antérieures à la réforme.",
+      },
+      {
+        type: "info",
+        title: "Page tarifs à venir",
+        text: "Les montants précis de remboursement par catégorie feront l'objet d'une page dédiée, une fois la source tarifaire officielle vérifiée ligne par ligne.",
+      },
+      {
+        type: "h2",
+        id: "faq",
+        text: "Questions fréquentes",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            q: "Un fauteuil manuel est-il toujours prescrit avant un fauteuil électrique ?",
+            a: "Non. Ce n'est pas une gradation obligatoire. Le choix dépend des capacités de propulsion du patient et de son environnement, évalués dès le départ.",
+          },
+          {
+            q: "Qui décide de la catégorie de fauteuil ?",
+            a: "Le prescripteur, ou l'équipe pluridisciplinaire pour les catégories techniques, sur la base de l'évaluation des besoins — jamais le distributeur seul, et jamais sans essai préalable pour la plupart des catégories.",
+          },
+          {
+            q: "Peut-on essayer plusieurs modèles avant de choisir ?",
+            a: "Oui, c'est une obligation réglementaire pour la quasi-totalité des catégories : le distributeur doit présenter au moins 4 modèles au catalogue et permettre l'essai d'au moins 2 modèles conformes à la prescription.",
+          },
+          {
+            q: "Que se passe-t-il si le fauteuil livré ne convient pas après l'essai ?",
+            a: "Une nouvelle préconisation est établie et le parcours reprend. Aucune facturation n'a lieu tant que l'essai n'est pas validé.",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        headline: "Trouver un revendeur agréé",
+        sub: "Localisez un revendeur de fauteuils roulants près de chez vous.",
+        btnLabel: "Rechercher",
+        href: "/trouver-praticien",
+      },
     ],
   },
 };
