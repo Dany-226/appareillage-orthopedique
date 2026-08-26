@@ -43,7 +43,7 @@ export const pathologies: Pathologie[] = [
     devices: [
       { label: 'Prothèses tibiales', href: '/protheses/tibiale', pilier: 'Prothèses', description: 'Amputation sous le genou' },
       { label: 'Prothèses fémorales', href: '/protheses/femorale', pilier: 'Prothèses', description: 'Amputation au-dessus du genou' },
-      { label: 'Fauteuils roulants actifs', href: '/fauteuils-roulants/manuel', pilier: 'Fauteuils', description: 'Phase transitoire ou définitive' },
+      { label: 'Fauteuils roulants actifs', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Phase transitoire ou définitive' },
       { label: 'Aides à la mobilité', href: '/aides-techniques/mobilite', pilier: 'Aides techniques', description: 'Cannes, déambulateurs' },
       { label: 'Positionnement assis', href: '/positionnement/assis', pilier: 'Positionnement', description: 'Coussins et systèmes adaptés' },
     ],
@@ -134,7 +134,7 @@ export const pathologies: Pathologie[] = [
       { label: 'Orthèse cheville AFO', href: '/ortheses/membre-inferieur/orthese-cheville-afo', pilier: 'Orthèses', description: 'Releveur de pied spastique' },
       { label: 'Releveur de pied', href: '/ortheses/membre-inferieur/releveur-de-pied', pilier: 'Orthèses', description: 'Pied tombant post-AVC' },
       { label: 'Cannes et déambulateurs', href: '/aides-techniques/mobilite', pilier: 'Aides techniques', description: "Aide à la marche post-AVC" },
-      { label: 'Fauteuil roulant manuel', href: '/fauteuils-roulants/manuel', pilier: 'Fauteuils', description: 'Phase aigue et subaigue' },
+      { label: 'Fauteuil roulant manuel', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Phase aigue et subaigue' },
     ],
     blocks: [
       {
@@ -188,7 +188,7 @@ export const pathologies: Pathologie[] = [
     publishedAt: '2026-05-01',
     updatedAt: '2026-06-01',
     devices: [
-      { label: 'Fauteuil électrique', href: '/fauteuils-roulants/electrique', pilier: 'Fauteuils', description: 'Intérieur, extérieur, mixte' },
+      { label: 'Fauteuil électrique', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Intérieur, extérieur, mixte' },
       { label: 'Coussin anti-escarre', href: '/positionnement/assis/coussin-anti-escarre', pilier: 'Positionnement', description: 'Prévention escarres' },
       { label: 'Aides techniques', href: '/aides-techniques', pilier: 'Aides techniques', description: 'Communication, préhension' },
     ],
@@ -227,7 +227,7 @@ export const pathologies: Pathologie[] = [
     updatedAt: '2026-06-01',
     devices: [
       { label: 'Orthèses pédiatriques', href: '/ortheses/membre-inferieur', pilier: 'Orthèses', description: 'AFO, orthèses genou enfant' },
-      { label: 'Fauteuil enfant', href: '/fauteuils-roulants/manuel', pilier: 'Fauteuils', description: 'Manuel et électrique pédiatrique' },
+      { label: 'Fauteuil enfant', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Manuel et électrique pédiatrique' },
       { label: 'Positionnement pédiatrique', href: '/positionnement/pediatrique', pilier: 'Positionnement', description: 'Coques, systèmes assis/couché' },
     ],
     blocks: [
@@ -312,8 +312,8 @@ export const pathologies: Pathologie[] = [
     publishedAt: '2026-05-01',
     updatedAt: '2026-06-01',
     devices: [
-      { label: 'Fauteuil électrique extérieur', href: '/fauteuils-roulants/electrique/fauteuil-electrique-exterieur', pilier: 'Fauteuils', description: 'Mixte intérieur/extérieur' },
-      { label: 'Fauteuil actif manuel', href: '/fauteuils-roulants/manuel/fauteuil-actif', pilier: 'Fauteuils', description: 'Paraplégiques actifs' },
+      { label: 'Fauteuil électrique extérieur', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Mixte intérieur/extérieur' },
+      { label: 'Fauteuil actif manuel', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Paraplégiques actifs' },
       { label: 'Coussin anti-escarre', href: '/positionnement/assis/coussin-anti-escarre', pilier: 'Positionnement', description: 'Prévention escarres ischiatiques' },
       { label: 'Aides techniques', href: '/aides-techniques', pilier: 'Aides techniques', description: 'Transferts, autonomie domicile' },
     ],
