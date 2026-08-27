@@ -22,6 +22,7 @@ type HubProps = {
   readingTime: number;
   h1: string;
   author: HubAuthor;
+  heroImage?: string;
   article?: never;
 };
 
@@ -160,7 +161,7 @@ function ArticleFormatHeader({ article }: { article: Article }) {
 }
 
 // ── Hub format header (original, preserved) ───────────────────────────────────
-function HubFormatHeader({ category, readingTime, h1, author }: HubProps) {
+function HubFormatHeader({ category, readingTime, h1, author, heroImage }: HubProps) {
   return (
     <header className="mb-10">
       <div className="flex items-center gap-3 mb-6">
@@ -207,31 +208,47 @@ function HubFormatHeader({ category, readingTime, h1, author }: HubProps) {
         </div>
       </div>
 
-      {/* Hero image placeholder */}
-      <div
-        className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br
-                   from-brand-teal-light to-brand-teal/15
-                   flex items-center justify-center"
-        style={{ aspectRatio: "16 / 9" }}
-        role="img"
-        aria-label={`Image illustrative — ${category}`}
-      >
-        <div className="flex flex-col items-center gap-3 text-brand-teal/40">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.25"
-            aria-hidden
-          >
-            <rect x="3" y="3" width="18" height="18" rx="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <path d="m21 15-5-5L5 21" />
-          </svg>
+      {/* Hero image (if provided), placeholder otherwise */}
+      {heroImage ? (
+        <div
+          className="mt-8 relative w-full rounded-xl overflow-hidden"
+          style={{ aspectRatio: "16 / 9" }}
+        >
+          <Image
+            src={heroImage}
+            alt={h1 || category}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 800px"
+            priority
+          />
         </div>
-      </div>
+      ) : (
+        <div
+          className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br
+                     from-brand-teal-light to-brand-teal/15
+                     flex items-center justify-center"
+          style={{ aspectRatio: "16 / 9" }}
+          role="img"
+          aria-label={`Image illustrative — ${category}`}
+        >
+          <div className="flex flex-col items-center gap-3 text-brand-teal/40">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.25"
+              aria-hidden
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="m21 15-5-5L5 21" />
+            </svg>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

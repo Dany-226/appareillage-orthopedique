@@ -20,6 +20,7 @@ export type PilierData = {
   readingTime: number;
   h1: string;
   author: { name: string; title: string; updatedAt: string };
+  heroImage?: string;
   content: ContentBlock[];
 };
 
@@ -38,6 +39,7 @@ const piliers: Record<string, PilierData> = {
       title: "Expert appareillage orthopédique — 15 ans chez Össur France",
       updatedAt: "Mis à jour le 8 juin 2026",
     },
+    heroImage: "https://i.imgur.com/24V24KZ.png",
     content: [
       {
         type: "paragraph",
@@ -171,6 +173,7 @@ const piliers: Record<string, PilierData> = {
       title: "Kinésithérapeute spécialisée en rééducation orthopédique — 12 ans d'expérience",
       updatedAt: "Mis à jour le 8 juin 2026",
     },
+    heroImage: "https://i.imgur.com/RZHWt7e.png",
     content: [
       { type: "paragraph", text: "Une orthèse est un dispositif médical externe destiné à soutenir, corriger, immobiliser ou protéger une partie du corps. Contrairement aux prothèses qui remplacent un membre absent, les orthèses agissent sur un membre présent mais défaillant ou douloureux." },
       { type: "h2", id: "types-ortheses", text: "Types d'orthèses et indications" },
@@ -197,6 +200,7 @@ const piliers: Record<string, PilierData> = {
       title: "Ergothérapeute — Centre de rééducation de Lyon",
       updatedAt: "Mis à jour en août 2026 — réforme VPH en vigueur depuis le 1er décembre 2025",
     },
+    heroImage: "https://i.imgur.com/DxcmorL.png",
     content: [
       {
         type: "paragraph",

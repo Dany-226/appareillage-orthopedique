@@ -75,6 +75,7 @@ export default function PilierPage({
                 readingTime={data.readingTime}
                 h1={data.h1}
                 author={data.author}
+                heroImage={data.heroImage}
               />
               <ArticleBody blocks={data.content} />
             </article>
