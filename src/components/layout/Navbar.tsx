@@ -66,16 +66,23 @@ export default function Navbar() {
           className="mx-auto flex h-16 max-w-[1280px] items-center justify-between
                      px-6 sm:px-10 lg:px-16"
         >
-          {/* Logo — full lockup */}
-          <Link href="/" className="flex items-center focus-ring rounded">
+          {/* Logo — icon + Fraunces wordmark */}
+          <Link
+            href="/"
+            className="flex items-center gap-2 font-heading text-[20px] font-bold
+                       tracking-tight focus-ring rounded"
+            style={{ color: "#1b1c1a" }}
+          >
             <Image
-              src="/logo-full-transparent.png"
-              alt="Appareillage Orthopédique"
-              width={155}
-              height={46}
-              className="h-[46px] w-auto"
+              src="/logo-icon.png"
+              alt=""
+              width={32}
+              height={38}
+              className="h-[38px] w-auto"
               priority
             />
+            Appareillage&nbsp;
+            <span className="font-normal italic">Orthopédique</span>
           </Link>
 
           {/* Desktop nav */}

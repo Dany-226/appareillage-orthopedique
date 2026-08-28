@@ -54,13 +54,15 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Image
-              src="/logo-full-dark.png"
-              alt="Appareillage Orthopédique"
-              width={220}
-              height={65}
-              className="mb-3 h-auto w-[220px]"
-            />
+            <div className="mb-3 inline-block rounded-lg bg-brand-light p-5">
+              <Image
+                src="/logo-full.png"
+                alt="Appareillage Orthopédique"
+                width={220}
+                height={147}
+                className="h-auto w-[220px]"
+              />
+            </div>
             <p className="text-sm leading-relaxed text-white/50 max-w-xs">
               Le guide de référence pour les patients appareillés et leurs
               proches. Contenus rédigés avec des professionnels de santé.
