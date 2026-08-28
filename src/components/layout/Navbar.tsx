@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -65,12 +66,20 @@ export default function Navbar() {
           className="mx-auto flex h-16 max-w-[1280px] items-center justify-between
                      px-6 sm:px-10 lg:px-16"
         >
-          {/* Logo — Fraunces, no icon */}
+          {/* Logo — icon + Fraunces wordmark */}
           <Link
             href="/"
-            className="font-heading text-[20px] font-bold tracking-tight focus-ring rounded"
+            className="flex items-center gap-2 font-heading text-[20px] font-bold
+                       tracking-tight focus-ring rounded"
             style={{ color: "#1b1c1a" }}
           >
+            <Image
+              src="/logo-icon.png"
+              alt=""
+              width={32}
+              height={38}
+              className="h-[38px] w-auto"
+            />
             Appareillage&nbsp;
             <span className="font-normal italic">Orthopédique</span>
           </Link>
