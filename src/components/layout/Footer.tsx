@@ -55,10 +55,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/logo-full.png"
+              src="/logo-full-dark.png"
               alt="Appareillage Orthopédique"
               width={220}
-              height={147}
+              height={65}
               className="mb-3 h-auto w-[220px]"
             />
             <p className="text-sm leading-relaxed text-white/50 max-w-xs">
