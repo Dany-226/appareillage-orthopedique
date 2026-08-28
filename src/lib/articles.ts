@@ -129,7 +129,113 @@ export const articles: Article[] = [
         buttonHref: '/trouver-un-praticien',
       },
     ],
-    relatedArticles: ['pied-prothetique', 'emboiture-prothese-tibiale'],
+    relatedArticles: ['pied-prothetique', 'emboiture-prothese-tibiale', 'prothese-femorale-choisir-son-genou'],
+  },
+  {
+    slug: 'prothese-femorale-choisir-son-genou',
+    pilier: 'protheses',
+    title: 'Prothèse fémorale : genou mécanique ou microprocesseur, comment choisir',
+    metaTitle: 'Genou mécanique ou microprocesseur - Choisir sa prothèse fémorale',
+    metaDescription: "Comprendre la différence entre genou mécanique et genou à microprocesseur pour une prothèse fémorale. Indications, remboursement LPPR, critères de choix.",
+    badge: 'Prothèses',
+    readingTime: '9 min',
+    publishedAt: '2026-08-28',
+    updatedAt: '2026-08-28',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage — 15 ans chez Össur France',
+    },
+    excerpt: "Le choix du genou est la décision la plus structurante d'une prothèse fémorale. Entre genou mécanique et genou à microprocesseur, les indications, les usages et le remboursement LPPR diffèrent nettement.",
+    blocks: [
+      {
+        type: 'paragraph',
+        content: "Pour une amputation fémorale (au-dessus du genou), le composant qui détermine le plus la qualité de marche - et souvent le budget - n'est pas le pied prothétique mais le genou. Contrairement à une prothèse tibiale où l'articulation du genou reste intacte, une prothèse fémorale doit recréer mécaniquement deux phases de marche : la phase d'appui (jambe légèrement pliée, portant le poids) et la phase d'oscillation (jambe qui se balance vers l'avant). C'est la façon dont chaque type de genou gère ces deux phases qui distingue le mécanique du microprocesseur.",
+      },
+      {
+        type: 'h2',
+        id: 'mecanique-vs-microprocesseur',
+        content: 'Genou mécanique ou genou à microprocesseur - la vraie différence',
+      },
+      {
+        type: 'paragraph',
+        content: "Un genou mécanique est contrôlé par un verrou, un système à friction, ou un mécanisme pneumatique ou hydraulique classique. Le poids du corps active généralement le mécanisme de gestion de la phase d'appui, ce qui produit un schéma de marche moins naturel et demande davantage d'adaptation consciente de la part du patient.",
+      },
+      {
+        type: 'paragraph',
+        content: "Un genou à microprocesseur (MPK) utilise des capteurs et un système hydraulique piloté par ordinateur pour ajuster la résistance en temps réel, à chaque pas, selon la vitesse de marche et le terrain. Cela sécurise la marche à allure variable, les descentes de pente et les escaliers - des situations où un genou mécanique demande une compensation active du patient. La programmation initiale prend généralement 2 à 4 semaines, avec plusieurs rendez-vous d'ajustement sur les 12 mois suivants.",
+      },
+      {
+        type: 'info_box',
+        title: 'Le microprocesseur n\'est pas réservé aux patients très actifs',
+        content: "Contrairement à une idée reçue, les genoux à microprocesseur ne sont pas uniquement destinés aux niveaux d'activité élevés. Certains modèles, comme le Rheo Knee (technologie magnétorhéologique), sont spécifiquement conçus pour améliorer la sécurité des patients à niveau d'activité faible à modéré - la priorité étant alors la prévention des chutes plutôt que la performance sportive.",
+      },
+      {
+        type: 'h2',
+        id: 'remboursement-lppr',
+        content: 'Remboursement LPPR - composants de base et variantes',
+      },
+      {
+        type: 'paragraph',
+        content: "La nomenclature LPPR distingue l'emboîture de base et les variantes de genou, chacune avec son propre code et son propre tarif - le prix final résulte de leur addition, pas d'un forfait unique par type de prothèse.",
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Élément', 'Code', 'Tarif TTC'],
+        rows: [
+          ['Prothèse fémorale, emboîture résines stratifiées (base)', 'PI04SSC23', '1 865,86 €'],
+          ['Genou polycentrique à microprocesseur, régulation pneumatique', 'VI4ZE25', '5 497,40 €'],
+          ['Boîtier de programmation genou électronique', 'VI4BE01', '982,08 €'],
+        ],
+      },
+      {
+        type: 'info_box',
+        title: 'Un genou à microprocesseur n\'est pas automatique',
+        content: "L'accès à un genou à microprocesseur en prise en charge LPPR répond à des critères précis - profil fonctionnel du patient, capacité de rééducation, projet de vie. Ce n'est pas un choix par défaut même pour un amputé fémoral actif : l'orthoprothésiste et le médecin prescripteur évaluent l'indication au cas par cas.",
+      },
+      {
+        type: 'h2',
+        id: 'criteres-choix',
+        content: 'Les critères qui orientent le choix du genou',
+      },
+      {
+        type: 'paragraph',
+        content: "Au-delà du niveau d'activité, plusieurs facteurs pèsent dans la décision : la capacité du patient à s'engager dans une rééducation qui exploite pleinement les capacités d'un genou avancé, la variabilité des terrains fréquentés au quotidien (un genou microprocesseur apporte le plus de valeur sur terrain irrégulier ou en descente), le risque de chute (particulièrement déterminant chez les patients âgés ou avec comorbidités), et le projet de vie global - activité professionnelle, pratique sportive, contraintes de déplacement.",
+      },
+      {
+        type: 'h2',
+        id: 'parcours-essai',
+        content: 'L\'essai avant validation définitive',
+      },
+      {
+        type: 'paragraph',
+        content: "Pour un genou à microprocesseur, une période d'essai encadrée par un centre prothétique agréé est la norme avant la prescription définitive - le patient teste un ou plusieurs modèles sous la direction d'un professionnel, qui peut ajuster les réglages via un logiciel dédié. Si la prothèse semble instable en cours d'essai, mieux vaut interrompre l'utilisation et le signaler immédiatement plutôt que de poursuivre : la sécurité prime toujours, en particulier avec un genou électronique.",
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: 'Un genou mécanique est-il forcément moins performant ?',
+            answer: "Non. Pour un patient avec une marche stable sur terrain régulier, un genou mécanique bien réglé peut parfaitement répondre au besoin. Le microprocesseur apporte sa valeur ajoutée principalement dans les situations variables - vitesse changeante, terrain irrégulier, escaliers - pas comme un progrès universellement supérieur.",
+          },
+          {
+            question: 'Combien de temps dure la programmation d\'un genou à microprocesseur ?',
+            answer: "La programmation initiale prend généralement 2 à 4 semaines, avec plusieurs rendez-vous d'ajustement répartis sur les 12 mois suivant la mise à disposition, le temps d'affiner les réglages à la marche réelle du patient.",
+          },
+          {
+            question: 'Peut-on changer de genou mécanique vers microprocesseur plus tard ?',
+            answer: "Oui, sous réserve d'une nouvelle évaluation par le médecin prescripteur et l'orthoprothésiste, qui vérifient que l'indication est justifiée au moment du changement - ce n'est pas automatique, même après plusieurs années avec un genou mécanique.",
+          },
+        ],
+      },
+      {
+        type: 'cta_block',
+        title: 'Besoin d\'un avis pour votre prothèse fémorale ?',
+        subtitle: 'Trouvez un orthoprothésiste agréé près de chez vous pour évaluer votre indication.',
+        buttonText: 'Trouver un praticien',
+        buttonHref: '/trouver-praticien',
+      },
+    ],
+    relatedArticles: ['prothese-tibiale-niveaux-activite'],
   },
 ]
 
