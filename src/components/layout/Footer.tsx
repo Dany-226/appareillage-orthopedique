@@ -29,9 +29,7 @@ const columns = [
     links: [
       { label: "Comprendre la LPPR",  href: "/guides/remboursement-lppr" },
       { label: "Remboursement",       href: "/guides/remboursement-lppr" },
-      { label: "Renouvellement",      href: "/guide/renouvellement" },
-      { label: "Choisir son centre",  href: "/guide/choisir-centre" },
-      { label: "Vivre avec",          href: "/guide/vivre-avec" },
+      { label: "Renouvellement",      href: "/guides/remboursement-lppr#renouvellement" },
     ],
   },
   {
