@@ -8,6 +8,7 @@ import Breadcrumb       from "@/components/article/Breadcrumb";
 import ArticleHeader    from "@/components/article/ArticleHeader";
 import ArticleBody      from "@/components/article/ArticleBody";
 import Sidebar          from "@/components/sidebar/Sidebar";
+import RelatedArticles  from "@/components/sections/RelatedArticles";
 import {
   getPilierData,
   getAllPilierSlugs,
@@ -85,6 +86,8 @@ export default function PilierPage({
           </div>
         </div>
       </div>
+
+      <RelatedArticles pilier={data.slug} />
 
       <Footer />
     </>
