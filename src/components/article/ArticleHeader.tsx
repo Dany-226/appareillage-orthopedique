@@ -143,15 +143,14 @@ function ArticleFormatHeader({ article }: { article: Article }) {
       {article.heroImage && (
         <motion.div
           {...fadeUp(0.3)}
-          className="mt-8 relative w-full rounded-xl overflow-hidden"
+          className="mt-8 relative w-full rounded-xl overflow-hidden bg-muted"
           style={{ aspectRatio: "21 / 9" }}
         >
           <Image
             src={article.heroImage}
             alt={article.title}
             fill
-            className="object-cover"
-            style={{ objectPosition: "top" }}
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, 800px"
             priority
           />
@@ -212,15 +211,14 @@ function HubFormatHeader({ category, readingTime, h1, author, heroImage }: HubPr
       {/* Hero image (if provided), placeholder otherwise */}
       {heroImage ? (
         <div
-          className="mt-8 relative w-full rounded-xl overflow-hidden"
+          className="mt-8 relative w-full rounded-xl overflow-hidden bg-muted"
           style={{ aspectRatio: "21 / 9" }}
         >
           <Image
             src={heroImage}
             alt={h1 || category}
             fill
-            className="object-cover"
-            style={{ objectPosition: "top" }}
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, 800px"
             priority
           />
