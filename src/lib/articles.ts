@@ -251,6 +251,7 @@ export const articles: Article[] = [
       name: 'Jean-Marc Tissier',
       title: 'Expert appareillage — 15 ans chez Össur France',
     },
+    heroImage: 'https://i.imgur.com/tV6pX7W.png',
     excerpt: "Une prothèse de main myoélectrique capte l'activité musculaire résiduelle pour commander des mouvements de préhension. Un choix technologique lourd, encadré par des conditions de prescription strictes et un vrai budget.",
     blocks: [
       {
