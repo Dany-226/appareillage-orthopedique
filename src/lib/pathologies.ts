@@ -116,6 +116,13 @@ export const pathologies: Pathologie[] = [
         buttonText: 'Trouver un praticien agréé',
         buttonHref: '/trouver-un-praticien',
       },
+      {
+        type: 'cta_block',
+        title: 'Anticipez votre prochain renouvellement',
+        subtitle: "Stumpr suit vos échéances LPPR et vous alerte avant qu'il ne soit trop tard. Accès bêta gratuit.",
+        buttonText: 'Rejoindre la bêta Stumpr',
+        buttonHref: 'https://stumpr.app/',
+      },
     ],
   },
   {

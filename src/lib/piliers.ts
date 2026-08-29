@@ -160,6 +160,13 @@ const piliers: Record<string, PilierData> = {
         btnLabel: "Rechercher un praticien",
         href: "/trouver-praticien",
       },
+      {
+        type: "cta",
+        headline: "Anticipez vos renouvellements LPPR",
+        sub: "Stumpr calcule vos dates d'échéance et vous alerte 90 jours avant. Accès bêta gratuit.",
+        btnLabel: "Rejoindre la bêta Stumpr",
+        href: "https://stumpr.app/",
+      },
     ],
   },
 
