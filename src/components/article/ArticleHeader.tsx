@@ -144,13 +144,14 @@ function ArticleFormatHeader({ article }: { article: Article }) {
         <motion.div
           {...fadeUp(0.3)}
           className="mt-8 relative w-full rounded-xl overflow-hidden"
-          style={{ aspectRatio: "16 / 9" }}
+          style={{ aspectRatio: "21 / 9" }}
         >
           <Image
             src={article.heroImage}
             alt={article.title}
             fill
             className="object-cover"
+            style={{ objectPosition: "top" }}
             sizes="(max-width: 768px) 100vw, 800px"
             priority
           />
@@ -212,13 +213,14 @@ function HubFormatHeader({ category, readingTime, h1, author, heroImage }: HubPr
       {heroImage ? (
         <div
           className="mt-8 relative w-full rounded-xl overflow-hidden"
-          style={{ aspectRatio: "16 / 9" }}
+          style={{ aspectRatio: "21 / 9" }}
         >
           <Image
             src={heroImage}
             alt={h1 || category}
             fill
             className="object-cover"
+            style={{ objectPosition: "top" }}
             sizes="(max-width: 768px) 100vw, 800px"
             priority
           />
@@ -228,7 +230,7 @@ function HubFormatHeader({ category, readingTime, h1, author, heroImage }: HubPr
           className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br
                      from-brand-teal-light to-brand-teal/15
                      flex items-center justify-center"
-          style={{ aspectRatio: "16 / 9" }}
+          style={{ aspectRatio: "21 / 9" }}
           role="img"
           aria-label={`Image illustrative — ${category}`}
         >
