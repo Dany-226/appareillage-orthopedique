@@ -129,7 +129,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-un-praticien',
       },
     ],
-    relatedArticles: ['pied-prothetique', 'emboiture-prothese-tibiale', 'prothese-femorale-choisir-son-genou'],
+    relatedArticles: ['pied-prothetique', 'emboiture-prothese-tibiale', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique'],
   },
   {
     slug: 'prothese-femorale-choisir-son-genou',
@@ -235,7 +235,131 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-tibiale-niveaux-activite'],
+    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-main-myoelectrique'],
+  },
+  {
+    slug: 'prothese-main-myoelectrique',
+    pilier: 'protheses',
+    title: 'Prothèse de main myoélectrique : Michelangelo, i-Limb Ultra, comment ça marche',
+    metaTitle: 'Prothèse de main myoélectrique - Michelangelo, i-Limb, remboursement',
+    metaDescription: "Comprendre le fonctionnement d'une prothèse de main myoélectrique, les principales technologies disponibles (Michelangelo, i-Limb Ultra) et les conditions de remboursement.",
+    badge: 'Prothèses',
+    readingTime: '10 min',
+    publishedAt: '2026-08-28',
+    updatedAt: '2026-08-28',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage — 15 ans chez Össur France',
+    },
+    excerpt: "Une prothèse de main myoélectrique capte l'activité musculaire résiduelle pour commander des mouvements de préhension. Un choix technologique lourd, encadré par des conditions de prescription strictes et un vrai budget.",
+    blocks: [
+      {
+        type: 'paragraph',
+        content: "Une prothèse myoélectrique fonctionne à partir de la récupération d'un courant électrique généré par la contraction musculaire du membre résiduel, capté par des électrodes placées sur la peau. Ce signal commande l'ouverture, la fermeture et différents modes de préhension de la main prothétique. C'est une technologie fondamentalement différente d'une prothèse mécanique à câble : aucun mouvement corporel de compensation n'est nécessaire, la commande vient directement de l'intention musculaire.",
+      },
+      {
+        type: 'h2',
+        id: 'principales-technologies',
+        content: 'Les principales mains myoélectriques disponibles',
+      },
+      {
+        type: 'paragraph',
+        content: "Deux fabricants dominent le marché français avec des références inscrites à la LPPR : Ottobock avec la gamme Michelangelo, et Össur (via sa filiale Touch Bionics) avec i-Limb Ultra et i-Digits. D'autres technologies comparables existent à l'international, notamment TASKA Prosthetics, distribuée en France par des orthoprothésistes spécialisés - mais sans inscription à la LPPR à ce jour : aucun tarif de responsabilité n'est fixé et la prise en charge par l'Assurance Maladie n'est pas automatique, quelle que soit la prescription. Une demande d'inscription semble avoir été engagée par le passé sans aboutir pour l'instant. Ce statut peut évoluer - à vérifier directement avec votre orthoprothésiste si cette option vous intéresse.",
+      },
+      {
+        type: 'h3',
+        content: 'Michelangelo (Ottobock)',
+      },
+      {
+        type: 'paragraph',
+        content: "La main Michelangelo associe un pouce motorisé, un système de commande AXON-BUS et une pronosupination (rotation du poignet) disponible en version motorisée ou non motorisée. Elle est indiquée pour les amputations du membre supérieur à partir du niveau transradial (avant-bras), acquises ou congénitales, en appareillage unilatéral ou bilatéral. Une variante, Michelangelo Transcarpienne, existe spécifiquement pour les amputations au niveau du poignet, avec un pouce motorisé adapté à ce niveau.",
+      },
+      {
+        type: 'h3',
+        content: 'i-Limb Ultra et i-Digits (Touch Bionics / Össur)',
+      },
+      {
+        type: 'paragraph',
+        content: "i-Limb Ultra est une main myoélectrique complète, livrée avec un ensemble de gants de recouvrement esthétique (i-Limb Skin Natural et i-Limb Skin Active) permettant de personnaliser l'apparence. i-Digits est un dispositif distinct, pensé pour les amputations partielles de main : de 1 à 5 doigts prothétiques indépendants, avec batteries logées dans un bracelet-poignet plutôt que dans l'emboîture - une différence de conception notable par rapport à une main complète.",
+      },
+      {
+        type: 'h2',
+        id: 'remboursement-lppr',
+        content: 'Remboursement LPPR - un budget significatif, encadré strictement',
+      },
+      {
+        type: 'paragraph',
+        content: "Les prothèses myoélectriques figurent parmi les dispositifs les plus coûteux de la nomenclature LPPR, avec une prise en charge accordée sur entente préalable, pas de façon automatique.",
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Dispositif', 'Fabricant', 'Tarif TTC'],
+        rows: [
+          ['Main myoélectrique Michelangelo', 'Ottobock', '32 275,00 €'],
+          ['Main myoélectrique Michelangelo Transcarpienne', 'Ottobock', '32 275,00 €'],
+          ['Pronosupination motorisée (option Michelangelo)', 'Ottobock', '5 427,00 €'],
+          ['Main myoélectrique i-Limb Ultra (pack complet)', 'Touch Bionics / Össur', '27 270,37 €'],
+          ['Gant de recouvrement i-Limb Skin Natural (boîte de 4)', 'Touch Bionics / Össur', '892,22 €'],
+        ],
+      },
+      {
+        type: 'info_box',
+        title: 'Ces tarifs incluent l\'essentiel du système, pas tout',
+        content: "Ces montants couvrent la main et ses composants de base (batteries, chargeur, électrodes, kit de connexion). L'emboîture (sous coude ou au-dessus du coude) est facturée séparément, tout comme le renouvellement des gants de recouvrement esthétique, limité à un nombre défini par an selon le modèle.",
+      },
+      {
+        type: 'h2',
+        id: 'conditions-prise-en-charge',
+        content: 'Qui peut prescrire, et selon quelles conditions',
+      },
+      {
+        type: 'paragraph',
+        content: "La prescription initiale et tout renouvellement doivent être réalisés par une équipe pluridisciplinaire spécialisée dans l'appareillage du membre supérieur, composée au minimum d'un médecin (spécialiste en médecine physique et de réadaptation, ou en orthopédie), d'un professionnel de la rééducation (kinésithérapeute ou ergothérapeute), et de l'orthoprothésiste au libre choix du patient.",
+      },
+      {
+        type: 'paragraph',
+        content: "L'évaluation préalable est approfondie : niveau d'amputation, longueur du moignon, état de la peau, tests de commande musculaire par myotesteurs, motivation du patient et de son entourage, contraintes géographiques et socioprofessionnelles, et capacité à assimiler la technique d'utilisation du système myoélectrique - un apprentissage réel, pas un geste intuitif immédiat.",
+      },
+      {
+        type: 'info_box',
+        title: 'Un essai réel avant toute décision définitive',
+        content: "Avant la prescription définitive, un essai est systématique. Un compte-rendu est établi en fin d'essai sur la base du projet de vie du patient, de la tolérance cutanée, des différents modes de préhension utilisés (enregistrés par la prothèse elle-même), de la motivation et de la satisfaction du patient. Si un rejet de prothèse myoélectrique a eu lieu par le passé, les raisons doivent être discutées avant de valider la pertinence d'un nouvel essai.",
+      },
+      {
+        type: 'h2',
+        id: 'garantie-entretien',
+        content: 'Garantie et entretien',
+      },
+      {
+        type: 'paragraph',
+        content: "Les mains myoélectriques Michelangelo et i-Limb Ultra bénéficient d'une garantie de 5 ans, avec une maintenance préventive biennale (après le 24e et le 48e mois) prise en charge par le fabricant, frais d'expédition compris. Une main de prêt est mise à disposition gratuitement pendant toute réparation, y compris au-delà de la période de garantie - le patient n'est jamais laissé sans solution de préhension pendant un entretien technique.",
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: 'Une prothèse myoélectrique remplace-t-elle toute autre prothèse ?',
+            answer: "Non. La prise en charge d'une prothèse myoélectrique n'exclut pas celle d'une prothèse de secours, esthétique ou mécanique - beaucoup de patients gardent une prothèse mécanique ou esthétique pour certaines activités ou en cas de panne.",
+          },
+          {
+            question: 'Combien de temps faut-il pour apprendre à utiliser une main myoélectrique ?',
+            answer: "Il n'y a pas de durée fixe - l'apprentissage dépend de la personne, encadré par l'équipe pluridisciplinaire dès le début de l'essai, avec une rééducation prescrite en parallèle et une évaluation périodique après la mise à disposition.",
+          },
+          {
+            question: 'Que se passe-t-il en cas de panne ?',
+            answer: "Une main de prêt est fournie gratuitement pendant la durée de la réparation, y compris après la période de garantie initiale de 5 ans. Le renouvellement complet de la prothèse n'intervient que lors de la première panne survenant après expiration de cette garantie.",
+          },
+        ],
+      },
+      {
+        type: 'cta_block',
+        title: 'Une question sur l\'appareillage myoélectrique ?',
+        subtitle: 'Trouvez un orthoprothésiste agréé spécialisé en membre supérieur près de chez vous.',
+        buttonText: 'Trouver un praticien',
+        buttonHref: '/trouver-praticien',
+      },
+    ],
+    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou'],
   },
 ]
 
