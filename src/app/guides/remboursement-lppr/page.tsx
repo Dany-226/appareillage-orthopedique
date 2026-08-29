@@ -8,10 +8,9 @@ import { Reveal } from '@/components/ui/Reveal'
 import TableOfContents from '@/components/sidebar/TableOfContents'
 import StatCallout from '@/components/article/blocks/StatCallout'
 import InfoBox from '@/components/article/blocks/InfoBox'
-import ComparisonTable from '@/components/article/blocks/ComparisonTable'
 import FaqAccordion from '@/components/article/blocks/FaqAccordion'
 import CtaBlock from '@/components/article/blocks/CtaBlock'
-import { lpprSections } from '@/lib/lppr'
+import LPPRSearchTool from '@/components/article/blocks/LPPRSearchTool'
 
 export const metadata: Metadata = {
   title: 'Remboursement appareillage orthopédique LPPR - guide complet 2026',
@@ -56,17 +55,6 @@ function H2({ id, children }: { id: string; children: React.ReactNode }) {
     >
       {children}
     </h2>
-  )
-}
-
-function H3({ children }: { children: React.ReactNode }) {
-  return (
-    <h3
-      className="mt-8 mb-3 font-sans font-semibold text-on-surface"
-      style={{ fontSize: '22px' }}
-    >
-      {children}
-    </h3>
   )
 }
 
@@ -167,11 +155,14 @@ export default function RemboursementLPPRPage() {
               <Reveal>
                 <H2 id="principes">Principes généraux de la prise en charge</H2>
                 <P>
-                  Toute prise en charge d&rsquo;une orthoprothèse nécessite un accord préalable de
-                  la CPAM avant fabrication. La prescription doit être établie par un médecin
-                  spécialiste habilité, sur une ordonnance distincte de tout traitement
-                  médicamenteux. Le dispositif doit figurer à la nomenclature LPPR ou faire
-                  l&rsquo;objet d&rsquo;une demande dérogatoire argumentée.
+                  L&rsquo;inscription d&rsquo;un dispositif médical à la LPP suit un circuit
+                  précis. La CNEDiMTS (Commission Nationale d&rsquo;Évaluation des Dispositifs
+                  Médicaux et des Technologies de Santé), rattachée à la Haute Autorité de Santé,
+                  évalue d&rsquo;abord le dispositif et rend un avis sur son service rendu et son
+                  amélioration par rapport à l&rsquo;existant. Sur la base de cet avis,
+                  l&rsquo;inscription est ensuite décidée par arrêté du ministre chargé de la
+                  Santé. Le tarif de remboursement, lui, résulte d&rsquo;une négociation entre le
+                  CEPS (Comité Économique des Produits de Santé) et le fabricant.
                 </P>
                 <InfoBox
                   title="Qui peut prescrire ?"
@@ -182,6 +173,23 @@ export default function RemboursementLPPRPage() {
                   figurer sur la même ordonnance que des médicaments. Cette règle est stricte et
                   conditionne la prise en charge.
                 </P>
+                <InfoBox
+                  title="La base de données officielle LPP"
+                  text="L'Assurance Maladie publie une base de données officielle de la nomenclature LPP, consultable par code, désignation ou chapitre, mise à jour chaque semaine. C'est la référence à consulter pour toute recherche exhaustive au-delà de la sélection présentée plus bas dans ce guide."
+                />
+                <p className="mb-6">
+                  <a
+                    href="http://www.codage.ext.cnamts.fr/codif/tips/index_presentation.php?p_site=AMELI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 font-sans font-semibold text-brand-teal
+                               hover:text-brand-teal/80 transition-colors duration-150"
+                    style={{ fontSize: '16px' }}
+                  >
+                    Consulter la base de données LPP - Assurance Maladie
+                    <ExternalLink size={14} aria-hidden />
+                  </a>
+                </p>
               </Reveal>
 
               {/* ── Renouvellement ───────────────────────────────────────── */}
@@ -209,36 +217,12 @@ export default function RemboursementLPPRPage() {
               <Reveal>
                 <H2 id="tarifs">Tarifs de remboursement par dispositif</H2>
                 <P>
-                  Les tarifs ci-dessous sont les Prix Limites de Vente TTC (PLV TTC) - la base de
-                  remboursement SS. Votre mutuelle complète selon votre contrat.
+                  Les tarifs ci-dessous sont les prix TTC de la base de remboursement SS - votre
+                  mutuelle complète selon votre contrat. Recherchez par mot-clé, code, ou filtrez
+                  par catégorie.
                 </P>
+                <LPPRSearchTool />
               </Reveal>
-
-              {lpprSections.map(section => {
-                const isKnee = section.id === 'genoux-microprocesseur'
-                const headers = isKnee
-                  ? ['Code LPPR', 'Dispositif', 'Base SS (PLV TTC)', 'Durée', 'Conditions']
-                  : ['Code LPPR', 'Dispositif', 'Base SS (PLV TTC)', 'Durée']
-                const rows = section.items.map(item =>
-                  isKnee
-                    ? [item.code, item.label, item.plvTTC, item.duree ?? '-', item.conditions ?? '-']
-                    : [item.code, item.label, item.plvTTC, item.duree ?? '-']
-                )
-
-                return (
-                  <Reveal key={section.id}>
-                    <H3>{section.title}</H3>
-                    {section.note && (
-                      <InfoBox text={section.note} />
-                    )}
-                    <ComparisonTable
-                      headers={headers}
-                      rows={rows}
-                      monoColumns={[0]}
-                    />
-                  </Reveal>
-                )
-              })}
 
               {/* ── Entente préalable ─────────────────────────────────────── */}
               <Reveal>
