@@ -9,8 +9,6 @@ const columns = [
       { label: "Orthèses",          href: "/ortheses" },
       { label: "Prothèses",         href: "/protheses" },
       { label: "Fauteuils roulants",href: "/fauteuils" },
-      { label: "Aides techniques",  href: "/aides-techniques" },
-      { label: "Positionnement",    href: "/positionnement" },
     ],
   },
   {
