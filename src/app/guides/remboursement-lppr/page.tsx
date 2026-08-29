@@ -15,7 +15,7 @@ import LPPRSearchTool from '@/components/article/blocks/LPPRSearchTool'
 export const metadata: Metadata = {
   title: 'Remboursement appareillage orthopédique LPPR - guide complet 2026',
   description:
-    'Comprendre le remboursement de votre appareillage par la Sécurité sociale. Tarifs LPPR 2026, conditions, entente préalable et droits des patients.',
+    'Comprendre le remboursement LPPR de votre appareillage : codes, tarifs, conditions, entente préalable. Recherchez un dispositif par mot-clé (genou, pied, main...) parmi les références vérifiées du site.',
   alternates: {
     canonical: '/guides/remboursement-lppr',
   },
