@@ -24,6 +24,9 @@ export async function generateMetadata({
   return {
     title: article.metaTitle,
     description: article.metaDescription,
+    alternates: {
+      canonical: `/${article.pilier}/${article.slug}`,
+    },
   }
 }
 

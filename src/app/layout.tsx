@@ -34,6 +34,9 @@ export const metadata: Metadata = {
   description:
     "Ressources et conseils sur les appareillages orthopédiques : prothèses, orthèses et fauteuils roulants, pour les patients et leurs proches.",
   metadataBase: new URL("https://appareillageorthopedique.fr"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "fr_FR",

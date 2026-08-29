@@ -25,6 +25,9 @@ export async function generateMetadata({
   return {
     title: pathologie.metaTitle,
     description: pathologie.metaDescription,
+    alternates: {
+      canonical: `/pathologie/${pathologie.slug}`,
+    },
   }
 }
 

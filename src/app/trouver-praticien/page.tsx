@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Trouver un orthoprothésiste agréé",
   description:
     "Annuaire national des orthoprothésistes agréés en France - recherchez par département ou par ville pour trouver un professionnel près de chez vous.",
+  alternates: {
+    canonical: "/trouver-praticien",
+  },
 };
 
 const heroGradient = "linear-gradient(135deg, #00374e 0%, #0b4f6c 60%, #0d5875 100%)";

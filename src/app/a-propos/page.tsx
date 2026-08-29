@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'À propos - Expert appareillage orthopédique, 15 ans chez Össur France',
   description:
     'Qui sommes-nous ? Un expert ayant passé 15 ans chez Össur France, leader mondial de la prothèse et de l\'orthèse, au service des patients appareillés.',
+  alternates: {
+    canonical: '/a-propos',
+  },
 }
 
 const jsonLd = {
