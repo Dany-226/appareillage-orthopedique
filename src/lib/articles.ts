@@ -41,6 +41,7 @@ export const articles: Article[] = [
       name: 'Jean-Marc Tissier',
       title: 'Expert appareillage — 15 ans chez Össur France',
     },
+    heroImage: 'https://i.imgur.com/yILXceN.jpeg',
     excerpt: "La classification K1 à K4 conditionne le choix de votre prothèse tibiale et son remboursement par la Sécurité sociale. Explications claires pour comprendre votre niveau et ce à quoi vous avez droit.",
     blocks: [
       {
