@@ -39,6 +39,19 @@ export default function ArticlePage({
     .filter(b => b.type === 'h2')
     .map(b => ({ id: (b as { id: string }).id, text: (b as { content: string }).content }))
 
+  const extraCards =
+    article.pilier === 'protheses'
+      ? [
+          {
+            variant: 'stumpr' as const,
+            title: 'Anticipez vos renouvellements LPPR',
+            subtitle: "Stumpr calcule vos échéances et vous alerte 90 jours avant. Accès bêta gratuit.",
+            buttonText: 'Rejoindre la bêta',
+            href: 'https://stumpr.app/',
+          },
+        ]
+      : undefined
+
   return (
     <>
       <Navbar />
@@ -58,7 +71,7 @@ export default function ArticlePage({
               <ArticleHeader article={article} />
               <ArticleBody blocks={article.blocks} />
             </article>
-            <Sidebar headings={headings} />
+            <Sidebar headings={headings} extraCards={extraCards} />
           </div>
         </div>
       </main>

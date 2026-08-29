@@ -36,6 +36,31 @@ export default function PathologiePage({ params }: { params: { slug: string } })
     .filter(b => b.type === 'h2')
     .map(b => ({ id: (b as { id: string }).id, text: (b as { content: string }).content }))
 
+  const AIDANT_PATHOLOGIES = ['avc', 'sep', 'paralysie-cerebrale', 'lesion-medullaire']
+
+  const extraCards =
+    pathologie.slug === 'amputation'
+      ? [
+          {
+            variant: 'stumpr' as const,
+            title: 'Anticipez vos renouvellements LPPR',
+            subtitle: "Stumpr calcule vos échéances et vous alerte 90 jours avant. Accès bêta gratuit.",
+            buttonText: 'Rejoindre la bêta',
+            href: 'https://stumpr.app/',
+          },
+        ]
+      : AIDANT_PATHOLOGIES.includes(pathologie.slug)
+      ? [
+          {
+            variant: 'aidant' as const,
+            title: 'Vous accompagnez un proche appareillé ?',
+            subtitle: 'Ressources pratiques pour le quotidien de l\'accompagnement.',
+            buttonText: 'Consulter le guide des aidants',
+            href: 'https://guide-aidant.fr/',
+          },
+        ]
+      : undefined
+
   return (
     <>
       <Navbar />
@@ -136,7 +161,7 @@ export default function PathologiePage({ params }: { params: { slug: string } })
               <ArticleBody blocks={pathologie.blocks} />
             </div>
             <div className="hidden lg:block">
-              <Sidebar headings={headings} />
+              <Sidebar headings={headings} extraCards={extraCards} />
             </div>
           </div>
         </div>

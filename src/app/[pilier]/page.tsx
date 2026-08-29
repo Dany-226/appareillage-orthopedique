@@ -51,6 +51,19 @@ export default function PilierPage({
 
   const headings = extractTocHeadings(data.content);
 
+  const extraCards =
+    data.slug === "protheses"
+      ? [
+          {
+            variant: "stumpr" as const,
+            title: "Anticipez vos renouvellements LPPR",
+            subtitle: "Stumpr calcule vos échéances et vous alerte 90 jours avant. Accès bêta gratuit.",
+            buttonText: "Rejoindre la bêta",
+            href: "https://stumpr.app/",
+          },
+        ]
+      : undefined;
+
   return (
     <>
       <Navbar />
@@ -82,7 +95,7 @@ export default function PilierPage({
             </article>
 
             {/* ── RIGHT — sticky sidebar (35%) */}
-            <Sidebar headings={headings} />
+            <Sidebar headings={headings} extraCards={extraCards} />
           </div>
         </div>
       </div>

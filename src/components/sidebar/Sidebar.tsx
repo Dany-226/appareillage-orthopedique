@@ -2,13 +2,87 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { BookOpen, ThumbsUp, ArrowRight } from "lucide-react";
+import { BookOpen, ThumbsUp, ArrowRight, Bell, HeartHandshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TableOfContents from "./TableOfContents";
 import type { TocHeading } from "@/lib/piliers";
 import { motionVariants } from "@/components/ui/design-tokens";
 
-export default function Sidebar({ headings }: { headings: TocHeading[] }) {
+export type SidebarExtraCard = {
+  variant: "stumpr" | "aidant";
+  title: string;
+  subtitle: string;
+  buttonText: string;
+  href: string;
+};
+
+function ExtraCard({ card, delay }: { card: SidebarExtraCard; delay: number }) {
+  const isStumpr = card.variant === "stumpr";
+
+  return (
+    <motion.div
+      variants={motionVariants.fadeUp}
+      initial="hidden"
+      animate="visible"
+      transition={{ delay }}
+      className={
+        isStumpr
+          ? "rounded-xl bg-brand-dark p-5 text-white shadow-card border-t-[3px] border-brand-amber"
+          : "rounded-xl bg-brand-teal-light p-5 shadow-card border border-brand-teal/25"
+      }
+    >
+      <div
+        className={
+          isStumpr
+            ? "mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-white/15"
+            : "mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-white"
+        }
+      >
+        {isStumpr ? (
+          <Bell size={16} aria-hidden />
+        ) : (
+          <HeartHandshake size={16} className="text-brand-teal" aria-hidden />
+        )}
+      </div>
+      <p
+        className={
+          isStumpr
+            ? "font-semibold text-sm leading-snug mb-1.5"
+            : "text-sm font-semibold text-brand-dark mb-1.5 leading-snug"
+        }
+      >
+        {card.title}
+      </p>
+      <p
+        className={
+          isStumpr
+            ? "text-xs text-white/75 leading-relaxed mb-4"
+            : "text-xs text-brand-dark/70 leading-relaxed mb-4"
+        }
+      >
+        {card.subtitle}
+      </p>
+      <Link
+        href={card.href}
+        className={
+          isStumpr
+            ? "inline-flex items-center gap-1.5 text-xs font-semibold text-white/90 hover:text-white transition-colors duration-150 focus-ring rounded"
+            : "inline-flex items-center gap-1.5 text-xs font-semibold text-brand-teal hover:text-brand-teal/80 transition-colors duration-150 focus-ring rounded"
+        }
+      >
+        {card.buttonText} <ArrowRight size={12} />
+      </Link>
+    </motion.div>
+  );
+}
+
+export default function Sidebar({
+  headings,
+  extraCards,
+}: {
+  headings: TocHeading[];
+  extraCards?: SidebarExtraCard[];
+}) {
   return (
     <aside className="hidden lg:block">
       <div className="sticky top-[88px] max-h-[calc(100vh-108px)] overflow-y-auto
@@ -81,6 +155,11 @@ export default function Sidebar({ headings }: { headings: TocHeading[] }) {
             <Link href="/trouver-praticien">Trouver un praticien</Link>
           </Button>
         </motion.div>
+
+        {/* ── Extra promotional cards (Stumpr / guide-aidant) */}
+        {extraCards?.map((card, i) => (
+          <ExtraCard key={card.variant} card={card} delay={0.3 + i * 0.1} />
+        ))}
       </div>
     </aside>
   );
