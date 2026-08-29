@@ -129,7 +129,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-un-praticien',
       },
     ],
-    relatedArticles: ['pied-prothetique', 'emboiture-prothese-tibiale', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique'],
+    relatedArticles: ['pied-prothetique', 'emboiture-prothese-tibiale', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
   },
   {
     slug: 'prothese-femorale-choisir-son-genou',
@@ -235,7 +235,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-main-myoelectrique'],
+    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
   },
   {
     slug: 'prothese-main-myoelectrique',
@@ -360,7 +360,116 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou'],
+    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-bras-systeme-corporel'],
+  },
+  {
+    slug: 'prothese-bras-systeme-corporel',
+    pilier: 'protheses',
+    title: 'Prothèse de bras : comprendre le système corporel à câble et harnais',
+    metaTitle: 'Prothèse de bras mécanique - système corporel, remboursement LPPR',
+    metaDescription: "Comment fonctionne une prothèse de bras mécanique à commande corporelle (câble et harnais), ses indications selon le niveau d'amputation et son remboursement LPPR.",
+    badge: 'Prothèses',
+    readingTime: '8 min',
+    publishedAt: '2026-08-28',
+    updatedAt: '2026-08-28',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage — 15 ans chez Össur France',
+    },
+    excerpt: "Avant le myoélectrique, il existe une solution éprouvée pour l'amputation de bras : le système corporel à câble et harnais. Robuste, sans batterie, avec un principe de fonctionnement radicalement différent d'une main myoélectrique.",
+    blocks: [
+      {
+        type: 'paragraph',
+        content: "Pour une amputation au niveau du bras - qu'il s'agisse d'une désarticulation de l'épaule ou d'une amputation avec moignon court, moyen ou long - la solution la plus ancienne et la plus répandue reste le système corporel, aussi appelé prothèse à câble et harnais. Contrairement à une prothèse myoélectrique qui capte un signal musculaire, ce système utilise directement le mouvement du corps - notamment de l'épaule controlatérale - pour actionner, via un câble, l'ouverture ou la fermeture du dispositif terminal (main souple ou crochet) et le verrouillage du coude.",
+      },
+      {
+        type: 'h2',
+        id: 'principe-fonctionnement',
+        content: 'Le principe du système corporel',
+      },
+      {
+        type: 'paragraph',
+        content: "Un mouvement d'épaule ou d'omoplate tend le câble relié au harnais, ce qui actionne le dispositif terminal en ouverture (le retour se fait par un ressort). Pour une amputation plus haute, un verrou de coude à commande passive permet de bloquer l'articulation dans la position souhaitée avant d'actionner la main ou le crochet. Ce n'est pas un mouvement intuitif au premier abord - il demande un apprentissage - mais une fois acquis, il offre un retour sensoriel direct (l'utilisateur \"sent\" l'effort transmis par le câble) qu'un système myoélectrique ne reproduit pas de la même façon.",
+      },
+      {
+        type: 'info_box',
+        title: 'Pourquoi ce système reste pertinent face au myoélectrique',
+        content: "Le système corporel n'a besoin d'aucune batterie, ne craint pas l'eau ou la poussière comme un système électronique, et sa mécanique est réparable localement dans la plupart des ateliers d'orthopédie. Pour un usage professionnel exigeant (travail manuel, environnement humide ou poussiéreux) ou comme prothèse de secours en complément d'une prothèse myoélectrique, il garde une vraie place - ce n'est pas une simple alternative \"moins bien\" par défaut de budget.",
+      },
+      {
+        type: 'h2',
+        id: 'niveaux-amputation',
+        content: 'Les prothèses selon le niveau d\'amputation',
+      },
+      {
+        type: 'paragraph',
+        content: "La nomenclature distingue précisément quatre grands niveaux, chacun avec sa propre configuration technique : la désarticulation scapulo-humérale et les moignons de bras très courts (nécessitant un corselet de fixation englobant l'épaule), l'amputation de bras à moignon court, l'amputation à moignon moyen ou long, et la désarticulation du coude ou moignon d'avant-bras très court assimilable.",
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Niveau d\'amputation', 'Code', 'Tarif TTC'],
+        rows: [
+          ['Désarticulation épaule, articulation simple à friction', 'PS1Z01', '1 554,22 €'],
+          ['Désarticulation épaule, articulation à rotule', 'PS1Z02', '1 581,24 €'],
+          ['Désarticulation épaule, liaison souple au corselet', 'PS1Z03', '1 254,94 €'],
+          ['Amputation bras, moignon court (emboîture stratifiée)', 'PS2Z20', '1 395,82 €'],
+          ['Amputation bras, moignon moyen/long (emboîture de contact)', 'PS3Z20', '1 107,50 €'],
+          ['Désarticulation coude / avant-bras très court', 'PS4Z20', '1 090,23 €'],
+        ],
+      },
+      {
+        type: 'info_box',
+        title: 'Ces tarifs couvrent l\'emboîture de base',
+        content: "Comme pour toute prothèse LPPR, ces montants correspondent au composant de base (emboîture, coude, corselet le cas échéant). Le dispositif terminal (main souple ou crochet), le verrou de coude, et les adjonctions esthétiques ou fonctionnelles se facturent séparément et s'additionnent au tarif final.",
+      },
+      {
+        type: 'h2',
+        id: 'plus-haut-niveau',
+        content: 'Plus le niveau d\'amputation est haut, plus la prothèse est complexe',
+      },
+      {
+        type: 'paragraph',
+        content: "Une désarticulation scapulo-humérale (amputation au niveau de l'épaule) nécessite un corselet de fixation qui répartit l'appui sur le thorax, avec un choix d'articulation d'épaule - simple à friction, à rotule, ou liaison souple. À l'inverse, une désarticulation du coude avec avant-bras très court assimilable permet une emboîture plus simple, sans articulation d'épaule à gérer, mais nécessite un coude prothétique adapté (avec ou sans verrou) pour recréer la flexion.",
+      },
+      {
+        type: 'h2',
+        id: 'mecanique-ou-myoelectrique',
+        content: 'Système corporel ou myoélectrique - une vraie décision, pas un défaut',
+      },
+      {
+        type: 'paragraph',
+        content: "Le choix entre un système corporel et une prothèse myoélectrique dépend du niveau d'amputation, de l'activité professionnelle, de l'environnement de vie et du projet personnel du patient - ce n'est pas simplement une question de génération technologique. Beaucoup de patients équipés d'une prothèse myoélectrique gardent d'ailleurs un système corporel comme prothèse de secours, précisément pour sa robustesse et sa simplicité de réparation.",
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: 'Le système corporel demande-t-il beaucoup de rééducation ?',
+            answer: "Un apprentissage est nécessaire pour maîtriser le mouvement d'épaule qui actionne le câble, mais il est généralement plus rapide à acquérir qu'une commande myoélectrique - le mouvement reste un geste corporel volontaire, pas l'apprentissage d'un signal musculaire fin.",
+          },
+          {
+            question: 'Peut-on faire du sport ou des activités salissantes avec ce système ?',
+            answer: "C'est un des atouts du système corporel : sans batterie ni électronique, il tolère mieux l'eau, la poussière et les environnements exigeants qu'une prothèse myoélectrique - c'est pour cela qu'il reste utilisé pour certaines activités professionnelles ou de loisirs même chez des patients équipés en myoélectrique au quotidien.",
+          },
+          {
+            question: 'Le dispositif terminal peut-il être une main plutôt qu\'un crochet ?',
+            answer: "Oui, une main souple avec revêtement esthétique peut être montée en dispositif terminal, en adjonction du système de base - le choix entre main et crochet dépend des activités visées, la préhension d'un crochet étant souvent plus précise pour des tâches manuelles fines.",
+          },
+        ],
+      },
+      {
+        type: 'cta_block',
+        title: 'Vous envisagez une prothèse de bras ?',
+        subtitle: 'Trouvez un orthoprothésiste agréé pour évaluer la solution la plus adaptée à votre niveau d\'amputation.',
+        buttonText: 'Trouver un praticien',
+        buttonHref: '/trouver-praticien',
+      },
+    ],
+    relatedArticles: [
+      'prothese-tibiale-niveaux-activite',
+      'prothese-femorale-choisir-son-genou',
+      'prothese-main-myoelectrique',
+    ],
   },
 ]
 
