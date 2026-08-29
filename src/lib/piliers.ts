@@ -173,7 +173,7 @@ const piliers: Record<string, PilierData> = {
       title: "Kinésithérapeute spécialisée en rééducation orthopédique — 12 ans d'expérience",
       updatedAt: "Mis à jour en août 2026",
     },
-    heroImage: "https://i.imgur.com/RZHWt7e.png",
+    heroImage: "https://i.imgur.com/ioyEb2t.png",
     content: [
       {
         type: "paragraph",
