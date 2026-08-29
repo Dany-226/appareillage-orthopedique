@@ -146,6 +146,7 @@ export const articles: Article[] = [
       name: 'Jean-Marc Tissier',
       title: 'Expert appareillage — 15 ans chez Össur France',
     },
+    heroImage: 'https://i.imgur.com/7szHUzS.jpeg',
     excerpt: "Le choix du genou est la décision la plus structurante d'une prothèse fémorale. Entre genou mécanique et genou à microprocesseur, les indications, les usages et le remboursement LPPR diffèrent nettement.",
     blocks: [
       {
