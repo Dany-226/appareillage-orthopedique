@@ -376,6 +376,7 @@ export const articles: Article[] = [
       name: 'Jean-Marc Tissier',
       title: 'Expert appareillage — 15 ans chez Össur France',
     },
+    heroImage: 'https://i.imgur.com/2IuOQNc.png',
     excerpt: "Avant le myoélectrique, il existe une solution éprouvée pour l'amputation de bras : le système corporel à câble et harnais. Robuste, sans batterie, avec un principe de fonctionnement radicalement différent d'une main myoélectrique.",
     blocks: [
       {
