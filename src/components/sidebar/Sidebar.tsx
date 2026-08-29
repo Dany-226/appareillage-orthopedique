@@ -105,7 +105,7 @@ export default function Sidebar({
             charge par l&rsquo;Assurance Maladie.
           </p>
           <Link
-            href="/guide/remboursement"
+            href="/guides/remboursement-lppr"
             className="inline-flex items-center gap-1.5 text-xs font-semibold
                        text-white/90 hover:text-white transition-colors duration-150
                        focus-ring rounded"

@@ -167,7 +167,7 @@ export default function Hero() {
             <ArrowRight size={14} aria-hidden />
           </Link>
           <Link
-            href="/guide/remboursement"
+            href="/guides/remboursement-lppr"
             className="inline-flex items-center rounded-button border px-6 py-3
                        text-sm font-semibold transition-all duration-200
                        hover:bg-brand-teal/5"
