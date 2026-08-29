@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { BookOpen, ThumbsUp, ArrowRight, Bell, HeartHandshake } from "lucide-react";
+import { BookOpen, ThumbsUp, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TableOfContents from "./TableOfContents";
 import type { TocHeading } from "@/lib/piliers";
@@ -27,51 +28,36 @@ function ExtraCard({ card, delay }: { card: SidebarExtraCard; delay: number }) {
       transition={{ delay }}
       className={
         isStumpr
-          ? "rounded-xl bg-brand-dark p-5 text-white shadow-card border-t-[3px] border-brand-amber"
+          ? "rounded-xl bg-brand-light p-5 shadow-card border-t-[3px] border-brand-amber"
           : "rounded-xl bg-brand-teal-light p-5 shadow-card border border-brand-teal/25"
       }
     >
-      <div
-        className={
-          isStumpr
-            ? "mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-white/15"
-            : "mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-white"
-        }
-      >
-        {isStumpr ? (
-          <Bell size={16} aria-hidden />
-        ) : (
-          <HeartHandshake size={16} className="text-brand-teal" aria-hidden />
-        )}
-      </div>
-      <p
-        className={
-          isStumpr
-            ? "font-semibold text-sm leading-snug mb-1.5"
-            : "text-sm font-semibold text-brand-dark mb-1.5 leading-snug"
-        }
-      >
+      <Image
+        src={isStumpr ? "/logo-stumpr.png" : "/logo-guide-aidant.png"}
+        alt={isStumpr ? "Stumpr" : "Guide-Aidant"}
+        width={130}
+        height={isStumpr ? 41 : 64}
+        className="h-auto w-[130px] mb-4"
+      />
+      <p className="text-sm font-semibold text-brand-dark mb-1.5 leading-snug">
         {card.title}
       </p>
-      <p
-        className={
-          isStumpr
-            ? "text-xs text-white/75 leading-relaxed mb-4"
-            : "text-xs text-brand-dark/70 leading-relaxed mb-4"
-        }
-      >
+      <p className="text-xs text-brand-dark/70 leading-relaxed mb-4">
         {card.subtitle}
       </p>
-      <Link
-        href={card.href}
+      <Button
+        asChild
+        size="sm"
         className={
           isStumpr
-            ? "inline-flex items-center gap-1.5 text-xs font-semibold text-white/90 hover:text-white transition-colors duration-150 focus-ring rounded"
-            : "inline-flex items-center gap-1.5 text-xs font-semibold text-brand-teal hover:text-brand-teal/80 transition-colors duration-150 focus-ring rounded"
+            ? "w-full bg-brand-dark hover:bg-brand-dark/90 text-white text-xs"
+            : "w-full bg-brand-teal hover:bg-brand-teal-light text-white text-xs"
         }
       >
-        {card.buttonText} <ArrowRight size={12} />
-      </Link>
+        <Link href={card.href} target="_blank" rel="noopener noreferrer">
+          {card.buttonText} <ArrowRight size={12} />
+        </Link>
+      </Button>
     </motion.div>
   );
 }
