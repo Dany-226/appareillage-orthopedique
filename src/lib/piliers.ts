@@ -166,27 +166,99 @@ const piliers: Record<string, PilierData> = {
   ortheses: {
     slug: "ortheses",
     category: "Orthèses",
-    readingTime: 10,
-    h1: "Orthèses : guide complet sur les dispositifs de soutien et correction",
+    readingTime: 12,
+    h1: "Orthèses : comprendre les 3 grandes familles et bien choisir",
     author: {
       name: "Claire Beaumont",
       title: "Kinésithérapeute spécialisée en rééducation orthopédique — 12 ans d'expérience",
-      updatedAt: "Mis à jour le 8 juin 2026",
+      updatedAt: "Mis à jour en août 2026",
     },
     heroImage: "https://i.imgur.com/RZHWt7e.png",
     content: [
-      { type: "paragraph", text: "Une orthèse est un dispositif médical externe destiné à soutenir, corriger, immobiliser ou protéger une partie du corps. Contrairement aux prothèses qui remplacent un membre absent, les orthèses agissent sur un membre présent mais défaillant ou douloureux." },
-      { type: "h2", id: "types-ortheses", text: "Types d'orthèses et indications" },
-      { type: "paragraph", text: "Les orthèses se classifient selon la région anatomique qu'elles couvrent et leur fonction principale : maintien, correction, décharge ou protection." },
-      { type: "stat", value: "3,2M", label: "de Français portent une orthèse de membres inférieurs au quotidien", source: "SFPO 2025" },
-      { type: "h2", id: "remboursement", text: "Remboursement LPPR des orthèses" },
-      { type: "paragraph", text: "Les orthèses sont inscrites à la LPPR dans plusieurs chapitres selon leur type. La prise en charge varie de 60 % à 100 % selon la pathologie et le statut ALD du patient." },
-      { type: "h2", id: "faq", text: "Questions fréquentes" },
-      { type: "faq", items: [
-        { q: "Différence entre orthèse sur mesure et orthèse de série ?", a: "Les orthèses de série (préfabriquées) sont ajustées par modifications mineures. Les orthèses sur mesure sont moulées directement sur le patient, pour les situations complexes nécessitant un ajustement précis." },
-        { q: "Une ordonnance est-elle obligatoire ?", a: "Oui, pour toute prise en charge par l'Assurance Maladie, une prescription médicale est requise. Elle doit préciser le type d'orthèse, l'indication clinique et la durée de port." },
-      ]},
-      { type: "cta", headline: "Trouver un orthésiste", sub: "Localisez un professionnel agréé spécialisé.", btnLabel: "Rechercher un praticien", href: "/trouver-praticien" },
+      {
+        type: "paragraph",
+        text: "Une orthèse est un dispositif médical externe destiné à soutenir, corriger, immobiliser ou protéger une partie du corps. Contrairement à une prothèse qui remplace un membre absent, l'orthèse agit sur un membre présent mais défaillant, douloureux ou en cours de rééducation. C'est un marché à l'offre considérable - des centaines de références couvrant chaque zone anatomique - mais qui se structure en réalité autour de trois grandes familles fonctionnelles, bien identifiées par la profession.",
+      },
+      {
+        type: "h2",
+        id: "trois-familles",
+        text: "Les 3 grandes familles d'orthèses",
+      },
+      {
+        type: "paragraph",
+        text: "Plutôt que de raisonner uniquement par zone du corps, il est plus utile de comprendre d'abord à quelle famille fonctionnelle appartient une orthèse - cela détermine directement son usage et sa durée de port.",
+      },
+      {
+        type: "table",
+        headers: ["Famille", "Fonction", "Exemples", "Durée de port typique"],
+        rows: [
+          ["Orthèse de traitement", "Corrige une déformation (scoliose, arthrose)", "Corset de scoliose, orthèse de genou pour gonarthrose", "Long terme, souvent plusieurs années"],
+          ["Orthèse d'immobilisation", "Bloque une articulation pour favoriser la guérison", "Attelle post-traumatique, orthèse post-opératoire du rachis", "Court à moyen terme, quelques semaines à mois"],
+          ["Orthèse de positionnement", "Maintient une position (assise, debout) au quotidien", "Corset-siège, verticalisateur", "Permanent, vie quotidienne"],
+        ],
+      },
+      {
+        type: "info",
+        title: "Une quatrième catégorie existe hors grand appareillage",
+        text: "Les orthèses de contention ou de soutien (genouillères élastiques, ceintures lombaires souples) relèvent généralement du Petit Appareillage Orthopédique (PAO) plutôt que du Grand Appareillage Orthopédique (GAO) sur mesure. Elles sont délivrées sans prescription obligatoire, en pharmacie ou en magasin spécialisé, pour des usages courts (entorse légère, douleur chronique modérée) - un circuit de prise en charge différent de celui des orthèses sur mesure évoquées ci-dessus.",
+      },
+      {
+        type: "stat",
+        value: "89%",
+        label: "du volume d'appareillages conçus par les orthoprothésistes concerne des orthèses (environ 142 300 dispositifs par an), très majoritairement des orthèses de tronc (corsets)",
+        source: "Audit KPMG du système réglementaire du Grand Appareillage Orthopédique, commandé par l'UFOP - mars 2017",
+      },
+      {
+        type: "h2",
+        id: "qui-prescrit",
+        text: "Qui peut prescrire une orthèse sur mesure",
+      },
+      {
+        type: "paragraph",
+        text: "Pour une première prescription de grand appareillage orthopédique (orthèse sur mesure), la réglementation réserve ce droit à des spécialités médicales précises : médecine physique et de réadaptation (MPR), orthopédie, rhumatologie, neurochirurgie, neurologie, endocrinologie, chirurgie plastique et reconstructrice, chirurgie vasculaire. Le médecin MPR reste le prescripteur le plus fréquent, notamment pour les orthèses de positionnement destinées aux patients polyhandicapés.",
+      },
+      {
+        type: "paragraph",
+        text: "Pour un renouvellement d'un appareillage identique, un médecin généraliste peut prescrire directement - une simplification qui ne s'applique pas à la première mise, où l'évaluation d'un spécialiste reste nécessaire.",
+      },
+      {
+        type: "h2",
+        id: "remboursement",
+        text: "Remboursement LPPR - deux circuits distincts",
+      },
+      {
+        type: "paragraph",
+        text: "Les orthèses sur mesure conçues par un orthoprothésiste relèvent du chapitre 7 de la LPPR - le même chapitre que les prothèses - avec une prise en charge à 100 % au tarif opposable, quel que soit le fabricant du composant choisi. Les orthèses de série ou de contention plus simples relèvent d'un autre chapitre de la LPPR, avec des règles et des taux de remboursement différents, généralement délivrées sans passer par un orthoprothésiste.",
+      },
+      {
+        type: "info",
+        title: "L'entente préalable, un passage obligé pour le sur-mesure",
+        text: "Contrairement à une orthèse de série achetée en pharmacie, la prise en charge d'une orthèse sur mesure du chapitre 7 est soumise à une demande d'entente préalable : l'orthoprothésiste transmet un devis à la caisse d'Assurance Maladie, qui dispose d'un délai de réponse (l'absence de réponse dans le délai réglementaire valant accord).",
+      },
+      {
+        type: "h2",
+        id: "fabricants-reference",
+        text: "Les fabricants qui font référence en France",
+      },
+      {
+        type: "paragraph",
+        text: "Le marché français de l'orthèse s'appuie sur un nombre restreint d'acteurs industriels de référence, chacun avec ses domaines de spécialisation : Ottobock (pionnier mondial de l'appareillage), Össur (technologies orthopédiques et bioniques avancées), Thuasne (acteur historique français, fort sur l'orthopédie de série - ceintures, genouillères), DJO Global - marques DonJoy et Aircast (référence des orthèses fonctionnelles et sportives en officine), Bauerfeind (fabricant allemand haut de gamme, orthèses articulaires et bas de compression), auxquels s'ajoutent des acteurs comme Zimmer Biomet, Stryker ou Breg selon les zones anatomiques. C'est votre orthoprothésiste qui oriente le choix du fabricant le plus adapté à votre situation clinique précise, pas une préférence de marque affichée en ligne.",
+      },
+      {
+        type: "faq",
+        items: [
+          { q: "Différence entre orthèse sur mesure et orthèse de série ?", a: "Les orthèses de série (préfabriquées) sont ajustées par des modifications mineures et relèvent généralement du Petit Appareillage Orthopédique. Les orthèses sur mesure sont moulées directement sur le patient par un orthoprothésiste, pour les situations complexes nécessitant un ajustement précis - c'est le Grand Appareillage Orthopédique, remboursé à 100 % au tarif opposable." },
+          { q: "Une ordonnance est-elle obligatoire ?", a: "Pour une orthèse sur mesure du grand appareillage, oui - une prescription médicale d'un spécialiste habilité est requise pour la première mise. Pour une orthèse de série simple (genouillère élastique par exemple), la prescription n'est pas toujours obligatoire, mais reste nécessaire pour un remboursement par l'Assurance Maladie." },
+          { q: "Pourquoi certaines orthèses sont-elles remboursées à 100 % et d'autres non ?", a: "Le taux de remboursement dépend du chapitre LPPR concerné. Les orthèses sur mesure du grand appareillage (chapitre 7) sont prises en charge à 100 % au tarif opposable. Les orthèses de série suivent des règles de remboursement différentes, avec un reste à charge possible selon le dispositif et le statut du patient (ALD ou non)." },
+        ],
+      },
+      {
+        type: "cta",
+        headline: "Trouver un orthoprothésiste",
+        sub: "Localisez un professionnel agréé spécialisé près de chez vous.",
+        btnLabel: "Rechercher un praticien",
+        href: "/trouver-praticien",
+      },
     ],
   },
 
