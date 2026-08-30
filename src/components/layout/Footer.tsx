@@ -34,9 +34,6 @@ const columns = [
     heading: "À propos",
     links: [
       { label: "À propos",          href: "/a-propos" },
-      { label: "Notre mission",     href: "/mission" },
-      { label: "Partenaires",       href: "/partenaires" },
-      { label: "Contact",           href: "/contact" },
       { label: "Mentions légales",  href: "/mentions-legales" },
     ],
   },
