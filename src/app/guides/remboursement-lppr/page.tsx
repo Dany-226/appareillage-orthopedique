@@ -289,7 +289,7 @@ export default function RemboursementLPPRPage() {
                 headline="Trouver un orthoprothésiste agréé"
                 sub="Votre choix est entièrement libre. Vous pouvez changer de prestataire à tout moment."
                 btnLabel="Trouver un praticien près de chez vous"
-                href="/trouver-un-praticien"
+                href="/trouver-praticien"
               />
 
             </article>

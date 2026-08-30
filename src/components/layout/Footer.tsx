@@ -17,7 +17,7 @@ const columns = [
       { label: "Amputation",         href: "/pathologie/amputation" },
       { label: "AVC",                href: "/pathologie/avc" },
       { label: "SEP",                href: "/pathologie/sep" },
-      { label: "IMC",                href: "/pathologie/imc" },
+      { label: "IMC",                href: "/pathologie/paralysie-cerebrale" },
       { label: "Arthrose",           href: "/pathologie/arthrose" },
       { label: "Lésion médullaire",  href: "/pathologie/lesion-medullaire" },
     ],

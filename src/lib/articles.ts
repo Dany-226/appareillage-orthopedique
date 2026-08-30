@@ -127,7 +127,7 @@ export const articles: Article[] = [
         title: 'Trouver un orthoprothésiste spécialisé',
         subtitle: 'Le choix du prestataire conditionne la qualité de votre appareillage. Vous êtes libre de choisir et de changer à tout moment.',
         buttonText: 'Trouver un praticien agréé',
-        buttonHref: '/trouver-un-praticien',
+        buttonHref: '/trouver-praticien',
       },
     ],
     relatedArticles: ['pied-prothetique', 'emboiture-prothese-tibiale', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
