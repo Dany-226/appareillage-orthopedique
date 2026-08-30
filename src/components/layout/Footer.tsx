@@ -95,6 +95,11 @@ export default function Footer() {
           <p className="text-xs text-white/35">
             © {new Date().getFullYear()} Appareillage Orthopédique. Tous droits réservés.
           </p>
+          <p className="text-xs text-white/30 max-w-md text-left sm:text-right">
+            L&rsquo;éditeur se réserve la possibilité d&rsquo;intégrer à l&rsquo;avenir des
+            liens d&rsquo;affiliation ou de la publicité (Google AdSense). Le cas
+            échéant, cette page sera mise à jour en conséquence.
+          </p>
         </div>
       </div>
     </footer>
