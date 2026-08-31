@@ -39,7 +39,7 @@ const zones: Zone[] = [
     eyebrow: "03 — L'articulation",
     title: "Le genou",
     body: "Mécanique ou à microprocesseur : chaque modèle a son propre protocole d'attribution, testé et chiffré — vitesse de marche, périmètre, descente d'escaliers. Rien n'est laissé au hasard.",
-    href: "/protheses/femorale-choisir-son-genou",
+    href: "/protheses/prothese-femorale-choisir-son-genou",
     glow: "teal",
     image: "https://i.imgur.com/cPqvCdB.png",
   },

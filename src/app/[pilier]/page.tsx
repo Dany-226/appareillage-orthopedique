@@ -9,6 +9,7 @@ import ArticleHeader    from "@/components/article/ArticleHeader";
 import ArticleBody      from "@/components/article/ArticleBody";
 import Sidebar          from "@/components/sidebar/Sidebar";
 import RelatedArticles  from "@/components/sections/RelatedArticles";
+import { ProstheticJourney } from "@/components/prosthesis/ProstheticJourney";
 import {
   getPilierData,
   getAllPilierSlugs,
@@ -105,6 +106,8 @@ export default function PilierPage({
           </div>
         </div>
       </div>
+
+      {data.slug === "protheses" && <ProstheticJourney />}
 
       <RelatedArticles pilier={data.slug} />
 
