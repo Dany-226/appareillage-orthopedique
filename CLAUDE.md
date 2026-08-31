@@ -115,6 +115,35 @@ Le dev server tourne en arrière-plan ; utiliser claude-in-chrome (navigate/scre
 
 ---
 
+## SEO et infrastructure (complément)
+
+- `alternates.canonical` ajouté sur toutes les pages avec `metadata` (la homepage hérite du canonical racine `/`, pas de duplication).
+- Meta descriptions réécrites pour `/ortheses` et `/guides/remboursement-lppr` — langage de recherche réel plutôt que vocabulaire clinique générique.
+- Vercel confirmé correctement configuré (Production Primary + redirection 308 www→non-www) — le décalage observé dans Google Search Console (version www mieux positionnée) est un résidu historique de recrawl, pas une mauvaise configuration actuelle.
+- **Stratégie SEO** : ne pas chercher à récupérer le trafic "chaussures orthopédiques" hérité de l'ancien propriétaire du domaine (voir section Infrastructure ci-dessus). Liens retour (UFOP, ADEPA) mis en attente jusqu'à trafic significatif — ne pas relancer cette démarche avant.
+
+---
+
+## Footer — état final après nettoyage
+
+État de `src/components/layout/Footer.tsx` après plusieurs passes de nettoyage successives :
+
+- **Colonne Dispositifs** : 3 entrées (Orthèses, Prothèses, Fauteuils roulants) — `aides-techniques`/`positionnement` retirés (aucun contenu construit).
+- **Colonne Guides** : 3 entrées — `/guide/lppr` corrigé vers `/guides/remboursement-lppr`, "Renouvellement" pointe vers l'ancre `#renouvellement` de cette même page, "Choisir son centre"/"Vivre avec" retirés (aucun contenu nulle part sur le site).
+- **Colonne À propos** : 2 entrées (À propos, Mentions légales) — "Notre mission"/"Partenaires"/"Contact" retirés (pages jamais construites).
+- **Bandeau bas de page** : ne plus jamais affirmer qu'AdSense/affiliation sont actifs (ils ne le sont pas actuellement). Le texte actuel réserve la possibilité future, cohérent avec `/mentions-legales`.
+- **5 occurrences de `/trouver-un-praticien` (typo)** corrigées vers `/trouver-praticien` dans `articles.ts`, `pathologies.ts`, `guides/remboursement-lppr/page.tsx`.
+
+---
+
+## Page /mentions-legales
+
+- Éditeur réel : **DIGICORPEX**, SASU au capital de 500 €, 226 rue Camille Godard, 33000 Bordeaux, SIREN 940 521 719, RCS Bordeaux (source : Pappers/INSEE).
+- Directeur de la publication formulé comme "le représentant légal de la société" sans nom personnel — choix explicite de Daniel. **Réserve non tranchée** sur la conformité stricte LCEN à ce sujet ; à faire valider par un professionnel si besoin.
+- Hébergeur Vercel Inc. correctement identifié.
+
+---
+
 ## Sources de données externes
 
 - `github.com/Dany-226/stumpr-mvp` (repo public) : contient `backend/data/orthos_ufop.csv`, les 295 orthoprothésistes réels (source UFOP) utilisés pour construire `src/lib/orthoprothesistes.ts` et alimenter `/trouver-praticien`. Contient aussi, dans `frontend/src/components/LPPRSearch.js`, le schéma (pas les données — protégées par un token Airtable) de la base LPPR complète de Stumpr.
@@ -175,3 +204,31 @@ Le dev server tourne en arrière-plan ; utiliser claude-in-chrome (navigate/scre
 | Slugs `sep-sla` et `avc-hemiplegie` | Fusion de deux entités cliniques distinctes sous un seul slug | Slugs séparés (`sep`, `avc`) + redirects 301 permanents dans `next.config.mjs` |
 | Liens footer `/guide/lppr`, `/guide/renouvellement`, `/guide/choisir-centre`, `/guide/vivre-avec`, `/aides-techniques`, `/positionnement` | URLs supposées exister par convention de nommage, jamais vérifiées contre les routes réelles | Liens vers du contenu réel corrigés vers le bon chemin (`/guides/remboursement-lppr`, ancre `#renouvellement`) ; liens sans contenu correspondant retirés |
 | heroImage recadrée / bandes de couleur visibles | Conteneur à `aspectRatio` fixe + `object-cover`/`object-contain` forcé | `next/image` en largeur pleine, ratio naturel, sans conteneur à ratio imposé |
+
+---
+
+## CHANTIER EN COURS — ProstheticJourney (NON COMMITÉ)
+
+Composant de scroll-reveal pour la page `/protheses`, présentant la construction anatomique d'une prothèse fémorale (emboîture → manchon/accroche → genou → pied) avec un panneau de texte par zone qui apparaît/disparaît selon la position de scroll.
+
+**Fichiers concernés (aucun commit à ce jour)** :
+- `src/components/prosthesis/ProstheticJourney.tsx` — le composant.
+- `src/app/protheses/apercu-parcours/page.tsx` — page de prévisualisation temporaire (à retirer avant toute intégration finale, ou à transformer en vraie route).
+- `public/videos/prothese-femorale-hero.mp4` — **orphelin**, plus référencé nulle part (la vidéo a été retirée à cause d'un watermark HeyGen non supprimable sans plan payant) — à supprimer au prochain nettoyage.
+
+**Décisions techniques prises, à ne pas redéfaire** :
+- Pas de vidéo en fond — remplacée par une image par zone (`next/image`, `fill`, `object-contain` — **pas** `object-cover`, qui zoomait excessivement sur la texture au lieu de montrer l'objet entier).
+- Logique d'opacité par zone : fonction explicite avec clamp manuel (`zoneOpacityFn`), **pas** des tableaux de points passés à `useTransform` — cette dernière approche avait un bug reproductible et confirmé deux fois : à `scrollYProgress` exactement égal à 1.0, la zone 1 revenait à opacité 1 et la zone 4 retombait à 0 (inversion complète). Ne pas revenir à l'approche par tableaux de points sans revalider numériquement ce cas limite précis.
+- `pointerEvents: none` sur les conteneurs de panneaux à opacité 0, réactivé seulement sur le contenu texte — sinon un panneau invisible peut intercepter les clics destinés à un panneau visible.
+
+**Images actuellement câblées** (Imgur, déjà vérifiées à l'affichage) :
+- emboiture : `https://i.imgur.com/eNgsm2u.png`
+- manchon : `https://i.imgur.com/4bcuGg0.png`
+- genou : `https://i.imgur.com/cPqvCdB.png` (photo produit Ottobock Genium, marque/modèle visibles — risque de droit des marques, assumé explicitement par Daniel après mise en garde)
+- pied : `https://i.imgur.com/VmO2fBd.png` (photo produit Össur Pro-Flex Terra, même réserve assumée)
+
+**Ce qui reste à faire avant intégration réelle** :
+1. 3 pages liées n'existent pas encore (404 actuellement) : `/protheses/emboiture`, `/protheses/manchon-accroche`, `/protheses/pied-prothetique`. Le lien "genou" pointe déjà vers l'article existant `/protheses/femorale-choisir-son-genou` (pas de nouvel article nécessaire pour cette zone).
+2. Décision non tranchée : écrire ces 3 articles avant d'intégrer le composant sur la vraie page `/protheses`, OU intégrer d'abord et écrire le contenu après.
+3. Supprimer la page de prévisualisation `apercu-parcours` une fois l'intégration réelle décidée (elle ne doit pas rester en prod comme route publique séparée).
+4. Nettoyer le fichier vidéo orphelin.
