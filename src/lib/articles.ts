@@ -474,6 +474,123 @@ export const articles: Article[] = [
       'prothese-main-myoelectrique',
     ],
   },
+  {
+    slug: 'prothese-femorale-emboiture',
+    pilier: 'protheses',
+    title: "Prothèse fémorale : comprendre l'emboîture, l'interface qui porte toute la prothèse",
+    metaTitle: "Emboîture de prothèse fémorale - contact, suspension, sub-ischiatique",
+    metaDescription: "Emboîture de contact, à suspension ou sub-ischiatique : comment fonctionne l'interface entre le moignon et la prothèse fémorale, les matériaux, et le remboursement LPPR.",
+    badge: 'Prothèses',
+    readingTime: '8 min',
+    publishedAt: '2026-08-31',
+    updatedAt: '2026-08-31',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage — 15 ans chez Össur France',
+    },
+    excerpt: "Sur une prothèse fémorale, l'emboîture pèse plus lourd dans le confort quotidien que le genou ou le pied. La forme (ischion intégré, CAT-CAM, sub-ischiatique) et le mode de suspension (externe, accrochage distal, dépression) sont deux choix indépendants - avec un remboursement LPPR qui distingue nomenclature générique et dispositifs nominatifs.",
+    blocks: [
+      {
+        type: 'paragraph',
+        content: "Pour une amputation fémorale, le composant qui détermine le plus le confort au quotidien n'est ni le genou ni le pied - c'est l'emboîture. C'est elle qui porte le poids du corps à chaque pas, transmet les mouvements du moignon au reste de la prothèse, et reste en contact avec la peau plusieurs heures par jour.",
+      },
+      {
+        type: 'h2',
+        id: 'forme-emboiture',
+        content: "La forme de l'emboîture - trois générations",
+      },
+      {
+        type: 'h3',
+        content: 'Emboîture à ischion intégré',
+      },
+      {
+        type: 'paragraph',
+        content: "La forme la plus répandue et la plus universelle : le calage se fait au niveau du grand trochanter, et l'ischion est intégré dans la structure pour stabiliser le bassin. Elle convient à la majorité des morphologies et reste la référence par défaut.",
+      },
+      {
+        type: 'h3',
+        content: 'Emboîture CAT-CAM',
+      },
+      {
+        type: 'paragraph',
+        content: "Une évolution historique, aujourd'hui moins utilisée : une tablette reprend l'appui sous l'ischion, complétée par un appui sur la face antérieure du moignon. Réservée à des morphologies particulières - son indication répond à des prérequis anatomiques précis, pas à une préférence esthétique.",
+      },
+      {
+        type: 'h3',
+        content: 'Emboîture sub-ischiatique',
+      },
+      {
+        type: 'paragraph',
+        content: "La génération la plus récente déleste l'ischion au profit de la branche ischio-pubienne, libérant la mobilité du bassin et de la hanche. Plusieurs acteurs portent cette approche - le PROTEOR I-SUB, l'Access Socket et le FleXEO d'Ottobock, le Direct Socket TF d'Össur, ou l'I.S.S. développé par le prothésiste indépendant Pommier Orthopédie. Le principe commun : une paroi supérieure souple qui accompagne l'écrasement naturel de la cuisse en position assise, là où une structure rigide impose un point de pression fixe.",
+      },
+      {
+        type: 'h2',
+        id: 'mode-suspension',
+        content: "Le mode de suspension - un choix indépendant de la forme",
+      },
+      {
+        type: 'paragraph',
+        content: "La suspension externe classique - courroie sur poulie, ceinture silésienne - reste utilisée en phase provisoire ou sur des moignons difficiles à appareiller autrement. L'accrochage distal, aujourd'hui le plus répandu, s'appuie sur un manchon en silicone, copolymère ou polyuréthane dont l'extrémité se verrouille mécaniquement au fond de l'emboîture. La suspension par dépression va d'une simple valve d'expulsion d'air à des systèmes actifs plus élaborés - une pompe qui maintient le vide en continu (Ottobock Harmony), ou une membrane d'étanchéité intégrée directement au manchon plutôt qu'à l'emboîture (Össur Seal-In). Les différents types de manchons et leurs systèmes d'accroche sont détaillés dans l'article dédié.",
+      },
+      {
+        type: 'info_box',
+        title: "L'I-SUB n'est pas une simple emboîture parmi d'autres",
+        content: "L'I-SUB doit être utilisé avec un manchon en silicone à anneaux - la valve anti-retour et le manchon se remplacent quatre fois par an. La garantie s'inscrit dans celle de l'appareillage sur mesure (3 ans), et la prescription relève d'un médecin spécialiste MPR, pas d'une prescription générale.",
+      },
+      {
+        type: 'h2',
+        id: 'remboursement-lppr',
+        content: 'Remboursement LPPR - deux systèmes qui coexistent',
+      },
+      {
+        type: 'paragraph',
+        content: "La nomenclature générique (titre I) couvre les emboîtures classiques par matériau et mécanisme, intégrée au prix global de la prothèse. Les dispositifs nominatifs (titre II), comme l'I-SUB, sont évalués individuellement par la CNEDiMTS et inscrits avec leur propre code et tarif. L'I-SUB a obtenu son inscription par arrêté du 8 juillet 2025, après l'avis favorable de la CNEDiMTS de décembre 2023.",
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Élément', 'Code', 'Tarif TTC'],
+        rows: [
+          ['Prothèse fémorale, emboîture résines stratifiées (base)', 'PI04SSC23', '1 865,86 €'],
+          ['Emboîture fémorale sub-ischiatique, PROTEOR I-SUB', '2783242', '1 171,05 €'],
+          ['Prestation I-SUB (fabrication, mise à disposition, suivi)', '2702841', '1 566,58 €'],
+        ],
+      },
+      {
+        type: 'h2',
+        id: 'criteres-choix',
+        content: "Qui bénéficie de quelle combinaison",
+      },
+      {
+        type: 'paragraph',
+        content: "Forme et suspension se combinent selon le profil : un moignon dont le volume fluctue s'accommode souvent mieux d'un accrochage distal que d'une dépression, qui exige un volume stable. Le gain du sub-ischiatique se lit surtout en position assise et dans la liberté de mouvement du bassin - pertinent pour une activité sédentaire ou la conduite. Le réseau de prothésistes formés aux techniques sub-ischiatiques reste plus restreint que celui des emboîtures classiques - un critère d'accès à vérifier avant de fixer ses attentes.",
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: "La CAT-CAM est-elle encore prescrite aujourd'hui ?",
+            answer: "Plus rarement, mais elle reste indiquée pour certaines morphologies précises où l'ischion intégré ou le sub-ischiatique ne conviennent pas - ce n'est pas une technique abandonnée, seulement moins fréquente.",
+          },
+          {
+            question: "Accrochage distal ou dépression - lequel est le plus sûr ?",
+            answer: "Les deux sont fiables pour un moignon stable. L'accrochage distal tolère mieux les petites variations de volume ; la dépression offre un contact plus intime mais demande un ajustement plus précis et un moignon au volume constant.",
+          },
+          {
+            question: "Peut-on passer d'une emboîture classique à une sub-ischiatique ?",
+            answer: "Oui, sous réserve d'une évaluation par un médecin MPR et l'orthoprothésiste - la forme et la longueur du moignon influencent directement la faisabilité d'un montage sub-ischiatique.",
+          },
+        ],
+      },
+      {
+        type: 'cta_block',
+        title: "Besoin d'un avis sur votre emboîture ?",
+        subtitle: "Trouvez un orthoprothésiste agréé près de chez vous pour évaluer votre indication.",
+        buttonText: 'Trouver un praticien',
+        buttonHref: '/trouver-praticien',
+      },
+    ],
+    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
+  },
 ]
 
 export function getArticle(pilier: string, slug: string): Article | undefined {

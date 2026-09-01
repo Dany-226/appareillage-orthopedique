@@ -21,7 +21,7 @@ const zones: Zone[] = [
     eyebrow: "01 — Le point de départ",
     title: "L'emboîture",
     body: "L'interface entre le moignon et le reste de la prothèse. Contact ou suspension, résines stratifiées ou composite carbone — le premier choix, et le plus déterminant pour le confort quotidien.",
-    href: "/protheses/emboiture",
+    href: "/protheses/prothese-femorale-emboiture",
     glow: "amber",
     image: "https://i.imgur.com/eNgsm2u.png",
   },
