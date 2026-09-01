@@ -6,7 +6,7 @@ import ScrollProgressBar from '@/components/article/ScrollProgressBar'
 import Breadcrumb from '@/components/article/Breadcrumb'
 import ArticleHeader from '@/components/article/ArticleHeader'
 import ArticleBody from '@/components/article/ArticleBody'
-import Sidebar from '@/components/sidebar/Sidebar'
+import Sidebar, { type SidebarExtraCard } from '@/components/sidebar/Sidebar'
 import { getArticle, articles } from '@/lib/articles'
 import type { TocHeading } from '@/lib/piliers'
 
@@ -42,18 +42,29 @@ export default function ArticlePage({
     .filter(b => b.type === 'h2')
     .map(b => ({ id: (b as { id: string }).id, text: (b as { content: string }).content }))
 
-  const extraCards =
-    article.pilier === 'protheses'
-      ? [
-          {
-            variant: 'stumpr' as const,
-            title: 'Anticipez vos renouvellements LPPR',
-            subtitle: "Stumpr calcule vos échéances et vous alerte 90 jours avant. Accès bêta gratuit.",
-            buttonText: 'Rejoindre la bêta',
-            href: 'https://stumpr.app/',
-          },
-        ]
-      : undefined
+  const extraCardsList: SidebarExtraCard[] = []
+
+  if (article.pilier === 'protheses') {
+    extraCardsList.push({
+      variant: 'stumpr',
+      title: 'Anticipez vos renouvellements LPPR',
+      subtitle: "Stumpr calcule vos échéances et vous alerte 90 jours avant. Accès bêta gratuit.",
+      buttonText: 'Rejoindre la bêta',
+      href: 'https://stumpr.app/',
+    })
+  }
+
+  if (article.slug === 'prothese-femorale-choisir-son-genou') {
+    extraCardsList.push({
+      variant: 'internal',
+      title: 'Les genoux "bioniques" à microprocesseur',
+      subtitle: 'C-Leg, Kenevo, Rheo Knee XC : ce que couvre vraiment la LPPR.',
+      buttonText: 'Découvrir',
+      href: '/protheses/genou-bionique-microprocesseur',
+    })
+  }
+
+  const extraCards = extraCardsList.length > 0 ? extraCardsList : undefined
 
   return (
     <>

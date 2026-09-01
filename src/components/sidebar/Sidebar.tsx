@@ -3,14 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { BookOpen, ThumbsUp, ArrowRight } from "lucide-react";
+import { BookOpen, ThumbsUp, ArrowRight, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TableOfContents from "./TableOfContents";
 import type { TocHeading } from "@/lib/piliers";
 import { motionVariants } from "@/components/ui/design-tokens";
 
 export type SidebarExtraCard = {
-  variant: "stumpr" | "aidant";
+  variant: "stumpr" | "aidant" | "internal";
   title: string;
   subtitle: string;
   buttonText: string;
@@ -19,6 +19,38 @@ export type SidebarExtraCard = {
 
 function ExtraCard({ card, delay }: { card: SidebarExtraCard; delay: number }) {
   const isStumpr = card.variant === "stumpr";
+
+  if (card.variant === "internal") {
+    return (
+      <motion.div
+        variants={motionVariants.fadeUp}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay }}
+        className="rounded-xl border border-border bg-card p-5 shadow-card"
+      >
+        <div className="mb-3 flex h-9 w-9 items-center justify-center
+                        rounded-lg bg-brand-teal-muted">
+          <Cpu size={16} className="text-brand-teal" aria-hidden />
+        </div>
+        <p className="text-sm font-semibold text-brand-dark mb-1.5 leading-snug">
+          {card.title}
+        </p>
+        <p className="text-xs text-muted-foreground leading-relaxed mb-4">
+          {card.subtitle}
+        </p>
+        <Button
+          asChild
+          size="sm"
+          className="w-full bg-brand-teal hover:bg-brand-teal-light text-white text-xs"
+        >
+          <Link href={card.href}>
+            {card.buttonText} <ArrowRight size={12} />
+          </Link>
+        </Button>
+      </motion.div>
+    );
+  }
 
   return (
     <motion.div

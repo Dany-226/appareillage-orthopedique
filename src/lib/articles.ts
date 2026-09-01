@@ -236,6 +236,13 @@ export const articles: Article[] = [
         buttonText: 'Trouver un praticien',
         buttonHref: '/trouver-praticien',
       },
+      {
+        type: 'cta_block',
+        title: 'Curieux des genoux "bioniques" à microprocesseur ?',
+        subtitle: "C-Leg, Kenevo, Rheo Knee XC, SYNSYS : ce que couvre vraiment la LPPR, marque par marque.",
+        buttonText: 'Découvrir',
+        buttonHref: '/protheses/genou-bionique-microprocesseur',
+      },
     ],
     relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
   },
@@ -787,6 +794,143 @@ export const articles: Article[] = [
       },
     ],
     relatedArticles: ['prothese-femorale-emboiture', 'manchon-accroche', 'prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou'],
+  },
+  {
+    slug: 'genou-bionique-microprocesseur',
+    pilier: 'protheses',
+    title: "Genoux bioniques : ce que couvre vraiment la Sécu, marque par marque",
+    metaTitle: "Genou bionique microprocesseur - remboursement LPPR par marque",
+    metaDescription: "C-Leg, Kenevo, Rheo Knee XC, Orion3, HYBRID-1P360, SYNSYS : quelles conditions d'attribution, quel remboursement LPPR réel pour les genoux prothétiques à microprocesseur.",
+    badge: 'Prothèses',
+    readingTime: '10 min',
+    publishedAt: '2026-08-31',
+    updatedAt: '2026-08-31',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage — 15 ans chez Össur France',
+    },
+    heroImage: 'https://i.imgur.com/LayXnuc.jpeg',
+    excerpt: "On dit souvent que les genoux prothétiques bioniques ne sont pas remboursés en France. C'est faux pour les six marques qui se partagent le marché - ce qui varie réellement, c'est l'éligibilité fonctionnelle, pas l'accès au remboursement.",
+    blocks: [
+      {
+        type: 'paragraph',
+        content: "Un genou prothétique \"bionique\" ne se limite pas à contenir un microprocesseur - une large partie de la nomenclature LPPR le fait déjà, sans jamais faire les gros titres. Ce qui distingue vraiment les six marques que le grand public connaît, c'est ce que ce microprocesseur contrôle réellement : la sécurité de la phase d'appui, le moment où le genou doit porter tout le poids du corps sans se dérober. C'est cette fonction-là, pas le mot \"microprocesseur\" en soi, qui définit un genou bionique au sens plein.",
+      },
+      {
+        type: 'h2',
+        id: 'trois-paliers',
+        content: 'Trois paliers technologiques, pas deux',
+      },
+      {
+        type: 'paragraph',
+        content: "La majorité des genoux réellement prescrits en France sont purement mécaniques - stabilité obtenue par la géométrie de l'articulation ou par un frein mécanique, aucune électronique, souvent sous les 2 000 €. Un second palier existe, moins connu : des genoux où le microprocesseur assiste uniquement la phase pendulaire - le réglage de la cadence de marche - sans piloter la sécurité de l'appui. Ils coûtent entre 3 400 € et 5 500 € environ. Le troisième palier, celui dont il est question ici, pilote électroniquement les deux phases à la fois : c'est le seul qui corresponde à ce que le grand public appelle un genou bionique.",
+      },
+      {
+        type: 'h2',
+        id: 'marques-remboursees',
+        content: 'Six marques, toutes remboursées - ce qui varie, c\'est l\'éligibilité',
+      },
+      {
+        type: 'paragraph',
+        content: "Contrairement à une idée répandue, aucune des six marques présentes sur le marché français n'est exclue de la LPPR. Chacune a son propre code, son propre tarif, et surtout son propre profil fonctionnel visé - un genou pensé pour la sécurité à basse vitesse n'a pas les mêmes critères d'attribution qu'un genou pensé pour une marche active.",
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Genou', 'Fabricant', 'Profil visé', 'Vitesse requise', 'Périmètre continu'],
+        rows: [
+          ['C-Leg 3C100', 'Ottobock', 'Actif', '≥ 3 km/h (≥ 4 km/h vérifié après essai)', '> 500 m (> 2 km vérifié après essai)'],
+          ['Kenevo', 'Ottobock', 'Basse activité, sécurité', '< 3 km/h', '> 300 m'],
+          ['Orion3', 'Blatchford', 'Actif', '≥ 3 km/h (≥ 4 km/h vérifié après essai)', '> 500 m (> 2 km vérifié après essai)'],
+          ['Rheo Knee XC', 'Össur', 'Actif', '≥ 3 km/h (≥ 4 km/h vérifié après essai)', '> 500 m (> 2 km vérifié après essai)'],
+          ['HYBRID-1P360', 'Proteor', 'Actif', '≥ 3 km/h', '> 500 m'],
+          ['SYNSYS (ensemble genou-cheville-pied)', 'Proteor', 'Actif avancé', '2 à 5 km/h', 'Terrains inégaux, pentes, escaliers'],
+        ],
+      },
+      {
+        type: 'h3',
+        content: 'Kenevo - le seul pensé pour la sécurité, pas la performance',
+      },
+      {
+        type: 'paragraph',
+        content: "Kenevo est le seul des six à cibler explicitement un profil à risque de chute élevé plutôt qu'un profil actif : score au test TGUG (Timed Get Up and Go) supérieur à 19 secondes, et surtout une interdiction d'utiliser des béquilles axillaires ou un déambulateur - la canne simple ou la canne anglaise restent autorisées. Les trois modes d'activité du dispositif ne sont réglables que par le prothésiste, jamais par le patient. La prescription initiale exige déjà une équipe pluridisciplinaire (MPR ou orthopédiste, kinésithérapeute, orthoprothésiste), avant même l'essai.",
+      },
+      {
+        type: 'h3',
+        content: 'Rheo Knee XC - le seul poids limite qui varie selon l\'activité',
+      },
+      {
+        type: 'paragraph',
+        content: "Les cinq autres dispositifs fixent un seuil de poids unique. Rheo Knee XC distingue deux seuils selon le niveau d'activité réel du patient : 110 kg pour un niveau d'activité élevé, 136 kg pour un niveau faible à modéré - une même limite physique du dispositif, mais une tolérance différente selon l'usage prévu.",
+      },
+      {
+        type: 'h3',
+        content: 'SYNSYS - le seul qui exige un établissement de santé agréé',
+      },
+      {
+        type: 'paragraph',
+        content: "SYNSYS n'est pas qu'un genou : c'est un ensemble genou-cheville-pied dont la synergie articulaire (une flexion de genou entraîne une dorsiflexion automatique de la cheville) exige un cadre de prescription différent des cinq autres. La prescription initiale et tout renouvellement doivent venir d'une équipe exerçant au sein d'un établissement de santé titulaire d'une autorisation \"locomoteur\" spécifique, et l'appareillage ne peut être réalisé que par un orthoprothésiste certifié par un expert clinique PROTEOR après formation dédiée au produit et à son logiciel de réglage.",
+      },
+      {
+        type: 'info_box',
+        title: "L'éligibilité se vérifie en deux temps, pas un seul",
+        content: "Pour C-Leg, Orion3, Rheo Knee XC et HYBRID-1P360, un seuil d'entrée (vitesse ≥3 km/h, périmètre >500 m) permet d'accéder à une période d'essai - mais la prescription définitive n'est confirmée qu'après vérification d'un seuil nettement plus exigeant (vitesse ≥4 km/h, périmètre continu >2 km, descente de pente à 15 %, escaliers en pas alternés). Remplir le premier seuil ne garantit donc pas l'accès au dispositif.",
+      },
+      {
+        type: 'h2',
+        id: 'remboursement-lppr',
+        content: 'Remboursement LPPR - l\'écart de prix entre marque et générique',
+      },
+      {
+        type: 'paragraph',
+        content: "Les six dispositifs nominatifs s'échelonnent entre 15 750 € et 38 546 € TTC - contre environ 3 400 à 6 500 € pour un genou générique à assistance microprocesseur limitée à la phase pendulaire. Le facteur de prix entre les deux paliers dépasse souvent 5, pour une différence technique précise : le contrôle électronique de la phase d'appui, pas simplement la présence d'un microprocesseur.",
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Genou', 'Fabricant', 'Tarif TTC'],
+        rows: [
+          ['HYBRID-1P360', 'Proteor', '15 750,29 €'],
+          ['Kenevo', 'Ottobock', '16 178,41 €'],
+          ['Orion3', 'Blatchford', '16 191,86 €'],
+          ['Rheo Knee XC', 'Össur', '17 044,06 €'],
+          ['C-Leg 3C100', 'Ottobock', '17 396,14 €'],
+          ['SYNSYS (ensemble genou-cheville-pied, avec prestation)', 'Proteor', '38 546,33 €'],
+        ],
+      },
+      {
+        type: 'h2',
+        id: 'la-realite-du-terrain',
+        content: 'Ce que porte la majorité des patients',
+      },
+      {
+        type: 'paragraph',
+        content: "Malgré la place que ces six dispositifs occupent dans les médias et les vitrines des fabricants, la majorité des patients amputés fémoraux portent un genou du premier palier - purement mécanique. L'accès au troisième palier dépend d'un profil fonctionnel documenté, pas d'une simple demande : vitesse de marche, périmètre continu, risque de chute, et pour SYNSYS, un encadrement hospitalier spécifique. Le remboursement n'est pas la barrière - l'éligibilité l'est.",
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: 'Un genou bionique est-il automatiquement mieux remboursé qu\'un genou mécanique ?',
+            answer: "Non - le remboursement suit l'éligibilité fonctionnelle du patient, pas une hiérarchie de qualité. Un patient qui ne remplit pas les critères de vitesse ou de périmètre continu n'aura pas accès à ces dispositifs, quel que soit son souhait.",
+          },
+          {
+            question: 'Peut-on choisir librement entre les six marques ?',
+            answer: "Non - chaque dispositif a ses propres critères d'indication (Kenevo pour un profil à risque de chute, C-Leg ou Orion3 pour un profil actif, SYNSYS pour un cadre hospitalier spécifique). Le choix suit le profil du patient, évalué en période d'essai par le médecin prescripteur.",
+          },
+          {
+            question: 'Le renouvellement nécessite-t-il un nouvel essai ?',
+            answer: "Ça dépend du dispositif. Kenevo ne nécessite pas de nouvel essai au renouvellement. Les autres exigent généralement un bilan d'activité récent du médecin prescripteur, sans nécessairement repasser par la période d'essai complète.",
+          },
+        ],
+      },
+      {
+        type: 'cta_block',
+        title: 'Besoin d\'évaluer votre éligibilité à un genou à microprocesseur ?',
+        subtitle: "Trouvez un orthoprothésiste agréé près de chez vous pour faire le point sur votre profil fonctionnel.",
+        buttonText: 'Trouver un praticien',
+        buttonHref: '/trouver-praticien',
+      },
+    ],
+    relatedArticles: ['prothese-femorale-choisir-son-genou', 'prothese-femorale-emboiture', 'manchon-accroche', 'pied-prothetique'],
   },
 ]
 
