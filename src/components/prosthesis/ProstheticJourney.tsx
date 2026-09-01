@@ -87,6 +87,12 @@ export function ProstheticJourney() {
   const opacity3 = useTransform(sectionProgress, zoneOpacityFn(3));
   const panelOpacities = [opacity0, opacity1, opacity2, opacity3];
 
+  const pointerEvents0 = useTransform(opacity0, (v) => (v > 0.5 ? "auto" : "none"));
+  const pointerEvents1 = useTransform(opacity1, (v) => (v > 0.5 ? "auto" : "none"));
+  const pointerEvents2 = useTransform(opacity2, (v) => (v > 0.5 ? "auto" : "none"));
+  const pointerEvents3 = useTransform(opacity3, (v) => (v > 0.5 ? "auto" : "none"));
+  const panelPointerEvents = [pointerEvents0, pointerEvents1, pointerEvents2, pointerEvents3];
+
   return (
     <div ref={containerRef} className="relative" style={{ height: "400vh" }}>
       <div className="sticky top-0 h-screen overflow-hidden bg-brand-dark">
@@ -140,7 +146,7 @@ export function ProstheticJourney() {
               className="absolute inset-0 flex max-w-md flex-col justify-center gap-4"
               style={{ opacity: panelOpacities[i], pointerEvents: "none" }}
             >
-              <div style={{ pointerEvents: "auto" }}>
+              <motion.div style={{ pointerEvents: panelPointerEvents[i] }}>
                 <p
                   className="mb-2 font-mono text-label-md uppercase tracking-[0.1em]"
                   style={{ color: zone.glow === "amber" ? "#FDF3E7" : "#E1F0F7" }}
@@ -156,7 +162,7 @@ export function ProstheticJourney() {
                 >
                   Lire l&apos;article →
                 </Link>
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>
