@@ -130,7 +130,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['pied-prothetique', 'emboiture-prothese-tibiale', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
+    relatedArticles: ['pied-prothetique', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
   },
   {
     slug: 'prothese-femorale-choisir-son-genou',
@@ -369,7 +369,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-bras-systeme-corporel'],
+    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-bras-systeme-corporel', 'futur-prothese-bionique-innovation'],
   },
   {
     slug: 'prothese-bras-systeme-corporel',
@@ -793,7 +793,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-femorale-emboiture', 'manchon-accroche', 'prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou'],
+    relatedArticles: ['prothese-femorale-emboiture', 'manchon-accroche', 'prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'futur-prothese-bionique-innovation'],
   },
   {
     slug: 'genou-bionique-microprocesseur',
@@ -930,7 +930,142 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-femorale-choisir-son-genou', 'prothese-femorale-emboiture', 'manchon-accroche', 'pied-prothetique'],
+    relatedArticles: ['prothese-femorale-choisir-son-genou', 'prothese-femorale-emboiture', 'manchon-accroche', 'pied-prothetique', 'futur-prothese-bionique-innovation'],
+  },
+  {
+    slug: 'futur-prothese-bionique-innovation',
+    pilier: 'protheses',
+    title: "Le futur de la prothèse : la nouvelle vague des acteurs bioniques",
+    metaTitle: "Prothèses bioniques du futur - 15 start-ups qui réinventent le membre artificiel",
+    metaDescription: "TASKA, Psyonic, Phantom Neuro, BrainCo, Axiles Bionics, BionicM et 10 autres acteurs : le tour complet des start-ups qui réinventent la prothèse externe, du contrôle neuronal au genou motorisé.",
+    badge: 'Prothèses',
+    readingTime: '14 min',
+    publishedAt: '2026-08-31',
+    updatedAt: '2026-08-31',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage — 15 ans chez Össur France',
+    },
+    heroImage: 'https://i.imgur.com/HFWYOjh.png',
+    excerpt: "Ottobock qui mène lui-même la levée de fonds d'une start-up d'interface neuronale, un genou japonais qui pousse au lieu de freiner, une main indienne à 4 gestes conçue pour coûter six fois moins cher : tour complet de la nouvelle vague bionique, membre par membre et tendance par tendance.",
+    blocks: [
+      {
+        type: 'paragraph',
+        content: "En avril 2025, Ottobock - le numéro un mondial historique de la prothèse - a mené lui-même une levée de fonds de 19 millions de dollars pour Phantom Neuro, une start-up d'interface neuronale née dans les laboratoires de médecine de Johns Hopkins. Ce n'est pas un fonds de capital-risque anonyme qui investit dans un concurrent lointain : c'est le leader historique du secteur qui rejoint le conseil d'administration d'une entreprise qui pourrait redéfinir la façon dont on pilote une prothèse. Ce signal résume assez bien où en est la prothèse externe en 2026 - une vague d'acteurs qui ne se contentent plus d'améliorer la mécanique, mais qui attaquent simultanément le contrôle neuronal, le confort de chaussage, la robustesse du quotidien et l'accessibilité économique.",
+      },
+      {
+        type: 'h2',
+        id: 'mains-etablies',
+        content: 'Mains bioniques établies : la course à la robustesse',
+      },
+      {
+        type: 'paragraph',
+        content: "TASKA Prosthetics reste la référence du secteur en matière d'étanchéité. Fondée en Nouvelle-Zélande par Mat Jury - un ingénieur reconverti après s'être cassé les deux bras en VTT -, l'entreprise a construit sa réputation sur sa certification IP67 (immersion totale) grâce à sa technologie HydroSeal, et sa gamme actuelle (TASKA CX, HandGen2) propose 23 configurations de préhension. En juin 2024, TASKA a été rachetée à 100% par le groupe Eqwal - un signal de consolidation qui montre qu'une partie du secteur s'organise déjà autour de quelques plateformes robustes et cliniquement déployées, pendant que d'autres continuent d'innover en marge.",
+      },
+      {
+        type: 'paragraph',
+        content: "Psyonic (États-Unis) reste le concurrent le plus direct : son Ability Hand revendique la vitesse de fermeture la plus rapide du marché, avec des doigts en silicone et caoutchouc conçus pour absorber les chocs, et surtout un retour haptique - des capteurs de pression en bout de doigt qui transmettent une vibration à l'utilisateur au contact d'un objet. Fondée par le Dr Aadeel Akhtar, inspiré à 7 ans par la rencontre d'une amputée au Pakistan, l'entreprise est aujourd'hui prise en charge par Medicare aux États-Unis - avec une étanchéité IP64, moins poussée que celle de TASKA. Aether Biomedical (Pologne) mise sur la réparabilité : sa main Zeus se démonte en sept modules interchangeables, remplaçables par le clinicien en moins de 10 minutes, pour une force de préhension allant jusqu'à 152 N et une capacité de levage de 35 kg sur la version V1.",
+      },
+      {
+        type: 'paragraph',
+        content: "Open Bionics (Royaume-Uni) joue une autre partition : l'accessibilité plutôt que la performance brute. Son Hero Arm, premier bras bionique imprimé 3D à obtenir une approbation clinique pour enfants dès 8 ans, se fabrique par scan et impression 3D en une quarantaine d'heures, avec un socket réimprimable tous les 12 à 18 mois à mesure que l'enfant grandit. Le partenariat avec Disney, en place depuis 2015 sans versement de royalties, permet des coques personnalisables Star Wars, Marvel ou La Reine des Neiges - une approche qui a fait d'Open Bionics une référence sur le segment pédiatrique, loin de la course aux Newtons de préhension.",
+      },
+      {
+        type: 'h2',
+        id: 'controle-neuronal',
+        content: 'Le contrôle neuronal, prochaine frontière',
+      },
+      {
+        type: 'h3',
+        content: 'Phantom Neuro - peu invasif, soutenu par Ottobock',
+      },
+      {
+        type: 'paragraph',
+        content: "Phantom Neuro mise sur une interface qualifiée de \"peu invasive\" : un dispositif de type bracelet, implanté sous la peau, qui capte les signaux nerveux périphériques plutôt que les seuls signaux musculaires de surface. L'entreprise revendique 94% de précision sur la reconnaissance de 11 mouvements de main et de poignet, et jusqu'à 85% de fonctionnalité naturelle retrouvée après seulement 10 minutes de calibration une fois le dispositif implanté. Sa Série A de 19 millions de dollars, menée par Ottobock en avril 2025, porte son financement total à 28 millions de dollars. Basée à Austin, la start-up est également soutenue par la DARPA à hauteur d'environ 300 000 dollars, signe d'un intérêt à double usage, civil et militaire.",
+      },
+      {
+        type: 'h3',
+        content: 'Morph Labs et BrainCo - l\'EEG sans aucune implantation',
+      },
+      {
+        type: 'paragraph',
+        content: "Morph Labs et BrainCo empruntent une voie entièrement non invasive : l'électroencéphalographie (EEG), qui lit l'activité cérébrale à travers le cuir chevelu, sans aucune chirurgie. Fondée en 2024 par Pranai Reddy, Nikola Cadavid et Soham Mehra, Morph Labs vise jusqu'à 19 degrés de liberté - contre 5 à 10 pour la plupart des mains myoélectriques du marché - et espère ses premières ventes commerciales autour de mars 2026, après son admission au programme Y Combinator de l'été 2026. Le stade reste précoce : le prototype actuel ne classifie que 5 gestes distincts avec un casque que son fondateur qualifie lui-même de \"bricolé\". BrainCo a huit ans d'avance : fondée en 2015 et incubée à la Harvard Innovation Lab, l'entreprise chinoise a dévoilé sa main bionique aux Jeux Para-Asiatiques de Hangzhou en 2023. Sa main Intelligent Bionic Hand pèse 383 g et revendique un contrôle indépendant des cinq doigts avec une précision de 0,1 degré, en combinant signaux neuronaux et électromyographiques captés par électrodes sèches.",
+      },
+      {
+        type: 'h2',
+        id: 'confort-ajustement',
+        content: "Le confort réinventé : quand le problème n'est pas la main, mais le socket",
+      },
+      {
+        type: 'paragraph',
+        content: "Deux jeunes entreprises partent d'un constat identique : la première cause d'abandon d'une prothèse n'est pas la mécanique de la main, c'est l'inconfort du socket qui la relie au moignon. Vessl Prosthetics (Ontario, Canada), fondée par Sydney Robinson et Oleksiy Zaika, développe l'Isoform, un système de socket à ajustement automatique qui compense en temps réel les variations de volume du moignon au cours de la journée - sans changer manuellement de chaussettes de compensation. La start-up a bouclé un tour de pré-amorçage sursouscrit en janvier 2025 et vise l'enregistrement FDA. Meablex, spin-off de l'Université de Melbourne fondée par le Dr Alireza Mohammadi après avoir interrogé 60 amputés, cliniciens et fournisseurs, associe un socket ajustable manuellement par l'utilisateur à des capteurs magnétiques - moins sensibles à la transpiration que les électrodes cutanées classiques. Objectif affiché : un prix autour de 10 000 dollars australiens, environ un tiers du prix habituel du marché, avec des essais cliniques prévus fin 2026 et un lancement commercial visé début 2027.",
+      },
+      {
+        type: 'h2',
+        id: 'jambes-chevilles-actives',
+        content: 'Jambes et chevilles actives : motoriser plutôt que freiner',
+      },
+      {
+        type: 'paragraph',
+        content: "La plupart des pieds prothétiques restent passifs : ils restituent l'énergie emmagasinée à l'appui, sans jamais en ajouter. Axiles Bionics (Belgique), spin-off de la Vrije Universiteit Brussel fondée en 2019 par le Dr Pierre Cherelle, part d'un constat simple : la plupart des pieds du marché n'ont aucune véritable articulation de cheville, une architecture héritée des années 1970-1980. Sa prothèse Lunaris intègre une vraie articulation et un tendon élastique adaptatif, avec marquage CE et FDA déjà obtenus, une distribution en Belgique, France, Luxembourg et Pays-Bas, et une Série A de 6 millions d'euros (sur 8 visés) close en juin 2025.",
+      },
+      {
+        type: 'paragraph',
+        content: "Toutes les start-ups de cette vague ne survivent pas jusqu'à la commercialisation. Revival Bionics (France), fondée en 2021 par deux ingénieurs de l'UTC Compiègne et lauréate du Grand Prix i-Lab 2022 pour sa cheville motorisée à tendon d'Achille artificiel développée avec le motoriste suisse maxon, a été placée en procédure de sauvegarde en mai 2025 puis en liquidation judiciaire en septembre 2025. Un rappel utile : la biomécatronique de pointe reste un secteur capitalistiquement exigeant, où l'innovation technique ne suffit pas toujours à franchir le cap de la commercialisation.",
+      },
+      {
+        type: 'paragraph',
+        content: "Côté genou, BionicM (Japon) prend le contre-pied de toute l'industrie. Les genoux à microprocesseur aujourd'hui remboursés en France régulent tous un frein hydraulique - ils ne font que ralentir le mouvement. Le Bio Leg de BionicM, spin-off de l'Université de Tokyo fondée par Sun Xiaojun (amputé lui-même à 9 ans), motorise activement l'articulation pour assister l'utilisateur - se lever d'une chaise, monter un escalier marche par marche. Le dispositif a obtenu une exemption d'enregistrement 510(k) auprès de la FDA en août 2023.",
+      },
+      {
+        type: 'h2',
+        id: 'accessibilite',
+        content: "Accessibilité : l'autre course, loin des Newtons et des degrés de liberté",
+      },
+      {
+        type: 'paragraph',
+        content: "Toutes les start-ups de ce panorama ne visent pas la performance de pointe. En Inde, Dee Dee Labs - née en 2016 après qu'un des fondateurs a assisté à une conférence de Nicolas Huchet, amputé français qui avait développé sa propre main imprimée en 3D - propose une main myoélectrique limitée à 4 gestes essentiels (poing, pointage, pince, relâchement), disponible en trois tailles avec gant en silicone teinté peau. L'ambition n'est pas de rivaliser avec Psyonic ou Aether sur le nombre de préhensions, mais de rendre la prothèse accessible dans un marché où les dispositifs importés coûtent souvent plus de six fois le revenu mensuel moyen d'une famille rurale. Social Hardware, également indienne, pousse la logique plus loin : ses prothèses, conçues avec des outils agricoles interchangeables pour des amputés ruraux (souvent victimes d'accidents agricoles ou de morsures de serpent), sont distribuées gratuitement via un modèle non lucratif appuyé sur des ONG et six centres de réadaptation répartis dans le pays.",
+      },
+      {
+        type: 'info_box',
+        title: 'REEV (France) - à surveiller, mais ce n\'est pas une prothèse',
+        content: "REEV, start-up toulousaine cofondée en 2021 par Amaury Ciurana et Robin Temporelli (ex-ingénieur Airbus), développe DREEVEN, une orthèse de genou motorisée par actionnement électrohydraulique pour les troubles neurologiques de la marche (AVC, sclérose en plaques, paralysie cérébrale) - pas pour les amputés. L'entreprise a levé 8,8 millions d'euros en 2025 (Polytechnique Ventures, Newfund Heka, Irdi Capital, avec Raphaël Varane parmi les investisseurs), revendique une réduction d'au moins 30% de l'effort au genou, et vise une première série commerciale en 2026, avec une implantation à Boston pour l'entrée sur le marché américain. Un acteur du champ non invasif au sens large, pas de la prothèse d'amputation au sens strict - mais suffisamment proche pour mériter une veille.",
+      },
+      {
+        type: 'h2',
+        id: 'ce-qui-se-dessine',
+        content: 'Ce qui se dessine',
+      },
+      {
+        type: 'paragraph',
+        content: "Trois lignes de force traversent ce panorama de 15 acteurs. La première : le contrôle ne se limite plus à l'électromyographie de surface - interfaces peu invasives, EEG, capteurs magnétiques, chacun cherchant à contourner les limites du signal musculaire classique. La deuxième : la robustesse et la réparabilité sont devenues des arguments de vente à part entière, pas des détails techniques - étanchéité totale, modules remplaçables en clinique en quelques minutes. La troisième, souvent négligée dans la couverture médiatique de ces innovations : la course à la performance n'est pas la seule qui compte, et toutes les start-ups n'atteignent pas la commercialisation. Des acteurs comme Dee Dee Labs ou Social Hardware, en visant un tout autre marché, adressent une population d'amputés bien plus large que celle qui aura jamais accès à une main à 152 N de force de préhension.",
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: "Ces dispositifs sont-ils disponibles en France ?",
+            answer: "Très inégalement. Lunaris (Axiles Bionics) est déjà distribuée en France. TASKA, Psyonic, Aether et Open Bionics sont accessibles via des réseaux de distribution internationaux. La plupart des autres (Phantom Neuro, Morph Labs, Meablex, BionicM) en sont encore au stade clinique ou de lancement initial, hors du circuit LPPR français.",
+          },
+          {
+            question: "Quelle est la différence entre les approches EEG et les interfaces implantées comme Phantom Neuro ?",
+            answer: "L'EEG (Morph Labs, BrainCo) lit l'activité cérébrale à travers le cuir chevelu, sans aucune chirurgie, mais avec un signal plus faible et plus bruité. Phantom Neuro implante un dispositif sous la peau pour capter directement les signaux nerveux périphériques - plus invasif que l'EEG, mais nettement moins qu'un implant cérébral profond, avec un signal plus précis et stable.",
+          },
+          {
+            question: "Ces start-ups sont-elles fiables sur la durée ?",
+            answer: "Inégalement - la liquidation judiciaire de Revival Bionics en 2025, malgré une innovation technique reconnue, montre que ce secteur reste capitalistiquement exigeant. L'acquisition de TASKA par Eqwal en 2024 illustre à l'inverse la consolidation d'acteurs matures autour de plateformes robustes.",
+          },
+        ],
+      },
+      {
+        type: 'cta_block',
+        title: "Une question sur l'appareillage bionique disponible en France ?",
+        subtitle: "Un orthoprothésiste agréé peut vous orienter sur les options réellement accessibles selon votre profil.",
+        buttonText: 'Trouver un praticien',
+        buttonHref: '/trouver-praticien',
+      },
+    ],
+    relatedArticles: ['prothese-main-myoelectrique', 'genou-bionique-microprocesseur', 'prothese-bras-systeme-corporel', 'pied-prothetique'],
   },
 ]
 

@@ -4,10 +4,16 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock } from "lucide-react";
 import { motionVariants, shadows, viewport } from "@/components/ui/design-tokens";
-import { getArticlesByPilier } from "@/lib/articles";
+import { getArticlesByPilier, type Article } from "@/lib/articles";
 
-export default function RelatedArticles({ pilier }: { pilier: string }) {
-  const articles = getArticlesByPilier(pilier);
+export default function RelatedArticles({
+  pilier,
+  articles: articlesProp,
+}: {
+  pilier?: string;
+  articles?: Article[];
+}) {
+  const articles = articlesProp ?? (pilier ? getArticlesByPilier(pilier) : []);
   if (articles.length === 0) return null;
 
   return (

@@ -7,6 +7,7 @@ import Breadcrumb from '@/components/article/Breadcrumb'
 import ArticleHeader from '@/components/article/ArticleHeader'
 import ArticleBody from '@/components/article/ArticleBody'
 import Sidebar, { type SidebarExtraCard } from '@/components/sidebar/Sidebar'
+import RelatedArticles from '@/components/sections/RelatedArticles'
 import { getArticle, articles } from '@/lib/articles'
 import type { TocHeading } from '@/lib/piliers'
 
@@ -66,6 +67,10 @@ export default function ArticlePage({
 
   const extraCards = extraCardsList.length > 0 ? extraCardsList : undefined
 
+  const relatedArticles = (article.relatedArticles ?? [])
+    .map(slug => getArticle(article.pilier, slug))
+    .filter(a => a !== undefined)
+
   return (
     <>
       <Navbar />
@@ -89,6 +94,9 @@ export default function ArticlePage({
           </div>
         </div>
       </main>
+
+      <RelatedArticles articles={relatedArticles} />
+
       <Footer />
     </>
   )
