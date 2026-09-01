@@ -591,6 +591,203 @@ export const articles: Article[] = [
     ],
     relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
   },
+  {
+    slug: 'manchon-accroche',
+    pilier: 'protheses',
+    title: "Manchon et systèmes d'accroche : silicone, copolymère, polyuréthane, comment choisir",
+    metaTitle: "Manchon de prothèse - silicone, copolymère, polyuréthane, accrochage",
+    metaDescription: "Manchon préfabriqué ou sur moulage, accrochage distal ou dépression : comment choisir le manchon d'une prothèse de membre, les indications cliniques et le remboursement LPPR.",
+    badge: 'Prothèses',
+    readingTime: '7 min',
+    publishedAt: '2026-08-31',
+    updatedAt: '2026-08-31',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage — 15 ans chez Össur France',
+    },
+    heroImage: 'https://i.imgur.com/DlHO0yB.jpeg',
+    excerpt: "Le manchon est la seule pièce de la prothèse en contact permanent avec la peau. Silicone, copolymère ou polyuréthane, accrochage distal ou dépression : le choix répond à des indications cliniques précises, pas à une préférence de confort.",
+    blocks: [
+      {
+        type: 'paragraph',
+        content: "Le manchon est la seule pièce de toute la prothèse en contact permanent avec la peau du moignon. C'est lui qui détermine si le port est tolérable sur une journée complète, et c'est souvent le premier composant à changer quand un appareillage cause des irritations - pas l'emboîture elle-même.",
+      },
+      {
+        type: 'h2',
+        id: 'materiaux',
+        content: 'Silicone, copolymère ou polyuréthane - une hiérarchie de prescription',
+      },
+      {
+        type: 'paragraph',
+        content: "Le silicone et le copolymère de qualité médicale sont la référence de première intention, préfabriqués ou réalisés sur moulage. Le polyuréthane n'est pas une alternative de confort : la nomenclature LPPR conditionne sa prise en charge à l'échec médicalement constaté d'un manchon silicone ou copolymère - c'est une solution de second recours, pas un choix initial.",
+      },
+      {
+        type: 'h2',
+        id: 'systemes-accroche',
+        content: "Deux logiques d'accroche, indépendantes du matériau",
+      },
+      {
+        type: 'paragraph',
+        content: "L'accrochage distal reste le plus répandu : une goupille à l'extrémité du manchon se verrouille mécaniquement au fond de l'emboîture. L'anneau d'étanchéité intermédiaire suit une autre logique - il crée le joint nécessaire à une suspension par dépression plutôt qu'un verrouillage mécanique. C'est ce second système qu'exige par exemple l'I-SUB de PROTEOR, traité dans l'article sur l'emboîture fémorale.",
+      },
+      {
+        type: 'h2',
+        id: 'technologies-avancees',
+        content: 'Dépression active et manchons à membrane intégrée',
+      },
+      {
+        type: 'paragraph',
+        content: "Au-delà d'une simple valve d'expulsion d'air, certains systèmes gèrent la dépression activement. Le Harmony d'Ottobock utilise une pompe mécanique (P3, P4) ou électronique (E2) qui extrait l'air entre manchon et emboîture à chaque pas, maintenant un vide constant autour de -600 mbar - avec un amortisseur en élastomère intégré qui absorbe les chocs verticaux. Le Seal-In d'Össur inverse la logique : l'étanchéité vient d'une membrane intégrée directement au manchon, avec des anneaux de joint successifs, plutôt que d'une valve sur l'emboîture elle-même.",
+      },
+      {
+        type: 'info_box',
+        title: 'Le manchon préfabriqué a des indications précises, pas génériques',
+        content: "La LPPR réserve le manchon fémoral préfabriqué à des situations cliniques identifiées : moignon court, moignon flasque, peau extrêmement fragile (patients brûlés ou greffés), cicatrices invaginées, ou amputation fémorale associée à une atteinte d'un ou des membres supérieurs. En dehors de ces indications, le manchon sur moulage reste la référence.",
+      },
+      {
+        type: 'h2',
+        id: 'remboursement-lppr',
+        content: 'Remboursement LPPR',
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Élément', 'Code', 'Tarif TTC'],
+        rows: [
+          ['Manchon préfabriqué, silicone ou copolymère', 'VI3X603', '1 059,25 €'],
+          ['Manchon injecté et tramé sur moulage, silicone ou copolymère', 'VI3X003', '1 157,61 €'],
+          ['Manchon polyuréthane préfabriqué (après échec silicone/copolymère)', 'VI3U601', '1 606,48 €'],
+          ['Cupule distale en adjonction (moignon conique, cicatrice irrégulière)', 'VI3X700', '210,12 €'],
+        ],
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: 'Peut-on demander directement un manchon polyuréthane ?',
+            answer: "Non - la prise en charge LPPR exige un échec médicalement constaté d'un manchon silicone ou copolymère au préalable. Ce n'est pas une question de préférence.",
+          },
+          {
+            question: "Un manchon à accrochage distal est-il compatible avec une emboîture I-SUB ?",
+            answer: "Non - l'I-SUB exige un manchon avec anneau d'étanchéité intermédiaire pour assurer la dépression, pas un système à goupille.",
+          },
+          {
+            question: 'À quelle fréquence change-t-on un manchon ?',
+            answer: "Ça dépend du système. Pour un montage type I-SUB, le manchon et la valve se changent quatre fois par an. Pour un accrochage distal classique, la fréquence dépend surtout de l'usure et de l'évolution du volume du moignon.",
+          },
+        ],
+      },
+      {
+        type: 'cta_block',
+        title: 'Un manchon qui irrite ou ne tient plus ?',
+        subtitle: "Trouvez un orthoprothésiste agréé près de chez vous pour réévaluer votre appareillage.",
+        buttonText: 'Trouver un praticien',
+        buttonHref: '/trouver-praticien',
+      },
+    ],
+    relatedArticles: ['prothese-femorale-emboiture', 'prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique'],
+  },
+  {
+    slug: 'pied-prothetique',
+    pilier: 'protheses',
+    title: "Pied prothétique : classe I, II ou III, ce que mesure vraiment la classification",
+    metaTitle: "Pied prothétique - classes I, II, III et remboursement LPPR",
+    metaDescription: "Comment fonctionne la classification des pieds à restitution d'énergie (classe I, II, III), les critères techniques mesurés, et le remboursement LPPR.",
+    badge: 'Prothèses',
+    readingTime: '7 min',
+    publishedAt: '2026-08-31',
+    updatedAt: '2026-08-31',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage — 15 ans chez Össur France',
+    },
+    heroImage: 'https://i.imgur.com/qbZYkcM.png',
+    excerpt: "La classe d'un pied à restitution d'énergie n'est pas une étiquette marketing - elle correspond à des seuils techniques mesurés en laboratoire et à des profils de déplacement définis par la classification internationale du fonctionnement, pas au prix du modèle.",
+    blocks: [
+      {
+        type: 'paragraph',
+        content: "Un pied à restitution d'énergie emmagasine l'énergie de l'appui au sol et la restitue à la propulsion. La classe I, II ou III qui lui est attribuée n'est pas une gamme commerciale : c'est un résultat de laboratoire, mesuré, qui conditionne le remboursement.",
+      },
+      {
+        type: 'h2',
+        id: 'classification-cif',
+        content: 'Une classification fondée sur des seuils mesurés, pas sur une gamme',
+      },
+      {
+        type: 'paragraph',
+        content: "Chaque classe correspond à un profil de déplacement défini par la Classification internationale du fonctionnement (CIF), et à des seuils techniques vérifiés lors d'un essai en laboratoire indépendant : la propulsion (un score obtenu au relevé force-déformation) et la déformation permanente de l'avant-pied et du talon. La conformité est valable cinq ans, puis réévaluée sur un pied neuf.",
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Classe', 'Propulsion (P)', 'Déformation permanente', 'Profil de déplacement (CIF)'],
+        rows: [
+          ['I', '30 ≤ P < 75', '< 10 mm avant-pied et talon', 'Déplacements dans des bâtiments autres que la maison (d4601)'],
+          ['II', 'P ≥ 30', '< 10 mm avant-pied, < 5 mm talon', 'Profil intermédiaire, tolérance au talon plus stricte'],
+          ['III', 'P ≥ 120', '< 10 mm avant-pied, < 5 mm talon', 'Déplacements extérieurs variés et autres lieux divers (d4601, d4602, d4608)'],
+        ],
+      },
+      {
+        type: 'info_box',
+        title: 'La classe III ne se prescrit pas par défaut',
+        content: "La première prescription d'un pied à restitution d'énergie, ou tout changement de type de pied, relève obligatoirement d'un médecin spécialiste en médecine physique et de réadaptation (MPR) - un renouvellement à l'identique ne l'exige pas. Pour une classe III spécifiquement, le prescripteur doit préciser quelles activités motivent ce choix : ce n'est pas une case cochée par prudence.",
+      },
+      {
+        type: 'h2',
+        id: 'exemple-concret',
+        content: 'Ce que couvre un pied de classe III en pratique',
+      },
+      {
+        type: 'paragraph',
+        content: "Le BIOSTEP LP (ALPS South Europe) illustre ce que la classe III implique techniquement : deux lames dynamiques en fibre de carbone, une pyramide de connexion en titane, une charge supportée jusqu'à 147 kg selon la taille, une étanchéité permettant l'immersion jusqu'à trois mètres pendant une heure, et une tenue en température de -23°C à 93°C. Le module est garanti 36 mois, le revêtement esthétique 6 mois, la chaussette de protection 1 mois - trois durées de garantie distinctes pour trois pièces d'usure différentes.",
+      },
+      {
+        type: 'h2',
+        id: 'remboursement-lppr',
+        content: 'Remboursement LPPR',
+      },
+      {
+        type: 'comparison_table',
+        headers: ['Élément', 'Code', 'Tarif TTC'],
+        rows: [
+          ['Pied à restitution d\'énergie, classe III, ALPS, BIOSTEP LP (22 cm)', '2744970', '2 512,82 €'],
+          ['Pied à restitution d\'énergie, classe III, ALPS, BIOSTEP EVO (23 cm)', '2761230', '2 512,82 €'],
+        ],
+      },
+      {
+        type: 'h2',
+        id: 'criteres-choix',
+        content: 'Pourquoi la classe compte plus que la marque',
+      },
+      {
+        type: 'paragraph',
+        content: "Un pied surclassé par rapport à l'activité réelle du patient ne se traduit pas par un bénéfice supplémentaire - la propulsion excédentaire n'est simplement pas exploitée, et l'ajustement (raideur de lame, catégories de résistance selon le poids) devient moins précis. À l'inverse, un pied sous-classé limite réellement le périmètre de marche. La classe se fixe sur le projet de vie du patient, pas sur ses préférences esthétiques ou son budget.",
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: "Peut-on demander directement un pied de classe III ?",
+            answer: "La prescription initiale relève d'un médecin MPR, qui doit justifier le choix par les activités réelles du patient - la classe III n'est pas automatique même en cas de demande explicite.",
+          },
+          {
+            question: 'Le renouvellement change-t-il automatiquement de classe ?',
+            answer: "Non - un renouvellement à l'identique ne nécessite pas de nouvelle évaluation par un spécialiste MPR. Un changement de classe, en revanche, suit les mêmes règles qu'une première prescription.",
+          },
+          {
+            question: 'Un pied de classe I convient-il à un usage extérieur occasionnel ?',
+            answer: "Oui pour un usage ponctuel, mais la classe I reste calibrée sur des déplacements en bâtiment - un usage extérieur régulier et varié relève plutôt d'une classe II ou III selon l'intensité.",
+          },
+        ],
+      },
+      {
+        type: 'cta_block',
+        title: 'Besoin de réévaluer votre appareillage ?',
+        subtitle: "Trouvez un orthoprothésiste agréé près de chez vous pour faire le point sur votre classe de pied.",
+        buttonText: 'Trouver un praticien',
+        buttonHref: '/trouver-praticien',
+      },
+    ],
+    relatedArticles: ['prothese-femorale-emboiture', 'manchon-accroche', 'prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou'],
+  },
 ]
 
 export function getArticle(pilier: string, slug: string): Article | undefined {
