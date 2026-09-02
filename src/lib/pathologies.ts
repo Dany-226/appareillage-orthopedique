@@ -132,6 +132,7 @@ export const pathologies: Pathologie[] = [
       { label: 'Orthèse cheville AFO', href: '/ortheses', pilier: 'Orthèses', description: 'Releveur de pied spastique' },
       { label: 'Releveur de pied', href: '/ortheses', pilier: 'Orthèses', description: 'Pied tombant post-AVC' },
       { label: 'Fauteuil roulant manuel', href: '/fauteuils#manuel-ou-electrique', pilier: 'Fauteuils', description: 'Phase aigue et subaigue' },
+      { label: 'Orthèse épaule', href: '/ortheses', pilier: 'Orthèses', description: 'Prévention subluxation post-AVC' },
     ],
     blocks: [
       {
@@ -162,6 +163,18 @@ export const pathologies: Pathologie[] = [
           {
             question: 'L\'orthèse AFO est-elle remboursée après un AVC ?',
             answer: "Oui. Les orthèses de cheville et de membre inférieur sont inscrites à la nomenclature LPPR. La prise en charge est soumise à prescription médicale et accord préalable de la CPAM pour certains modèles. Votre mutuelle complète selon votre contrat.",
+          },
+          {
+            question: "Une épaulière est-elle utile après un AVC ?",
+            answer: "Oui, en cas de parésie du membre supérieur - elle prévient la subluxation de l'épaule (diastasis gléno-huméral), fréquente quand les muscles stabilisateurs sont affaiblis. Le port se fait généralement en journée, pendant les déplacements, sur prescription du médecin MPR.",
+          },
+          {
+            question: "Existe-t-il des orthèses pour la main après un AVC ?",
+            answer: "Oui - orthèses de poignet-main statiques ou dynamiques, selon que l'objectif est de prévenir les rétractions ou d'accompagner une récupération motrice active. Le choix dépend du degré de spasticité et de la fonction résiduelle de la main.",
+          },
+          {
+            question: "Une orthèse de genou est-elle parfois nécessaire après un AVC ?",
+            answer: "Oui, en cas de recurvatum (genou qui part en hyperextension à la marche) - une orthèse de genou vient stabiliser l'articulation, souvent en complément de l'orthèse de cheville plutôt qu'à sa place.",
           },
         ],
       },
@@ -200,6 +213,15 @@ export const pathologies: Pathologie[] = [
       {
         type: 'paragraph',
         content: "La décision de passer au fauteuil électrique est souvent difficile à prendre. Pourtant, plus cette transition est anticipée, mieux elle se passe - apprentissage du pilotage, adaptation du domicile, démarches administratives. Le médecin MPR et l'ergothérapeute sont les interlocuteurs clés pour évaluer le bon moment et le bon modèle.",
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: 'Quel type de fauteuil électrique choisir en cas de sclérose en plaques ?',
+            answer: "Ça dépend de l'évolution de la maladie et du profil d'usage - un fauteuil pliable et léger pour un usage occasionnel et des trajets en voiture, un fauteuil plus robuste à autonomie étendue pour un usage quotidien prolongé. L'essai avec un ergothérapeute avant l'achat est essentiel, la SEP évoluant parfois rapidement.",
+          },
+        ],
       },
       {
         type: 'cta_block',
