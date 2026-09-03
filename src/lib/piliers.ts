@@ -19,6 +19,7 @@ export type PilierData = {
   category: string;
   readingTime: number;
   h1: string;
+  metaTitle: string;
   author: { name: string; title: string; updatedAt: string };
   heroImage?: string;
   content: ContentBlock[];
@@ -34,6 +35,7 @@ const piliers: Record<string, PilierData> = {
     category: "Prothèses",
     readingTime: 12,
     h1: "Prothèses de membres : guide complet pour les patients et leurs proches",
+    metaTitle: "Prothèses de membres : guide complet",
     author: {
       name: "Jean-Marc Tissier",
       title: "Expert appareillage orthopédique — 15 ans chez Össur France",
@@ -168,6 +170,7 @@ const piliers: Record<string, PilierData> = {
     category: "Orthèses",
     readingTime: 12,
     h1: "Orthèses : comprendre les 3 grandes familles et bien choisir",
+    metaTitle: "Orthèses : les 3 grandes familles",
     author: {
       name: "Claire Beaumont",
       title: "Kinésithérapeute spécialisée en rééducation orthopédique — 12 ans d'expérience",
@@ -267,6 +270,7 @@ const piliers: Record<string, PilierData> = {
     category: "Fauteuils roulants",
     readingTime: 14,
     h1: "Fauteuil roulant : guide complet pour les patients et leurs proches",
+    metaTitle: "Fauteuil roulant : guide complet",
     author: {
       name: "Sophie Arnaud",
       title: "Ergothérapeute — Centre de rééducation de Lyon",

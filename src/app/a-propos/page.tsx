@@ -9,7 +9,7 @@ import { Reveal } from '@/components/ui/Reveal'
 import InfoBox from '@/components/article/blocks/InfoBox'
 
 export const metadata: Metadata = {
-  title: 'À propos - Expert appareillage orthopédique, 15 ans chez Össur France',
+  title: 'À propos - 15 ans chez Össur France',
   description:
     'Qui sommes-nous ? Un expert ayant passé 15 ans chez Össur France, leader mondial de la prothèse et de l\'orthèse, au service des patients appareillés.',
   alternates: {

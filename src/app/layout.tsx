@@ -29,7 +29,7 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Appareillage Orthopédique",
-    template: "%s — Appareillage Orthopédique",
+    template: "%s - Appareillage Ortho",
   },
   description:
     "Ressources et conseils sur les appareillages orthopédiques : prothèses, orthèses et fauteuils roulants, pour les patients et leurs proches.",

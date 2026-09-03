@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!data) return { title: "Page introuvable" };
 
   return {
-    title: data.h1,
+    title: data.metaTitle,
     description:
       data.slug === "ortheses"
         ? "Genouillère, corset, orthèse sur mesure : comprendre les 3 familles d'orthèses (traitement, immobilisation, positionnement), le remboursement LPPR à 100% et comment bien choisir."
@@ -40,7 +40,7 @@ export async function generateMetadata({
       canonical: `/${data.slug}`,
     },
     openGraph: {
-      title: data.h1,
+      title: data.metaTitle,
       type: "article",
       locale: "fr_FR",
     },

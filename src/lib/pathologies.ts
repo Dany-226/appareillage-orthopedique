@@ -33,7 +33,7 @@ export const pathologies: Pathologie[] = [
   {
     slug: 'amputation',
     name: 'Amputation',
-    metaTitle: 'Appareillage après amputation - prothèses et aides techniques',
+    metaTitle: 'Appareillage après amputation',
     metaDescription: "Guide complet de l'appareillage après amputation de membre. Prothèses tibiales, fémorales, parcours patient et remboursement LPPR.",
     heroLabel: 'PATHOLOGIE',
     heroTitle: 'Appareillage après amputation',
@@ -121,7 +121,7 @@ export const pathologies: Pathologie[] = [
   {
     slug: 'avc',
     name: 'AVC',
-    metaTitle: 'Appareillage après un AVC - orthèses, fauteuils et aides techniques',
+    metaTitle: 'Appareillage après un AVC',
     metaDescription: 'Guide complet de l\'appareillage après un AVC. Orthèses, fauteuil roulant, aides techniques et parcours de rééducation pour retrouver l\'autonomie.',
     heroLabel: 'PATHOLOGIE',
     heroTitle: 'Appareillage après un AVC',
@@ -190,7 +190,7 @@ export const pathologies: Pathologie[] = [
   {
     slug: 'sep',
     name: 'Sclérose en plaques (SEP)',
-    metaTitle: 'Appareillage sclérose en plaques (SEP) - fauteuils électriques et aides techniques',
+    metaTitle: 'Appareillage et sclérose en plaques',
     metaDescription: 'Guide de l\'appareillage pour les patients atteints de sclérose en plaques. Fauteuil roulant électrique, positionnement, aides techniques et droits MDPH.',
     heroLabel: 'PATHOLOGIE',
     heroTitle: 'Appareillage et sclérose en plaques',
@@ -235,7 +235,7 @@ export const pathologies: Pathologie[] = [
   {
     slug: 'paralysie-cerebrale',
     name: 'Paralysie cérébrale',
-    metaTitle: 'Appareillage paralysie cérébrale IMC - orthèses et fauteuils enfant',
+    metaTitle: 'Appareillage et paralysie cérébrale',
     metaDescription: 'Guide de l\'appareillage pour enfants et adultes IMC. Orthèses pédiatriques, fauteuil roulant enfant, positionnement et parcours.',
     heroLabel: 'PATHOLOGIE',
     heroTitle: 'Appareillage et paralysie cérébrale',
@@ -268,7 +268,7 @@ export const pathologies: Pathologie[] = [
   {
     slug: 'arthrose',
     name: 'Arthrose',
-    metaTitle: 'Orthèse arthrose genou et hanche - remboursement et choix',
+    metaTitle: 'Orthèse pour arthrose genou et hanche',
     metaDescription: 'Orthèses pour l\'arthrose du genou et de la hanche. Orthèse de décharge, semelles, remboursement LPPR et conseils de port.',
     heroLabel: 'PATHOLOGIE',
     heroTitle: 'Appareillage et arthrose',
@@ -319,7 +319,7 @@ export const pathologies: Pathologie[] = [
   {
     slug: 'lesion-medullaire',
     name: 'Lésion médullaire',
-    metaTitle: 'Appareillage lésion médullaire - fauteuil électrique et positionnement',
+    metaTitle: 'Appareillage lésion médullaire',
     metaDescription: 'Guide complet de l\'appareillage pour paraplégiques et tétraplégiques. Fauteuil électrique, positionnement, prévention escarres.',
     heroLabel: 'PATHOLOGIE',
     heroTitle: 'Appareillage et lésion médullaire',
