@@ -38,7 +38,7 @@ const piliers: Record<string, PilierData> = {
     metaTitle: "Prothèses de membres : guide complet",
     author: {
       name: "Jean-Marc Tissier",
-      title: "Expert appareillage orthopédique — 15 ans chez Össur France",
+      title: "Expert appareillage orthopédique",
       updatedAt: "Mis à jour le 8 juin 2026",
     },
     heroImage: "https://i.imgur.com/24V24KZ.png",

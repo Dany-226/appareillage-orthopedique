@@ -39,7 +39,7 @@ export const articles: Article[] = [
     updatedAt: '2026-06-01',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/yILXceN.jpeg',
     excerpt: "La classification K1 à K4 conditionne le choix de votre prothèse tibiale et son remboursement par la Sécurité sociale. Explications claires pour comprendre votre niveau et ce à quoi vous avez droit.",
@@ -144,7 +144,7 @@ export const articles: Article[] = [
     updatedAt: '2026-08-28',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/7szHUzS.jpeg',
     excerpt: "Le choix du genou est la décision la plus structurante d'une prothèse fémorale. Entre genou mécanique et genou à microprocesseur, les indications, les usages et le remboursement LPPR diffèrent nettement.",
@@ -258,7 +258,7 @@ export const articles: Article[] = [
     updatedAt: '2026-08-28',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/tV6pX7W.png',
     excerpt: "Une prothèse de main myoélectrique capte l'activité musculaire résiduelle pour commander des mouvements de préhension. Un choix technologique lourd, encadré par des conditions de prescription strictes et un vrai budget.",
@@ -383,7 +383,7 @@ export const articles: Article[] = [
     updatedAt: '2026-08-28',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/2IuOQNc.png',
     excerpt: "Avant le myoélectrique, il existe une solution éprouvée pour l'amputation de bras : le système corporel à câble et harnais. Robuste, sans batterie, avec un principe de fonctionnement radicalement différent d'une main myoélectrique.",
@@ -493,7 +493,7 @@ export const articles: Article[] = [
     updatedAt: '2026-08-31',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     excerpt: "Sur une prothèse fémorale, l'emboîture pèse plus lourd dans le confort quotidien que le genou ou le pied. La forme (ischion intégré, CAT-CAM, sub-ischiatique) et le mode de suspension (externe, accrochage distal, dépression) sont deux choix indépendants - avec un remboursement LPPR qui distingue nomenclature générique et dispositifs nominatifs.",
     blocks: [
@@ -610,7 +610,7 @@ export const articles: Article[] = [
     updatedAt: '2026-08-31',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/DlHO0yB.jpeg',
     excerpt: "Le manchon est la seule pièce de la prothèse en contact permanent avec la peau. Silicone, copolymère ou polyuréthane, accrochage distal ou dépression : le choix répond à des indications cliniques précises, pas à une préférence de confort.",
@@ -705,7 +705,7 @@ export const articles: Article[] = [
     updatedAt: '2026-08-31',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/qbZYkcM.png',
     excerpt: "La classe d'un pied à restitution d'énergie n'est pas une étiquette marketing - elle correspond à des seuils techniques mesurés en laboratoire et à des profils de déplacement définis par la classification internationale du fonctionnement, pas au prix du modèle.",
@@ -807,7 +807,7 @@ export const articles: Article[] = [
     updatedAt: '2026-08-31',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/LayXnuc.jpeg',
     excerpt: "On dit souvent que les genoux prothétiques bioniques ne sont pas remboursés en France. C'est faux pour les six marques qui se partagent le marché - ce qui varie réellement, c'est l'éligibilité fonctionnelle, pas l'accès au remboursement.",
@@ -944,7 +944,7 @@ export const articles: Article[] = [
     updatedAt: '2026-08-31',
     author: {
       name: 'Jean-Marc Tissier',
-      title: 'Expert appareillage — 15 ans chez Össur France',
+      title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/HFWYOjh.png',
     excerpt: "Ottobock qui mène lui-même la levée de fonds d'une start-up d'interface neuronale, un genou japonais qui pousse au lieu de freiner, une main indienne à 4 gestes conçue pour coûter six fois moins cher : tour complet de la nouvelle vague bionique, membre par membre et tendance par tendance.",

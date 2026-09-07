@@ -62,7 +62,7 @@ function Avatar({ name }: { name: string }) {
 function ArticleFormatHeader({ article }: { article: Article }) {
   const author = article.author ?? {
     name: "Jean-Marc Tissier",
-    title: "Expert appareillage — 15 ans chez Össur France",
+    title: "Expert appareillage",
   };
 
   const updatedLabel = new Date(article.updatedAt).toLocaleDateString("fr-FR", {
