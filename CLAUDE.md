@@ -72,7 +72,7 @@ type Pathologie = {
 
 **Piège connu** : les noms de types se ressemblent (`h2`/`faq`/`cta*` existent dans les 3) mais les champs diffèrent (`text` vs `content`, `cta` vs `cta_block` avec `title/subtitle/buttonText/buttonHref` vs `headline/sub/btnLabel/href`). Toujours vérifier le type exact du fichier concerné avant d'ajouter un bloc — ne pas copier un bloc d'un système vers un autre sans adapter les champs.
 
-Il existe aussi `src/lib/lppr-verified.ts` (24 entrées LPPR vérifiées, utilisées par l'outil de recherche du guide remboursement) et `src/lib/lppr.ts` (ancien fichier, **non vérifié, en attente d'audit séparé — ne pas l'utiliser comme source de vérité, ne pas le supprimer sans consigne explicite**).
+Il existe aussi `src/lib/lppr-verified.ts` (24 entrées LPPR vérifiées, utilisées par l'outil de recherche du guide remboursement). `src/lib/lppr.ts` (ancien fichier non vérifié, code LPPR fémorale halluciné) a été supprimé (`a0d4f88`) — plus aucune trace à auditer.
 
 ### Routing et résolution des slugs
 
@@ -158,7 +158,7 @@ Le dev server tourne en arrière-plan ; utiliser claude-in-chrome (navigate/scre
 2. Une vérification en direct contre une source officielle (ameli.fr, CNAMTS, fiche fabricant) via recherche web.
 3. Une donnée déjà vérifiée lors d'une session précédente et documentée dans le code (`lppr-verified.ts`).
 
-**Cas d'école — code fémorale fabriqué (`src/lib/lppr.ts`, non corrigé, laissé pour audit séparé)** : ce fichier contient `PI03SSD20`/`PI03SSD23` pour une prothèse fémorale. Le code réel vérifié contre le chapitre 7 est **`PI04SSC23`** (utilisé dans `lppr-verified.ts` et dans les articles prothèse fémorale). Le préfixe `PI03` n'a jamais été confirmé contre une source réelle — probablement halluciné lors d'une génération antérieure. Ce fichier reste en place uniquement parce qu'il n'est plus utilisé par aucune page (remplacé par `lppr-verified.ts` dans le guide remboursement) ; ne jamais le citer comme référence.
+**Cas d'école — code fémorale fabriqué (`src/lib/lppr.ts`, supprimé)** : ce fichier contenait `PI03SSD20`/`PI03SSD23` pour une prothèse fémorale. Le code réel vérifié contre le chapitre 7 est **`PI04SSC23`** (utilisé dans `lppr-verified.ts` et dans les articles prothèse fémorale). Le préfixe `PI03` n'a jamais été confirmé contre une source réelle — probablement halluciné lors d'une génération antérieure. Le fichier a été supprimé (`a0d4f88`) une fois confirmé qu'aucune page ne l'importait plus (remplacé par `lppr-verified.ts` dans le guide remboursement).
 
 **Cas d'école — statistique avec fausse source précise** : l'ancienne entrée `ortheses` dans `piliers.ts` citait `"3,2M de Français portent une orthèse... — source: SFPO 2025"`, une source qui n'a jamais été vérifiée et semble fabriquée pour donner une apparence de crédibilité. Remplacée par une statistique réelle et vérifiable : *89 % du volume d'appareillages conçus par les orthoprothésistes concerne des orthèses — Audit KPMG du système réglementaire du Grand Appareillage Orthopédique, commandé par l'UFOP, mars 2017*. Règle qui en découle : **une statistique sans source vérifiable ne doit jamais être publiée avec une fausse précision de source — soit la source est réelle et citée avec exactitude, soit la statistique est omise.**
 
@@ -199,7 +199,7 @@ Le dev server tourne en arrière-plan ; utiliser claude-in-chrome (navigate/scre
 
 | Incident | Cause | Correction |
 |---|---|---|
-| Code LPPR fémorale `PI03SSD20`/`PI03SSD23` | Code jamais vérifié contre le chapitre 7, probablement halluciné | Code réel `PI04SSC23` isolé dans `lppr-verified.ts` ; `lppr.ts` laissé en l'état, non utilisé, en attente d'audit |
+| Code LPPR fémorale `PI03SSD20`/`PI03SSD23` | Code jamais vérifié contre le chapitre 7, probablement halluciné | Code réel `PI04SSC23` isolé dans `lppr-verified.ts` ; `lppr.ts` supprimé après confirmation qu'il n'était plus utilisé (`a0d4f88`) |
 | Stat "3,2M — SFPO 2025" (ortheses) | Source précise fabriquée pour donner une apparence de crédibilité | Remplacée par la stat KPMG/UFOP réellement sourcée (89 %, mars 2017) |
 | Slugs `sep-sla` et `avc-hemiplegie` | Fusion de deux entités cliniques distinctes sous un seul slug | Slugs séparés (`sep`, `avc`) + redirects 301 permanents dans `next.config.mjs` |
 | Liens footer `/guide/lppr`, `/guide/renouvellement`, `/guide/choisir-centre`, `/guide/vivre-avec`, `/aides-techniques`, `/positionnement` | URLs supposées exister par convention de nommage, jamais vérifiées contre les routes réelles | Liens vers du contenu réel corrigés vers le bon chemin (`/guides/remboursement-lppr`, ancre `#renouvellement`) ; liens sans contenu correspondant retirés |
@@ -207,28 +207,25 @@ Le dev server tourne en arrière-plan ; utiliser claude-in-chrome (navigate/scre
 
 ---
 
-## CHANTIER EN COURS — ProstheticJourney (NON COMMITÉ)
+## ProstheticJourney — terminé et intégré
 
 Composant de scroll-reveal pour la page `/protheses`, présentant la construction anatomique d'une prothèse fémorale (emboîture → manchon/accroche → genou → pied) avec un panneau de texte par zone qui apparaît/disparaît selon la position de scroll.
 
-**Fichiers concernés (aucun commit à ce jour)** :
-- `src/components/prosthesis/ProstheticJourney.tsx` — le composant.
-- `src/app/protheses/apercu-parcours/page.tsx` — page de prévisualisation temporaire (à retirer avant toute intégration finale, ou à transformer en vraie route).
-- `public/videos/prothese-femorale-hero.mp4` — **orphelin**, plus référencé nulle part (la vidéo a été retirée à cause d'un watermark HeyGen non supprimable sans plan payant) — à supprimer au prochain nettoyage.
+**État réel (vérifié par git log + inspection du repo)** : chantier terminé, committé et livré. La section précédente de ce fichier le décrivait comme "non commité" — c'était obsolète, corrigé ici.
+
+- `src/components/prosthesis/ProstheticJourney.tsx` — le composant, intégré dans `src/app/[pilier]/page.tsx` (`a672a00`).
+- Page de prévisualisation `apercu-parcours` : supprimée, plus de trace dans le repo.
+- Les 3 articles liés (`prothese-femorale-emboiture`, `manchon-accroche`, `pied-prothetique`) ont été écrits (`ae80c24`, `cf4378b`) — le lien "genou" pointe vers l'article existant `femorale-choisir-son-genou`. 4/4 liens du parcours résolus.
+- Fix pointer-events appliqué (`8e883a6`) : le lien "Lire l'article" ne capte plus le clic d'une zone non affichée.
+- `public/videos/prothese-femorale-hero.mp4` — **toujours orphelin, non tracké par git** (confirmé par `git status` du 2026-09-07), plus référencé nulle part dans `src/`. Retiré du plan de vidéo en fond (watermark HeyGen non supprimable sans plan payant). À supprimer au prochain nettoyage de fichiers.
 
 **Décisions techniques prises, à ne pas redéfaire** :
 - Pas de vidéo en fond — remplacée par une image par zone (`next/image`, `fill`, `object-contain` — **pas** `object-cover`, qui zoomait excessivement sur la texture au lieu de montrer l'objet entier).
 - Logique d'opacité par zone : fonction explicite avec clamp manuel (`zoneOpacityFn`), **pas** des tableaux de points passés à `useTransform` — cette dernière approche avait un bug reproductible et confirmé deux fois : à `scrollYProgress` exactement égal à 1.0, la zone 1 revenait à opacité 1 et la zone 4 retombait à 0 (inversion complète). Ne pas revenir à l'approche par tableaux de points sans revalider numériquement ce cas limite précis.
 - `pointerEvents: none` sur les conteneurs de panneaux à opacité 0, réactivé seulement sur le contenu texte — sinon un panneau invisible peut intercepter les clics destinés à un panneau visible.
 
-**Images actuellement câblées** (Imgur, déjà vérifiées à l'affichage) :
+**Images câblées** (Imgur, déjà vérifiées à l'affichage) :
 - emboiture : `https://i.imgur.com/eNgsm2u.png`
 - manchon : `https://i.imgur.com/4bcuGg0.png`
 - genou : `https://i.imgur.com/cPqvCdB.png` (photo produit Ottobock Genium, marque/modèle visibles — risque de droit des marques, assumé explicitement par Daniel après mise en garde)
 - pied : `https://i.imgur.com/VmO2fBd.png` (photo produit Össur Pro-Flex Terra, même réserve assumée)
-
-**Ce qui reste à faire avant intégration réelle** :
-1. 3 pages liées n'existent pas encore (404 actuellement) : `/protheses/emboiture`, `/protheses/manchon-accroche`, `/protheses/pied-prothetique`. Le lien "genou" pointe déjà vers l'article existant `/protheses/femorale-choisir-son-genou` (pas de nouvel article nécessaire pour cette zone).
-2. Décision non tranchée : écrire ces 3 articles avant d'intégrer le composant sur la vraie page `/protheses`, OU intégrer d'abord et écrire le contenu après.
-3. Supprimer la page de prévisualisation `apercu-parcours` une fois l'intégration réelle décidée (elle ne doit pas rester en prod comme route publique séparée).
-4. Nettoyer le fichier vidéo orphelin.
