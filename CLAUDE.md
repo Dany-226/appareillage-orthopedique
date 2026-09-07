@@ -229,3 +229,198 @@ Composant de scroll-reveal pour la page `/protheses`, présentant la constructio
 - manchon : `https://i.imgur.com/4bcuGg0.png`
 - genou : `https://i.imgur.com/cPqvCdB.png` (photo produit Ottobock Genium, marque/modèle visibles — risque de droit des marques, assumé explicitement par Daniel après mise en garde)
 - pied : `https://i.imgur.com/VmO2fBd.png` (photo produit Össur Pro-Flex Terra, même réserve assumée)
+
+---
+
+## Learnings — Erreurs et corrections
+
+> *Note : cette section recoupe partiellement le tableau de la section "Historique des
+> incidents à ne pas reproduire" et les cas d'école de la section "Sourcing des données"
+> (notamment les incidents LPPR fémorale, sep-sla/avc-hemiplegie, et le lien footer
+> /guide/renouvellement). Conservée intégralement pour préserver le raisonnement complet
+> et les dates de chaque cas — dédoublonnage éventuel à trancher séparément, ne pas
+> supprimer sans validation explicite.*
+
+*Document de capitalisation des erreurs commises sur le projet appareillageorthopedique.fr*  
+*À consulter avant toute intervention technique majeure (déploiement, modification d'architecture, prompts Claude Code de refactoring).*
+
+---
+
+## Sessions concernées
+
+- **17 juin 2026 soir** : déploiement initial, configuration domaine, GSC, désaveu backlinks toxiques
+- **18 juin 2026 matin** : configuration Bing, audit chips homepage, correction slugs pathologies
+
+---
+Jamais de cadratins ni de IA Slop rédactionnel 
+
+## I. Erreurs de configuration technique
+
+### 1. Domaine canonique non vérifié dès le déploiement initial
+
+**Erreur commise** : Vercel avait configuré par défaut `www.appareillageorthopedique.fr` comme domaine primary, avec une redirection 308 depuis la version sans-www. Le sitemap, les canonicals Next.js, la propriété GSC où on a poussé le désaveu et la communication du domaine pointaient tous sur la version sans-www. Décalage découvert seulement après que Google ait commencé à indexer les pages en www.
+
+**Conséquence** : disavow uploadé sur la mauvaise propriété (potentiellement), incohérence systémique entre signaux SEO et version indexée.
+
+**Règle pour la suite** : à chaque déploiement initial sur Vercel, vérifier immédiatement quel domaine est en "Production primary" et quel domaine redirige. Aligner ce choix avec le sitemap, la variable `NEXT_PUBLIC_SITE_URL`, les canonicals et la propriété GSC AVANT de soumettre quoi que ce soit aux moteurs.
+
+---
+
+### 2. Disavow Tool refuse les propriétés "Domaine" en GSC
+
+**Erreur commise** : tentative d'upload du fichier disavow sur la propriété "Domaine" `appareillageorthopedique.fr`. Refus immédiat : "Les propriétés de domaine ne sont pas prises en charge".
+
+**Règle pour la suite** : le Disavow Tool de Google n'accepte QUE les propriétés "Préfixe d'URL" (`https://example.com/`), JAMAIS les propriétés "Domaine". Toujours créer les deux types de propriétés en parallèle dans GSC pour avoir accès à toutes les fonctionnalités.
+
+---
+
+### 3. Espace parasite dans disavow.txt - rejet syntaxique
+
+**Erreur commise** : ligne 64 du fichier disavow.txt contenait `domain:thehighranks eo.shop` (espace dans le nom de domaine). Google a rejeté tout le fichier avec une erreur ligne par ligne.
+
+**Règle pour la suite** : avant tout upload de fichier disavow, validation syntaxique systématique avec une regex simple type `^domain:[a-z0-9.-]+$`. Un seul caractère parasite dans un domaine bloque tout le fichier.
+
+---
+
+## II. Erreurs de diagnostic SEO
+
+### 4. Panique sur faux positif Bing - cache obsolète
+
+**Erreur commise** : Bing Webmaster Tools a signalé un noindex sur la homepage avec un message d'alerte rouge. Première réaction : suspicion d'un noindex dans le code Next.js. Vérification approfondie nécessaire alors que les indices étaient évidents.
+
+**Les vrais indices à voir immédiatement** :
+- Date de découverte affichée : 29 Jun 2021 (donc bien avant la possession du domaine)
+- Dernière analyse : 25 Dec 2025 (idem)
+- Google avait indexé 4 pages dans les 24h précédentes (impossible avec un noindex)
+- Le site venait d'être ajouté à Bing : aucun re-crawl récent possible
+
+**Règle pour la suite** : devant tout signal d'alerte SEO sur un site fraîchement déployé, vérifier d'abord les **dates des données affichées**. Si elles sont antérieures à la prise de possession du domaine, c'est presque toujours du cache moteur du précédent propriétaire. Vérifier l'incohérence avec d'autres sources (l'indexation Google récente confirme ou infirme).
+
+---
+
+### 5. Hypothèse de cohérence sémantique sans vérification du code
+
+**Erreur commise** : sur la liste des 10 chips de pathologies de la homepage, j'ai supposé que `imc` (terme médical reconnu, ancien) existait dans `lib/pathologies.ts` et que `paralysie-cerebrale` (terme contemporain) n'existait pas. C'était l'inverse.
+
+**Conséquence** : premier prompt Claude Code donné avec mauvaise instruction (retirer paralysie-cerebrale au lieu d'imc).
+
+**Règle pour la suite** : ne JAMAIS supposer l'existence d'une URL/entrée dans le code à partir de la cohérence sémantique apparente du nommage. Toujours :
+- soit vérifier en cliquant sur les liens en prod live,
+- soit demander à voir le contenu réel du fichier de données concerné,
+avant d'émettre toute recommandation de suppression ou modification.
+
+---
+
+### 6. Audit de cohérence sitemap ↔ liens internes manquant initialement
+
+**Erreur commise** : 8 chips de pathologies sur 10 pointaient vers des 404 silencieux dès le déploiement initial. Cinq vers des pages inexistantes (diabete, polyarthrite, spina-bifida, imc, et probablement d'autres). Deux pointaient vers des slugs incohérents avec lib/pathologies.ts (avc au lieu d'avc-hemiplegie, sep au lieu de sep-sla). Découvert seulement après que tout soit déployé et que le site soit soumis aux moteurs.
+
+**Règle pour la suite** : avant tout déploiement en production et a fortiori avant soumission du sitemap aux moteurs, faire un **audit de cohérence entre** :
+- les slugs déclarés dans les sources de données (`lib/pathologies.ts`, `lib/piliers.ts`...)
+- les URLs générées par le sitemap dynamique
+- les `href` de tous les liens internes (chips, navigation, footer, breadcrumbs, internal articles)
+- les redirections déclarées dans `next.config.mjs`
+
+Tester chaque catégorie de lien en cliquant manuellement au moins une fois en production.
+
+---
+
+### 6bis. Lien en dur dans un composant statique pointant vers une route inexistante
+
+**Erreur commise** : le footer (`Footer.tsx`) contenait depuis le commit de lancement (8a730bb, 16/06/2026) un lien `href="/guide/renouvellement"` vers une route qui n'a JAMAIS existé dans `src/app/` — ni au moment de la création du lien, ni jamais après. Contrairement au cas du point 6 (slug déclaré dans une source de données mais incohérent avec le lien généré), ici il n'y avait même pas de source de données à vérifier : c'était un texte en dur dans un composant de layout statique (footer, nav), donc invisible aux audits qui se concentrent sur la cohérence `lib/*.ts` ↔ liens générés dynamiquement.
+
+**Pourquoi l'audit initial (point 6) ne l'a pas capté** : les chips, breadcrumbs et liens d'articles sont générés depuis des sources de données (`pathologies.ts`, `piliers.ts`, `articles.ts`), donc un audit de cohérence data source ↔ href suffit à les couvrir. Le footer et la nav globale contiennent souvent des liens écrits à la main, sans passer par aucune source de données — ils échappent structurellement à ce type d'audit.
+
+**Détecté via** : rapport GSC "Introuvable (404)", ~2,5 mois après la mise en prod du lien, le temps que Googlebot le crawle. Corrigé entre-temps (commit d233afa, 29/08/2026) sans lien avec cette investigation GSC — bon signe que la discipline d'audit courante fonctionne, mais confirme que ce type de lien reste un angle mort spécifique.
+
+**Règle pour la suite** : lors de tout audit de cohérence liens internes (cf. cheat sheet section V), inclure explicitement un grep sur les composants de layout statiques (`Footer.tsx`, `Header.tsx`, `Navigation.tsx`, tout composant hors `lib/`) et vérifier que chaque `href` en dur correspond à une route réellement présente sous `src/app/` — pas seulement à une cohérence avec une source de données. Une vérification simple : lister tous les `href="..."` statiques du repo, puis confirmer pour chacun qu'un fichier `page.tsx` existe au chemin correspondant (ou qu'il s'agit d'une ancre `#` vers une section d'une page qui, elle, existe).
+
+---
+
+## III. Erreurs éditoriales
+
+### 7. Fusion de pathologies distinctes sous un seul slug
+
+**Erreur commise** : page `/pathologie/sep-sla` traitant la sclérose en plaques et la SLA sous un H1 unique, avec un contenu qui reconnaissait lui-même l'incohérence : *"La sclérose en plaques et la SLA évoluent de façon très différente, mais partagent un besoin commun..."*
+
+**Pourquoi c'est une faute** : SEP (110 000 patients, évolution sur 20-30 ans avec poussées-rémissions) et SLA (8 000 patients, dégénérescence rapide et fatale en 3-5 ans) sont cliniquement distinctes. L'appareillage suit deux trajectoires différentes (progressif vs anticipation rapide), les publics et leurs proches cherchent des choses différentes, les SERPs concurrentielles sont différentes.
+
+**Conséquence SEO** : signaux divisés, Google incapable de classer la page sur l'un ou l'autre terme.
+
+**Règle pour la suite** : un slug = une intention de recherche unique = une entité clinique cohérente. **Ne jamais regrouper deux pathologies distinctes sous prétexte de "dispositifs similaires" ou "tronc commun d'appareillage".** Si plusieurs pathologies partagent un sous-thème, créer une page transversale dédiée à ce sous-thème, et garder les pages pathologies séparées.
+
+Cas similaire à surveiller : `avc-hemiplegie` était trop spécifique (l'hémiplégie n'est qu'une séquelle parmi d'autres de l'AVC), corrigé en `avc` plus large.
+
+---
+
+### 8. Mock content non identifié comme problème principal
+
+**Erreur commise** : focus disproportionné sur la configuration technique (Vercel, GSC, Bing, désaveu, redirections) alors que les 6 pages carrefour pathologies, 4 des 5 hubs piliers, et la quasi-totalité des articles longue traîne sont du contenu mock générique sans expertise différenciante.
+
+**Le vrai enjeu** : avec un actif comme 15 ans chez Össur France, le SEO de ce site se gagnera sur la **profondeur clinique et opérationnelle** des contenus (anecdotes patients, données chiffrées, perspectives métiers, comparaisons techniques entre dispositifs, références aux praticiens), pas sur le SEO technique qui est devenu un commodity.
+
+**Règle pour la suite** : à chaque session, se poser explicitement la question *"est-ce qu'on travaille sur la configuration ou est-ce qu'on travaille sur la valeur éditoriale ?"*. Le ratio temps configuration / temps contenu devrait basculer vers le contenu maintenant que le socle technique est solide.
+
+---
+
+## IV. Erreurs de workflow Claude Code
+
+### 9. Annonce de modifications non commitées
+
+**Erreur commise** : Claude Code a affirmé avoir retiré 4 chips orphelines (*"Removed 4 orphan chips... 6 remain"*), mais les modifications n'avaient pas été commitées ni pushées. Le state local divergait de la prod sans qu'on le sache, jusqu'à ce que la vérification en prod live révèle que les 10 chips originelles étaient toujours là.
+
+**Règle pour la suite** : dans tout prompt Claude Code de modification de code, exiger explicitement la chaîne complète :
+1. Modification
+2. Build local pour vérifier l'absence d'erreur
+3. Commit avec message explicite
+4. Push sur la branche main
+5. Confirmation du SHA distant (commande `git ls-remote origin main` ou équivalent)
+
+Sans confirmation du SHA distant, considérer que la modification n'est pas en production.
+
+---
+
+### 10. Dépassement de scope par Claude Code
+
+**Erreur commise** : on a demandé à Claude Code de retirer 4 chips. Il a en plus renommé 2 slugs (`avc → avc-hemiplegie` et `sep → sep-sla`) dans la foulée sans qu'on l'ait demandé. Heureusement le changement allait dans le bon sens (alignement avec les slugs réels du data source), mais ça aurait pu casser des URLs déjà indexées.
+
+**Règle pour la suite** : prompts Claude Code doivent inclure systématiquement une clause type :  
+*"Limite-toi strictement aux modifications demandées. Si tu détectes en passant d'autres incohérences ou bugs hors scope, **signale-les-moi mais n'y touche pas**. Je déciderai si ces corrections font partie du commit ou pas."*
+
+C'est une discipline d'autonomie : Claude Code peut être pertinent dans ses observations, mais le scope du commit doit rester sous contrôle humain.
+
+---
+
+## V. Cheat sheet - Vérifications à faire systématiquement
+
+### Avant tout déploiement en production
+- [ ] Domaine primary Vercel aligné avec sitemap + canonical + propriété GSC choisie ?
+- [ ] Tous les liens internes (chips, nav, footer) pointent vers des URLs qui existent dans les data sources ?
+- [ ] Test manuel en navigation privée de chaque catégorie de page ?
+- [ ] Liens en dur dans les composants statiques (footer, nav) vérifiés un par un contre les routes réelles sous src/app/, pas seulement contre les sources de données ?
+
+### Avant toute soumission de sitemap à un moteur
+- [ ] Diff entre URLs du sitemap et liens internes du site - aucune divergence ?
+- [ ] Toutes les URLs du sitemap retournent un 200 OK (pas de 404 ni 308) ?
+- [ ] Validation syntaxique des fichiers (disavow, robots, sitemap) ?
+
+### Avant tout prompt Claude Code de refactoring
+- [ ] État réel du code vérifié (pas d'hypothèse sur du nommage sémantique) ?
+- [ ] URLs concernées testées manuellement en prod ?
+- [ ] Prompt inclut clause anti-dépassement de scope ?
+- [ ] Prompt exige confirmation du SHA distant après push ?
+
+### Devant tout signal d'alerte SEO
+- [ ] Vérifier les dates des données affichées par l'outil (cache du précédent propriétaire) ?
+- [ ] Recouper avec un autre moteur ou outil pour confirmer l'incohérence ?
+- [ ] Vérifier la version réelle du code en source live avant de modifier ?
+
+---
+
+## VI. Principe directeur
+
+**La discipline d'audit doit toujours précéder l'action de modification.** 
+
+Une grande partie des erreurs de cette session venaient de cycles "j'agis d'abord, je vérifie ensuite" qui auraient pu être évités par 30 secondes d'audit préalable (cliquer sur une URL, lire un fichier source, vérifier une date).
+
+Le SEO d'un site éditorial naissant est une discipline cumulative : chaque erreur technique a peu d'impact isolément, mais multipliée par dix urls, deux moteurs et plusieurs semaines avant correction, elle peut sérieusement entamer l'autorité du domaine. **Mieux vaut perdre 5 minutes à vérifier qu'une heure à diagnostiquer après coup.**
