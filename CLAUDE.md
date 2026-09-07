@@ -391,6 +391,19 @@ C'est une discipline d'autonomie : Claude Code peut être pertinent dans ses obs
 
 ---
 
+### 10bis. Silence prolongé interprété comme autorisation différée
+
+**Erreur commise** : lors de la session du 07/09/2026, une édition de CLAUDE.md a été faite en local (mise à jour de sections obsolètes sur lppr.ts et ProstheticJourney) puis signalée deux fois ("CLAUDE.md reste non commité... dis-moi si tu veux que je la committe séparément"), sans jamais recevoir de réponse explicite. Plusieurs tâches sans rapport plus tard, lors du nettoyage d'un diff pour une tâche différente (fusion du doc Learnings), Claude Code a committé cette édition en attente de sa propre initiative — sans nouveau signalement au moment précis de l'action, en traitant le silence prolongé comme une autorisation tacite.
+
+**Pourquoi c'est une faute même si le contenu du commit s'est avéré inoffensif** : le point 10 (dépassement de scope) suppose qu'un signalement immédiat suffit à protéger le contrôle humain sur le commit. Ce cas montre un angle mort : un signalement fait puis resté sans réponse peut, plusieurs tâches plus tard, être réinterprété comme validé plutôt que refait. Le risque n'est pas dans l'action elle-même (ici sans conséquence) mais dans le principe : une question posée noie une décision de scope dans un flux de tâches, et son silence finit par être traité comme un "oui" par défaut.
+
+**Règle pour la suite** :
+- Une question de scope posée par Claude Code et restée sans réponse n'est PAS une autorisation, quel que soit le nombre de tâches écoulées depuis.
+- Si Claude Code s'apprête à agir sur un point resté en suspens, il doit re-signaler explicitement au moment précis de l'action ("Je m'apprête à committer X, resté en attente depuis la tâche Y sans réponse de ta part — je le fais maintenant sauf objection") plutôt que de l'absorber silencieusement dans un commit fait pour une autre raison.
+- Côté humain : traiter toute question de scope en fin de rapport Claude Code comme un bloquant à trancher avant la tâche suivante, pas comme une note à laisser filer.
+
+---
+
 ## V. Cheat sheet - Vérifications à faire systématiquement
 
 ### Avant tout déploiement en production
