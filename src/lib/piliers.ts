@@ -256,6 +256,16 @@ const piliers: Record<string, PilierData> = {
         ],
       },
       {
+        // Lien temporaire vers le sous-silo guide-achat, en attendant la page
+        // carrefour dédiée (prévue après 3 articles publiés dans ce silo) —
+        // évite que /ortheses/guide-achat/attelle-poignet reste orpheline.
+        type: "cta",
+        headline: "Attelle de poignet : quel modèle choisir ?",
+        sub: "Entorse, tendinite ou canal carpien : notre guide comparatif pour choisir la bonne attelle selon votre douleur.",
+        btnLabel: "Lire le guide d'achat",
+        href: "/ortheses/guide-achat/attelle-poignet",
+      },
+      {
         type: "cta",
         headline: "Trouver un orthoprothésiste",
         sub: "Localisez un professionnel agréé spécialisé près de chez vous.",

@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllPilierSlugs } from '@/lib/piliers'
 import { articles } from '@/lib/articles'
 import { pathologies } from '@/lib/pathologies'
+import { guidesAchat } from '@/lib/guides-achat'
 
 const BASE_URL = 'https://appareillageorthopedique.fr'
 
@@ -57,11 +58,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  const guideAchatPages = guidesAchat.map(g => ({
+    url: `${BASE_URL}/ortheses/guide-achat/${g.slug}`,
+    lastModified: new Date(g.updatedAt),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
   return [
     homepage,
     ...staticPages,
     ...pilierPages,
     ...articlePages,
     ...pathologiePages,
+    ...guideAchatPages,
   ]
 }
