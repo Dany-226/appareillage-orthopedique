@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import type { ContentBlock } from "@/lib/piliers";
 import type { ArticleBlock } from "@/lib/articles";
 import type { PathologieBlock } from "@/lib/pathologies";
+import { renderInline } from "@/lib/renderInline";
 import StatCallout    from "./blocks/StatCallout";
 import InfoBox        from "./blocks/InfoBox";
 import ComparisonTable from "./blocks/ComparisonTable";
@@ -55,7 +56,7 @@ export default function ArticleBody({ blocks }: { blocks: AnyBlock[] }) {
                   className="mb-6 font-sans leading-[1.8] text-on-surface"
                   style={{ fontSize: "18px" }}
                 >
-                  {getText(block)}
+                  {renderInline(getText(block), `p-${i}`)}
                 </p>
               </Block>
             );
@@ -117,17 +118,17 @@ export default function ArticleBody({ blocks }: { blocks: AnyBlock[] }) {
             const b = block as Extract<ContentBlock, { type: "info" }>;
             return (
               <Block key={i}>
-                <InfoBox title={b.title} text={b.text} />
+                <InfoBox title={b.title} text={renderInline(b.text, `info-${i}`)} />
               </Block>
             );
           }
 
-          // ── Info box (new ArticleBlock format)
+          // ── Info box (new ArticleBlock / PathologieBlock format)
           case "info_box": {
             const b = block as Extract<ArticleBlock, { type: "info_box" }>;
             return (
               <Block key={i}>
-                <InfoBox title={b.title} text={b.content} />
+                <InfoBox title={b.title} text={renderInline(b.content, `infobox-${i}`)} />
               </Block>
             );
           }

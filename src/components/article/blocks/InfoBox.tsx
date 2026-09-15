@@ -1,4 +1,6 @@
-type Props = { title?: string; text: string };
+import type { ReactNode } from "react";
+
+type Props = { title?: string; text: ReactNode };
 
 export default function InfoBox({ title, text }: Props) {
   return (

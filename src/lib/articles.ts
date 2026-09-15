@@ -49,6 +49,11 @@ export const articles: Article[] = [
         content: "Quand on parle de prothèse tibiale, le terme \"niveau d'activité\" revient systématiquement dans les échanges avec l'orthoprothésiste et le médecin prescripteur. Cette classification K - de K1 à K4 - n'est pas qu'un détail administratif : elle détermine directement quels composants vous sont prescrits, et ce que la Sécurité sociale accepte de rembourser.",
       },
       {
+        type: 'info_box',
+        title: 'Amputation tibiale',
+        content: "Cet article s'inscrit dans le parcours d'appareillage après une [amputation tibiale](/pathologie/amputation), qui préserve l'articulation du genou et simplifie l'apprentissage de la marche.",
+      },
+      {
         type: 'h2',
         id: 'classification-k',
         content: 'La classification K - ce que chaque niveau signifie concrètement',
@@ -130,7 +135,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['pied-prothetique', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
+    relatedArticles: ['prothese-femorale-choisir-son-genou', 'pied-prothetique', 'genou-bionique-microprocesseur'],
   },
   {
     slug: 'prothese-femorale-choisir-son-genou',
@@ -152,6 +157,11 @@ export const articles: Article[] = [
       {
         type: 'paragraph',
         content: "Pour une amputation fémorale (au-dessus du genou), le composant qui détermine le plus la qualité de marche - et souvent le budget - n'est pas le pied prothétique mais le genou. Contrairement à une prothèse tibiale où l'articulation du genou reste intacte, une prothèse fémorale doit recréer mécaniquement deux phases de marche : la phase d'appui (jambe légèrement pliée, portant le poids) et la phase d'oscillation (jambe qui se balance vers l'avant). C'est la façon dont chaque type de genou gère ces deux phases qui distingue le mécanique du microprocesseur.",
+      },
+      {
+        type: 'info_box',
+        title: 'Amputation fémorale',
+        content: "Le choix du genou prothétique est une étape clé du parcours d'appareillage après une [amputation fémorale](/pathologie/amputation), où le genou doit être recréé mécaniquement plutôt que simplement compensé.",
       },
       {
         type: 'h2',
@@ -244,7 +254,7 @@ export const articles: Article[] = [
         buttonHref: '/protheses/genou-bionique-microprocesseur',
       },
     ],
-    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
+    relatedArticles: ['genou-bionique-microprocesseur', 'prothese-femorale-emboiture', 'prothese-tibiale-niveaux-activite'],
   },
   {
     slug: 'prothese-main-myoelectrique',
@@ -369,7 +379,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-bras-systeme-corporel', 'futur-prothese-bionique-innovation'],
+    relatedArticles: ['prothese-bras-systeme-corporel', 'futur-prothese-bionique-innovation'],
   },
   {
     slug: 'prothese-bras-systeme-corporel',
@@ -475,11 +485,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: [
-      'prothese-tibiale-niveaux-activite',
-      'prothese-femorale-choisir-son-genou',
-      'prothese-main-myoelectrique',
-    ],
+    relatedArticles: ['prothese-main-myoelectrique', 'futur-prothese-bionique-innovation'],
   },
   {
     slug: 'prothese-femorale-emboiture',
@@ -596,7 +602,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique', 'prothese-bras-systeme-corporel'],
+    relatedArticles: ['manchon-accroche', 'prothese-femorale-choisir-son-genou'],
   },
   {
     slug: 'manchon-accroche',
@@ -618,6 +624,11 @@ export const articles: Article[] = [
       {
         type: 'paragraph',
         content: "Le manchon est la seule pièce de toute la prothèse en contact permanent avec la peau du moignon. C'est lui qui détermine si le port est tolérable sur une journée complète, et c'est souvent le premier composant à changer quand un appareillage cause des irritations - pas l'emboîture elle-même.",
+      },
+      {
+        type: 'info_box',
+        title: 'Amputation tibiale ou fémorale',
+        content: "Le manchon concerne toute prothèse de membre inférieur, quel que soit le niveau d'[amputation](/pathologie/amputation) - tibiale ou fémorale.",
       },
       {
         type: 'h2',
@@ -691,7 +702,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-femorale-emboiture', 'prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'prothese-main-myoelectrique'],
+    relatedArticles: ['prothese-femorale-emboiture', 'prothese-tibiale-niveaux-activite'],
   },
   {
     slug: 'pied-prothetique',
@@ -713,6 +724,11 @@ export const articles: Article[] = [
       {
         type: 'paragraph',
         content: "Un pied à restitution d'énergie emmagasine l'énergie de l'appui au sol et la restitue à la propulsion. La classe I, II ou III qui lui est attribuée n'est pas une gamme commerciale : c'est un résultat de laboratoire, mesuré, qui conditionne le remboursement.",
+      },
+      {
+        type: 'info_box',
+        title: 'Amputation tibiale ou fémorale',
+        content: "Le pied prothétique équipe aussi bien une prothèse tibiale qu'une prothèse fémorale, les deux niveaux d'[amputation](/pathologie/amputation) les plus fréquents en France.",
       },
       {
         type: 'h2',
@@ -793,7 +809,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-femorale-emboiture', 'manchon-accroche', 'prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou', 'futur-prothese-bionique-innovation'],
+    relatedArticles: ['prothese-tibiale-niveaux-activite', 'prothese-femorale-choisir-son-genou'],
   },
   {
     slug: 'genou-bionique-microprocesseur',
@@ -815,6 +831,11 @@ export const articles: Article[] = [
       {
         type: 'paragraph',
         content: "Un genou prothétique \"bionique\" ne se limite pas à contenir un microprocesseur - une large partie de la nomenclature LPPR le fait déjà, sans jamais faire les gros titres. Ce qui distingue vraiment les six marques que le grand public connaît, c'est ce que ce microprocesseur contrôle réellement : la sécurité de la phase d'appui, le moment où le genou doit porter tout le poids du corps sans se dérober. C'est cette fonction-là, pas le mot \"microprocesseur\" en soi, qui définit un genou bionique au sens plein.",
+      },
+      {
+        type: 'info_box',
+        title: 'Amputation fémorale',
+        content: "Les genoux à microprocesseur concernent spécifiquement l'[amputation fémorale](/pathologie/amputation), où le genou prothétique remplace une articulation absente.",
       },
       {
         type: 'h2',
@@ -930,7 +951,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-femorale-choisir-son-genou', 'prothese-femorale-emboiture', 'manchon-accroche', 'pied-prothetique', 'futur-prothese-bionique-innovation'],
+    relatedArticles: ['prothese-femorale-choisir-son-genou', 'futur-prothese-bionique-innovation'],
   },
   {
     slug: 'futur-prothese-bionique-innovation',
@@ -1065,7 +1086,7 @@ export const articles: Article[] = [
         buttonHref: '/trouver-praticien',
       },
     ],
-    relatedArticles: ['prothese-main-myoelectrique', 'genou-bionique-microprocesseur', 'prothese-bras-systeme-corporel', 'pied-prothetique'],
+    relatedArticles: ['genou-bionique-microprocesseur', 'prothese-main-myoelectrique'],
   },
 ]
 

@@ -1,57 +1,7 @@
-import type { ReactNode } from "react"
-import Link from "next/link"
 import type { GuideAchatBlock } from "@/lib/guides-achat"
+import { renderInline } from "@/lib/renderInline"
 import FaqAccordion from "@/components/article/blocks/FaqAccordion"
 import ProductComparisonTable from "./ProductComparisonTable"
-
-// Parseur inline minimal : **gras**, *italique*, [texte](lien) — les seules
-// constructions présentes dans le markdown source de ce silo. Pas de lien
-// deviné : un lien interne relatif (/...) devient un <Link>, tout le reste
-// reste du texte simple (ex. "(Lien vers l'article orthèse de pouce, à
-// publier.)" n'a pas de href fourni, donc pas de balise <a>).
-function renderInline(text: string, keyPrefix: string): ReactNode[] {
-  const pattern = /(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]+\))/g
-  return text
-    .split(pattern)
-    .filter(part => part.length > 0)
-    .map((part, i) => {
-      const key = `${keyPrefix}-${i}`
-
-      if (part.startsWith("**") && part.endsWith("**")) {
-        return <strong key={key}>{part.slice(2, -2)}</strong>
-      }
-
-      const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
-      if (linkMatch) {
-        const [, label, href] = linkMatch
-        return href.startsWith("/") ? (
-          <Link
-            key={key}
-            href={href}
-            className="text-brand-teal underline underline-offset-2 hover:text-brand-amber transition-colors"
-          >
-            {label}
-          </Link>
-        ) : (
-          <a
-            key={key}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-brand-teal underline underline-offset-2 hover:text-brand-amber transition-colors"
-          >
-            {label}
-          </a>
-        )
-      }
-
-      if (part.startsWith("*") && part.endsWith("*")) {
-        return <em key={key}>{part.slice(1, -1)}</em>
-      }
-
-      return part
-    })
-}
 
 export default function GuideAchatBody({ blocks }: { blocks: GuideAchatBlock[] }) {
   return (
