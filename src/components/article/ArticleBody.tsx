@@ -200,6 +200,7 @@ export default function ArticleBody({ blocks }: { blocks: AnyBlock[] }) {
                   sub={b.sub}
                   btnLabel={b.btnLabel}
                   href={b.href}
+                  variant={b.variant}
                 />
               </motion.div>
             );
