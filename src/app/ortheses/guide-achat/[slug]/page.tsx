@@ -12,6 +12,8 @@ import GuideAchatBody from '@/components/guide-achat/GuideAchatBody'
 import { getGuideAchat, getAllGuideAchatSlugs } from '@/lib/guides-achat'
 import type { TocHeading } from '@/lib/piliers'
 
+const SITE_URL = 'https://appareillageorthopedique.fr'
+
 export function generateStaticParams() {
   return getAllGuideAchatSlugs().map(slug => ({ slug }))
 }
@@ -61,6 +63,21 @@ export default function GuideAchatPage({
       }
     : null
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: 'Orthèses', item: `${SITE_URL}/ortheses` },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: guide.title,
+        item: `${SITE_URL}/ortheses/guide-achat/${guide.slug}`,
+      },
+    ],
+  }
+
   const updatedLabel = new Date(guide.updatedAt).toLocaleDateString('fr-FR', {
     day: 'numeric',
     month: 'long',
@@ -75,6 +92,10 @@ export default function GuideAchatPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Navbar />
       <ScrollProgressBar />
       <main className="pt-24 pb-32 bg-surface">

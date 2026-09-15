@@ -256,14 +256,21 @@ const piliers: Record<string, PilierData> = {
         ],
       },
       {
-        // Lien temporaire vers le sous-silo guide-achat, en attendant la page
+        // Liens temporaires vers le sous-silo guide-achat, en attendant la page
         // carrefour dédiée (prévue après 3 articles publiés dans ce silo) —
-        // évite que /ortheses/guide-achat/attelle-poignet reste orpheline.
+        // évite que ces pages restent orphelines.
         type: "cta",
         headline: "Attelle de poignet : quel modèle choisir ?",
         sub: "Entorse, tendinite ou canal carpien : notre guide comparatif pour choisir la bonne attelle selon votre douleur.",
         btnLabel: "Lire le guide d'achat",
         href: "/ortheses/guide-achat/attelle-poignet",
+      },
+      {
+        type: "cta",
+        headline: "Orthèse de pouce : quelle attelle choisir ?",
+        sub: "Rhizarthrose, De Quervain, entorse du pouce : notre guide comparatif pour choisir la bonne attelle selon la cause de la douleur.",
+        btnLabel: "Lire le guide d'achat",
+        href: "/ortheses/guide-achat/orthese-pouce",
       },
       {
         type: "cta",

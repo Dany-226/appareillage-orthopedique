@@ -147,7 +147,7 @@ export const guidesAchat: GuideAchatArticle[] = [
       },
       {
         type: 'paragraph',
-        text: "**Attelle de pouce ou de doigt : pas ici.** Si la douleur se concentre à la base du pouce (rhizarthrose, De Quervain) ou sur un doigt qui accroche en pliant (doigt à ressaut), ce n'est pas une attelle de poignet qu'il faut, mais une orthèse dédiée au pouce ou au doigt : l'anatomie et le geste à bloquer ne sont pas les mêmes. *(Lien vers l'article orthèse de pouce, à publier.)*",
+        text: "**Attelle de pouce ou de doigt : pas ici.** Si la douleur se concentre à la base du pouce (rhizarthrose, De Quervain) ou sur un doigt qui accroche en pliant (doigt à ressaut), ce n'est pas une attelle de poignet qu'il faut, mais une orthèse dédiée au pouce ou au doigt : l'anatomie et le geste à bloquer ne sont pas les mêmes. [Voir notre guide sur l'orthèse de pouce.](/ortheses/guide-achat/orthese-pouce)",
       },
       {
         type: 'h2',
@@ -201,6 +201,161 @@ export const guidesAchat: GuideAchatArticle[] = [
       {
         type: 'paragraph',
         text: "Identifiez d'abord ce qui fait mal, entorse, tendinite ou canal carpien, avant de regarder les avis Amazon : c'est ce diagnostic maison qui détermine s'il faut une attelle souple ou rigide, et si le port doit être surtout diurne ou nocturne. Une attelle en vente libre traite l'inconfort, elle ne remplace pas un avis médical si la douleur persiste au-delà de quelques semaines.",
+      },
+    ],
+  },
+  {
+    slug: 'orthese-pouce',
+    title: "Orthèse de pouce : quelle attelle choisir selon la douleur",
+    metaTitle: "Orthèse de pouce : quelle attelle choisir ?",
+    metaDescription:
+      "Rhizarthrose, De Quervain, entorse du pouce : reconnaître la cause de la douleur à la base du pouce et choisir la bonne attelle.",
+    readingTime: '6 min',
+    publishedAt: '2026-09-15',
+    updatedAt: '2026-09-15',
+    author: {
+      name: 'Jean-Marc Tissier',
+      title: 'Expert appareillage',
+    },
+    blocks: [
+      {
+        type: 'paragraph',
+        text: "La base du pouce n'est pas un poignet miniature. C'est l'articulation la plus sollicitée de la main, elle intervient dans presque toute prise entre le pouce et les autres doigts, et trois causes de douleur très différentes s'y logent : l'usure de l'articulation, l'inflammation d'un tendon, et l'entorse. Une attelle de poignet ne les couvre pas, même quand la fiche produit promet un maintien \"poignet et pouce\" : le geste à bloquer n'est pas le même.",
+      },
+      {
+        type: 'h2',
+        id: 'trois-causes',
+        text: 'Trois douleurs qui se ressemblent, trois causes différentes',
+      },
+      {
+        type: 'paragraph',
+        text: "**La rhizarthrose**, l'arthrose de la base du pouce, touche surtout après la cinquantaine, plus souvent les femmes. La douleur s'installe progressivement en pinçant ou en tournant une clé, un couvercle, un robinet. Elle s'accompagne parfois d'une déformation visible de l'articulation avec le temps. Le besoin est une immobilisation partielle de l'articulation trapézo-métacarpienne, portée sur la durée, pas seulement pendant une crise.",
+      },
+      {
+        type: 'paragraph',
+        text: "**La ténosynovite de De Quervain**, inflammation des tendons qui longent le bord du poignet jusqu'au pouce, se déclenche typiquement par un geste répété : porter un bébé, un usage intensif du téléphone ou du clavier, certains gestes de sport comme le golf. La douleur suit précisément ce trajet tendineux, entre le poignet et la base du pouce, et s'aggrave en écartant le pouce. Le besoin ici est de bloquer spécifiquement ce mouvement d'écartement, pas toute l'articulation.",
+      },
+      {
+        type: 'paragraph',
+        text: "**L'entorse du pouce**, souvent en ski (le pouce reste coincé dans la dragonne du bâton lors d'une chute, d'où son surnom de \"pouce du skieur\") ou lors d'un sport de ballon, touche le ligament collatéral ulnaire. C'est une lésion aiguë, traumatique, qui demande une immobilisation ferme le temps de la cicatrisation, contrairement aux deux causes précédentes qui sont chroniques ou inflammatoires.",
+      },
+      {
+        type: 'paragraph',
+        text: "Un doigt qui accroche en pliant, avec un blocage puis un déclic pour le redresser, n'est pas une douleur du pouce mais un doigt à ressaut : une pathologie de tendon différente, qui touche n'importe quel doigt, traitée avec une attelle de doigt et non de pouce. [Voir l'article dédié aux attelles de poignet pour la distinction avec le canal carpien, dont les symptômes se confondent parfois avec la rhizarthrose.](/ortheses/guide-achat/attelle-poignet)",
+      },
+      {
+        type: 'h2',
+        id: 'spica-ou-immobilisation',
+        text: 'Spica réversible ou immobilisation dédiée : ce que ça change',
+      },
+      {
+        type: 'paragraph',
+        text: "La plupart des attelles vendues en ligne sont des \"spica\" du pouce : elles enveloppent le poignet et remontent sur le pouce, réversibles main droite ou gauche. C'est le bon choix pour une rhizarthrose légère à modérée ou une prévention pendant un geste répétitif, parce qu'elles laissent une mobilité résiduelle suffisante pour continuer à se servir de la main au quotidien. Pour une entorse récente ou une rhizarthrose avancée, une attelle avec armature plus rigide, qui bloque franchement l'articulation trapézo-métacarpienne, devient nécessaire : le compromis mobilité contre immobilisation penche alors du côté de l'immobilisation.",
+      },
+      {
+        type: 'h2',
+        id: 'comparatif',
+        text: 'Comparatif : quatre attelles et leurs usages réels',
+      },
+      {
+        type: 'product_table',
+        headers: ['Attelle', 'Cause ciblée', 'Rigidité', 'Point fort'],
+        caption: "Prix, notes et disponibilité à vérifier sur la fiche Amazon au moment de la publication.",
+        rows: [
+          {
+            asin: 'B0FSKLZZMV',
+            cells: [
+              'FREETOO attelle pouce CMC',
+              'Rhizarthrose, arthrose de la base du pouce',
+              'Rigide, immobilisation dédiée',
+              "Conçue spécifiquement pour l'articulation trapézo-métacarpienne, pas un spica généraliste",
+            ],
+          },
+          {
+            asin: 'B074326GZB',
+            cells: [
+              'Bracoo TP33',
+              'Arthrite, De Quervain, entorse légère',
+              'Semi-rigide, réversible droite/gauche',
+              "Généraliste, bon premier achat quand la cause exacte n'est pas encore identifiée",
+            ],
+          },
+          {
+            asin: 'B09L4WDB92',
+            cells: [
+              'Scurnhau De Quervain',
+              'Ténosynovite de De Quervain',
+              'Semi-rigide, couvre poignet et pouce',
+              'Cible précisément le trajet tendineux entre poignet et pouce',
+            ],
+          },
+          {
+            asin: 'B074G1JZ29',
+            cells: [
+              'Push Sports pouce',
+              'Entorse du pouce, ligament (pouce du skieur)',
+              'Rigide, stabilisateur MCP-1',
+              'Marque orthopédique reconnue en pharmacie, pensée pour la reprise du sport',
+            ],
+          },
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: "**Attelle de doigt : pas ici.** Un doigt qui bloque en pliant relève d'une attelle de doigt à ressaut, pas d'une orthèse de pouce : anatomie et mécanisme différents. *(Lien vers un futur contenu dédié si le volume le justifie.)*",
+      },
+      {
+        type: 'h2',
+        id: 'quand-consulter',
+        text: 'Quand une attelle en vente libre ne suffit plus',
+      },
+      {
+        type: 'paragraph',
+        text: "Pour une rhizarthrose qui déforme progressivement l'articulation ou limite fortement la prise en pince, l'attelle en vente libre soulage mais ne remplace pas un avis médical : une orthèse thermoformée sur mesure, prise en charge par la LPPR, peut s'avérer plus adaptée et plus durable qu'une succession d'attelles génériques. Pour une entorse du pouce, l'absence d'amélioration après une à deux semaines, ou une instabilité persistante de l'articulation, doit faire consulter plutôt que prolonger le port d'une attelle en vente libre : un ligament rompu ne cicatrise pas avec une simple immobilisation prolongée. Notre [guide sur le remboursement des orthèses](/guides/remboursement-lppr) détaille les conditions de prescription et de prise en charge.",
+      },
+      {
+        type: 'h2',
+        id: 'faq',
+        text: 'Foire aux questions',
+      },
+      {
+        type: 'faq',
+        items: [
+          {
+            question: 'Comment savoir si c\'est une rhizarthrose ou une tendinite de De Quervain ?',
+            answer:
+              "La rhizarthrose touche l'articulation elle-même, la douleur se déclenche en pinçant ou en tournant un objet, et progresse sur des mois ou des années. La tendinite de De Quervain suit le trajet d'un tendon le long du poignet jusqu'au pouce, elle s'aggrave surtout en écartant le pouce, et apparaît souvent plus rapidement après un geste répété identifiable. En cas de doute, une consultation permet de trancher, les deux ne se traitent pas de la même façon.",
+          },
+          {
+            question: 'Peut-on continuer à travailler ou à faire du sport avec une attelle de pouce ?',
+            answer:
+              "Pour une rhizarthrose légère ou une tendinite, oui, une attelle spica réversible laisse assez de mobilité pour la plupart des gestes du quotidien. Pour une entorse récente, mieux vaut suivre les recommandations de reprise progressive, l'attelle rigide sert justement à protéger l'articulation pendant cette phase.",
+          },
+          {
+            question: 'Combien de temps porter une attelle de pouce ?',
+            answer:
+              "Pour une rhizarthrose, le port est souvent recommandé pendant les activités qui déclenchent la douleur, pas nécessairement en continu. Pour une entorse ou une poussée inflammatoire de De Quervain, un port plus soutenu sur quelques semaines est généralement conseillé, à ajuster selon l'évolution.",
+          },
+          {
+            question: 'Une attelle suffit-elle pour une rhizarthrose avancée ?',
+            answer:
+              "Dans les formes légères à modérées, oui, associée à des adaptations du geste au quotidien. Dans les formes avancées, avec déformation marquée ou perte de force en pince, l'attelle seule ne suffit généralement plus et une orthèse sur mesure ou un avis chirurgical peuvent être discutés.",
+          },
+          {
+            question: "Quelle différence entre une attelle de pouce et une attelle de poignet avec ouverture pour le pouce ?",
+            answer:
+              "Une attelle de poignet avec ouverture laisse le pouce libre et bloque le poignet, elle cible le canal carpien ou une tendinite du poignet. Une attelle de pouce bloque spécifiquement l'articulation à la base du pouce et laisse le poignet plus libre. Les deux se confondent souvent dans les fiches produit marketing, pas dans l'anatomie.",
+          },
+        ],
+      },
+      {
+        type: 'h2',
+        id: 'retenir',
+        text: "Ce qu'il faut retenir avant d'acheter",
+      },
+      {
+        type: 'paragraph',
+        text: "Repérez d'abord si la douleur vient de l'articulation elle-même (rhizarthrose), d'un tendon (De Quervain) ou d'un traumatisme (entorse) : c'est ce diagnostic maison qui oriente vers un spica généraliste ou une immobilisation plus ciblée. Une attelle de pouce en vente libre soulage l'inconfort et accompagne les gestes du quotidien, elle ne remplace pas un avis médical face à une déformation qui progresse ou une instabilité qui persiste.",
       },
     ],
   },
