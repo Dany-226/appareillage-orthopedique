@@ -88,7 +88,7 @@ export default function PilierPage({
           />
 
           {/* Two-column layout */}
-          <div className="grid gap-12 pb-24 lg:grid-cols-[1fr_340px] lg:items-start">
+          <div className="grid gap-12 pb-24 lg:grid-cols-[1fr_340px] lg:items-stretch">
             {/* ── LEFT — article (65%) */}
             <article>
               <ArticleHeader

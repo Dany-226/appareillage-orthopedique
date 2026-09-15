@@ -109,7 +109,7 @@ export default function GuideAchatPage({
             ]}
           />
 
-          <div className="mt-8 grid gap-12 pb-8 lg:grid-cols-[1fr_320px] lg:items-start">
+          <div className="mt-8 grid gap-12 pb-8 lg:grid-cols-[1fr_320px] lg:items-stretch">
             <article>
               <header className="mb-10">
                 <div className="flex items-center gap-3 mb-5">

@@ -159,13 +159,11 @@ export default function PathologiePage({ params }: { params: { slug: string } })
 
         {/* ── Article content + sidebar ─────────────────────────────────── */}
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8 lg:px-10 py-16">
-          <div className="grid gap-12 lg:grid-cols-[1fr_300px] lg:items-start">
+          <div className="grid gap-12 lg:grid-cols-[1fr_300px] lg:items-stretch">
             <div>
               <ArticleBody blocks={pathologie.blocks} />
             </div>
-            <div className="hidden lg:block">
-              <Sidebar headings={headings} extraCards={extraCards} />
-            </div>
+            <Sidebar headings={headings} extraCards={extraCards} />
           </div>
         </div>
 

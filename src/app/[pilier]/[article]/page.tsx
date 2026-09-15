@@ -85,7 +85,7 @@ export default function ArticlePage({
             ]}
           />
 
-          <div className="mt-8 grid gap-12 pb-8 lg:grid-cols-[1fr_320px] lg:items-start">
+          <div className="mt-8 grid gap-12 pb-8 lg:grid-cols-[1fr_320px] lg:items-stretch">
             <article>
               <ArticleHeader article={article} />
               <ArticleBody blocks={article.blocks} />
