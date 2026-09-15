@@ -93,11 +93,11 @@ export const pathologies: Pathologie[] = [
         items: [
           {
             question: "A quel moment peut-on commencer l'appareillage après une amputation ?",
-            answer: "L'appareillage provisoire peut démarrer dès que la cicatrice est suffisamment consolidée - généralement 4 à 8 semaines après l'amputation. Le timing est évalué par le chirurgien et le médecin MPR. Ne pas attendre trop longtemps est important : plus l'appareillage démarre tôt, meilleur est le pronostic fonctionnel.",
+            answer: "L'appareillage provisoire peut démarrer dès que la cicatrice est suffisamment consolidée - généralement 4 à 8 semaines après l'amputation. Le timing est évalué par le chirurgien et le médecin MPR. Ne pas attendre trop longtemps est important : plus l'appareillage démarre tôt, meilleur est le pronostic fonctionnel.",
           },
           {
             question: "Peut-on faire du sport après une amputation ?",
-            answer: "Oui - et bien au-delà de ce que l'on imagine souvent. Les prothèses sportives (lames de course carbone, prothèses de natation) permettent une pratique à haut niveau. La condition : être évalué K4 et trouver un orthoprothésiste formé à l'appareillage sportif.",
+            answer: "Oui - et bien au-delà de ce que l'on imagine souvent. Les prothèses sportives (lames de course carbone, prothèses de natation) permettent une pratique à haut niveau. La condition : être évalué K4 et trouver un orthoprothésiste formé à l'appareillage sportif.",
           },
           {
             question: "Le choix de l'orthoprothésiste est-il libre ?",
@@ -137,7 +137,7 @@ export const pathologies: Pathologie[] = [
     blocks: [
       {
         type: 'paragraph',
-        content: "Un AVC peut entraîner des séquelles très variées - hémiplégie, troubles sensitifs, difficultés de communication ou de déglutition. La récupération fonctionnelle dépend de nombreux facteurs, mais l'appareillage joue un rôle central dès les premières semaines : maintenir les bonnes positions, compenser les déficits moteurs, et accompagner la rééducation.",
+        content: "Un AVC peut entraîner des séquelles très variées - hémiplégie, troubles sensitifs, difficultés de communication ou de déglutition. La récupération fonctionnelle dépend de nombreux facteurs, mais l'appareillage joue un rôle central dès les premières semaines : maintenir les bonnes positions, compenser les déficits moteurs, et accompagner la rééducation.",
       },
       {
         type: 'h2',
@@ -146,7 +146,7 @@ export const pathologies: Pathologie[] = [
       },
       {
         type: 'paragraph',
-        content: 'L\'orthèse de cheville AFO (Ankle Foot Orthosis) est le dispositif le plus prescrit après un AVC avec atteinte du membre inférieur. Elle compense le "pied tombant" - l\'incapacité à relever le pied en marchant - et prévient les chutes. Il en existe plusieurs types : rigide, articulée, semi-rigide, en carbone - le choix dépend du degré de spasticité et des objectifs de marche.',
+        content: 'L\'orthèse de cheville AFO (Ankle Foot Orthosis) est le dispositif le plus prescrit après un AVC avec atteinte du membre inférieur. Elle compense le "pied tombant" - l\'incapacité à relever le pied en marchant - et prévient les chutes. Il en existe plusieurs types : rigide, articulée, semi-rigide, en carbone - le choix dépend du degré de spasticité et des objectifs de marche.',
       },
       {
         type: 'info_box',

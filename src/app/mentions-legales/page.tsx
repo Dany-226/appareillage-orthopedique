@@ -8,7 +8,7 @@ import InfoBox from '@/components/article/blocks/InfoBox'
 export const metadata: Metadata = {
   title: 'Mentions légales',
   description:
-    "Mentions légales du site appareillageorthopedique.fr : éditeur, hébergement, propriété intellectuelle, données personnelles et droit applicable.",
+    "Mentions légales du site appareillageorthopedique.fr : éditeur, hébergement, propriété intellectuelle, données personnelles et droit applicable.",
   alternates: {
     canonical: '/mentions-legales',
   },
@@ -22,25 +22,25 @@ const sections = [
     body: (
       <>
         <p className="font-sans text-on-surface leading-[1.8]" style={{ fontSize: '17px' }}>
-          Le site appareillageorthopedique.fr est édité par :
+          Le site appareillageorthopedique.fr est édité par :
         </p>
         <p className="font-sans text-on-surface leading-[1.9] mt-4" style={{ fontSize: '17px' }}>
           DIGICORPEX<br />
           SASU (Société par Actions Simplifiée Unipersonnelle) au capital de 500,00 €<br />
-          Siège social : 226 rue Camille Godard, 33000 Bordeaux<br />
-          SIREN : 940 521 719<br />
-          SIRET : 940 521 719 00010<br />
+          Siège social : 226 rue Camille Godard, 33000 Bordeaux<br />
+          SIREN : 940 521 719<br />
+          SIRET : 940 521 719 00010<br />
           RCS Bordeaux<br />
-          N° TVA intracommunautaire : FR69940521719
+          N° TVA intracommunautaire : FR69940521719
         </p>
         <p className="font-sans text-on-surface leading-[1.8] mt-4" style={{ fontSize: '17px' }}>
-          Email de contact :{' '}
+          Email de contact :{' '}
           <a href="mailto:danielrollin@digicorpex.com" className="text-brand-teal underline underline-offset-2">
             danielrollin@digicorpex.com
           </a>
         </p>
         <p className="font-sans text-on-surface leading-[1.8] mt-4" style={{ fontSize: '17px' }}>
-          Directeur de la publication : le représentant légal de la société DIGICORPEX.
+          Directeur de la publication : le représentant légal de la société DIGICORPEX.
         </p>
       </>
     ),
@@ -50,12 +50,12 @@ const sections = [
     body: (
       <>
         <p className="font-sans text-on-surface leading-[1.8]" style={{ fontSize: '17px' }}>
-          Le site est hébergé par :
+          Le site est hébergé par :
         </p>
         <p className="font-sans text-on-surface leading-[1.9] mt-4" style={{ fontSize: '17px' }}>
           Vercel Inc.<br />
           340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis<br />
-          Site web :{' '}
+          Site web :{' '}
           <a
             href="https://vercel.com"
             target="_blank"
@@ -65,7 +65,7 @@ const sections = [
             https://vercel.com
           </a>
           <br />
-          Contact :{' '}
+          Contact :{' '}
           <a href="mailto:privacy@vercel.com" className="text-brand-teal underline underline-offset-2">
             privacy@vercel.com
           </a>
@@ -202,7 +202,7 @@ export default function MentionsLegalesPage() {
                 className="font-mono uppercase tracking-widest text-on-surface-variant mt-16 pt-8 border-t border-outline-variant"
                 style={{ fontSize: '10px' }}
               >
-                Dernière mise à jour : 30 août 2026
+                Dernière mise à jour : 30 août 2026
               </p>
             </Reveal>
           </div>

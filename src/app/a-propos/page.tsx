@@ -146,14 +146,14 @@ export default function AProposPage() {
                       la consultation.
                     </p>
                     <p className="font-sans text-on-surface leading-[1.8]" style={{ fontSize: '18px' }}>
-                      Cette expérience terrain est irremplaçable : je connais les
+                      Cette expérience terrain est irremplaçable : je connais les
                       produits en profondeur, les nuances cliniques qui conditionnent
                       un bon appareillage, les réalités du remboursement LPPR, et
                       surtout les questions que se posent les patients - souvent sans
                       trouver de réponses claires.
                     </p>
                     <p className="font-sans text-on-surface leading-[1.8]" style={{ fontSize: '18px' }}>
-                      Ce site est né de ce constat : l&rsquo;information de qualité
+                      Ce site est né de ce constat : l&rsquo;information de qualité
                       sur l&rsquo;appareillage orthopédique est rare, fragmentée, et
                       souvent rédigée pour des professionnels de santé plutôt que
                       pour les patients eux-mêmes.
@@ -330,7 +330,7 @@ export default function AProposPage() {
                 {
                   Icon: BookOpen,
                   title: 'Sources institutionnelles',
-                  body: 'Toutes les informations médicales et réglementaires sont adossées à des sources primaires : HAS, SOFMER, nomenclature LPPR officielle, Ameli.fr. Les sources sont citées en bas de chaque article.',
+                  body: 'Toutes les informations médicales et réglementaires sont adossées à des sources primaires : HAS, SOFMER, nomenclature LPPR officielle, Ameli.fr. Les sources sont citées en bas de chaque article.',
                 },
                 {
                   Icon: Sparkles,
@@ -385,7 +385,7 @@ export default function AProposPage() {
                 className="font-sans text-on-surface leading-[1.8] mb-8"
                 style={{ fontSize: '17px' }}
               >
-                Ce site est financé par deux sources : la publicité Google Adsense et
+                Ce site est financé par deux sources : la publicité Google Adsense et
                 des liens d&rsquo;affiliation vers des revendeurs de dispositifs
                 médicaux. Ces liens sont systématiquement signalés.
               </p>
@@ -429,7 +429,7 @@ export default function AProposPage() {
                 className="font-mono uppercase tracking-widest mt-8"
                 style={{ fontSize: '10px', color: 'rgba(255,255,255,0.40)' }}
               >
-                Dernière mise à jour de cette page : juin 2026
+                Dernière mise à jour de cette page : juin 2026
               </p>
             </Reveal>
           </div>

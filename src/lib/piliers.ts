@@ -34,8 +34,8 @@ const piliers: Record<string, PilierData> = {
     slug: "protheses",
     category: "Prothèses",
     readingTime: 12,
-    h1: "Prothèses de membres : guide complet pour les patients et leurs proches",
-    metaTitle: "Prothèses de membres : guide complet",
+    h1: "Prothèses de membres : guide complet pour les patients et leurs proches",
+    metaTitle: "Prothèses de membres : guide complet",
     author: {
       name: "Jean-Marc Tissier",
       title: "Expert appareillage orthopédique",
@@ -54,7 +54,7 @@ const piliers: Record<string, PilierData> = {
       },
       {
         type: "paragraph",
-        text: "On distingue plusieurs grandes familles de prothèses selon le niveau d'amputation et l'objectif fonctionnel visé. Le choix dépend de nombreux facteurs : âge, niveau d'activité, étiologie de l'amputation, état du moignon et objectifs de réadaptation définis avec l'équipe médicale pluridisciplinaire.",
+        text: "On distingue plusieurs grandes familles de prothèses selon le niveau d'amputation et l'objectif fonctionnel visé. Le choix dépend de nombreux facteurs : âge, niveau d'activité, étiologie de l'amputation, état du moignon et objectifs de réadaptation définis avec l'équipe médicale pluridisciplinaire.",
       },
       {
         type: "h3",
@@ -85,7 +85,7 @@ const piliers: Record<string, PilierData> = {
       },
       {
         type: "paragraph",
-        text: "En France, les prothèses de membres sont inscrites à la Liste des Produits et Prestations Remboursables (LPPR). Chaque dispositif porte un code alphanumérique propre à la nomenclature (par exemple PI06SSA63 pour un composant de base, VI4ZE25 pour une variante optionnelle comme un genou à microprocesseur) : le tarif final résulte de l'addition du composant de base et des adjonctions ou variantes retenues. La prise en charge est de 100 % du tarif de base pour les assurés en ALD, et de 60 % pour les autres.",
+        text: "En France, les prothèses de membres sont inscrites à la Liste des Produits et Prestations Remboursables (LPPR). Chaque dispositif porte un code alphanumérique propre à la nomenclature (par exemple PI06SSA63 pour un composant de base, VI4ZE25 pour une variante optionnelle comme un genou à microprocesseur) : le tarif final résulte de l'addition du composant de base et des adjonctions ou variantes retenues. La prise en charge est de 100 % du tarif de base pour les assurés en ALD, et de 60 % pour les autres.",
       },
       {
         type: "info",
@@ -115,7 +115,7 @@ const piliers: Record<string, PilierData> = {
       },
       {
         type: "paragraph",
-        text: "Le choix d'une prothèse est une décision pluridisciplinaire : patient, médecin prescripteur (MPR ou chirurgien) et orthoprothésiste. Plusieurs critères guident le choix : le niveau fonctionnel K (K0 à K4), l'activité professionnelle et sportive, le profil morphologique et les préférences esthétiques.",
+        text: "Le choix d'une prothèse est une décision pluridisciplinaire : patient, médecin prescripteur (MPR ou chirurgien) et orthoprothésiste. Plusieurs critères guident le choix : le niveau fonctionnel K (K0 à K4), l'activité professionnelle et sportive, le profil morphologique et les préférences esthétiques.",
       },
       {
         type: "h3",
@@ -169,8 +169,8 @@ const piliers: Record<string, PilierData> = {
     slug: "ortheses",
     category: "Orthèses",
     readingTime: 12,
-    h1: "Orthèses : comprendre les 3 grandes familles et bien choisir",
-    metaTitle: "Orthèses : les 3 grandes familles",
+    h1: "Orthèses : comprendre les 3 grandes familles et bien choisir",
+    metaTitle: "Orthèses : les 3 grandes familles",
     author: {
       name: "Claire Beaumont",
       title: "Kinésithérapeute spécialisée en rééducation orthopédique — 12 ans d'expérience",
@@ -218,7 +218,7 @@ const piliers: Record<string, PilierData> = {
       },
       {
         type: "paragraph",
-        text: "Pour une première prescription de grand appareillage orthopédique (orthèse sur mesure), la réglementation réserve ce droit à des spécialités médicales précises : médecine physique et de réadaptation (MPR), orthopédie, rhumatologie, neurochirurgie, neurologie, endocrinologie, chirurgie plastique et reconstructrice, chirurgie vasculaire. Le médecin MPR reste le prescripteur le plus fréquent, notamment pour les orthèses de positionnement destinées aux patients polyhandicapés.",
+        text: "Pour une première prescription de grand appareillage orthopédique (orthèse sur mesure), la réglementation réserve ce droit à des spécialités médicales précises : médecine physique et de réadaptation (MPR), orthopédie, rhumatologie, neurochirurgie, neurologie, endocrinologie, chirurgie plastique et reconstructrice, chirurgie vasculaire. Le médecin MPR reste le prescripteur le plus fréquent, notamment pour les orthèses de positionnement destinées aux patients polyhandicapés.",
       },
       {
         type: "paragraph",
@@ -236,7 +236,7 @@ const piliers: Record<string, PilierData> = {
       {
         type: "info",
         title: "L'entente préalable, un passage obligé pour le sur-mesure",
-        text: "Contrairement à une orthèse de série achetée en pharmacie, la prise en charge d'une orthèse sur mesure du chapitre 7 est soumise à une demande d'entente préalable : l'orthoprothésiste transmet un devis à la caisse d'Assurance Maladie, qui dispose d'un délai de réponse (l'absence de réponse dans le délai réglementaire valant accord).",
+        text: "Contrairement à une orthèse de série achetée en pharmacie, la prise en charge d'une orthèse sur mesure du chapitre 7 est soumise à une demande d'entente préalable : l'orthoprothésiste transmet un devis à la caisse d'Assurance Maladie, qui dispose d'un délai de réponse (l'absence de réponse dans le délai réglementaire valant accord).",
       },
       {
         type: "h2",
@@ -245,7 +245,7 @@ const piliers: Record<string, PilierData> = {
       },
       {
         type: "paragraph",
-        text: "Le marché français de l'orthèse s'appuie sur un nombre restreint d'acteurs industriels de référence, chacun avec ses domaines de spécialisation : Ottobock (pionnier mondial de l'appareillage), Össur (technologies orthopédiques et bioniques avancées), Thuasne (acteur historique français, fort sur l'orthopédie de série - ceintures, genouillères), DJO Global - marques DonJoy et Aircast (référence des orthèses fonctionnelles et sportives en officine), Bauerfeind (fabricant allemand haut de gamme, orthèses articulaires et bas de compression), auxquels s'ajoutent des acteurs comme Zimmer Biomet, Stryker ou Breg selon les zones anatomiques. C'est votre orthoprothésiste qui oriente le choix du fabricant le plus adapté à votre situation clinique précise, pas une préférence de marque affichée en ligne.",
+        text: "Le marché français de l'orthèse s'appuie sur un nombre restreint d'acteurs industriels de référence, chacun avec ses domaines de spécialisation : Ottobock (pionnier mondial de l'appareillage), Össur (technologies orthopédiques et bioniques avancées), Thuasne (acteur historique français, fort sur l'orthopédie de série - ceintures, genouillères), DJO Global - marques DonJoy et Aircast (référence des orthèses fonctionnelles et sportives en officine), Bauerfeind (fabricant allemand haut de gamme, orthèses articulaires et bas de compression), auxquels s'ajoutent des acteurs comme Zimmer Biomet, Stryker ou Breg selon les zones anatomiques. C'est votre orthoprothésiste qui oriente le choix du fabricant le plus adapté à votre situation clinique précise, pas une préférence de marque affichée en ligne.",
       },
       {
         type: "faq",
@@ -277,8 +277,8 @@ const piliers: Record<string, PilierData> = {
     slug: "fauteuils",
     category: "Fauteuils roulants",
     readingTime: 14,
-    h1: "Fauteuil roulant : guide complet pour les patients et leurs proches",
-    metaTitle: "Fauteuil roulant : guide complet",
+    h1: "Fauteuil roulant : guide complet pour les patients et leurs proches",
+    metaTitle: "Fauteuil roulant : guide complet",
     author: {
       name: "Sophie Arnaud",
       title: "Ergothérapeute — Centre de rééducation de Lyon",
@@ -288,7 +288,7 @@ const piliers: Record<string, PilierData> = {
     content: [
       {
         type: "paragraph",
-        text: "Depuis le 1er décembre 2025, le terme réglementaire a changé : on ne parle plus de « fauteuil roulant » au sens de l'ancienne nomenclature, mais de VPH — véhicule pour personne en situation de handicap. Ce changement accompagne une refonte complète de la nomenclature, des catégories, des règles de prescription et de la prise en charge par l'Assurance Maladie.",
+        text: "Depuis le 1er décembre 2025, le terme réglementaire a changé : on ne parle plus de « fauteuil roulant » au sens de l'ancienne nomenclature, mais de VPH — véhicule pour personne en situation de handicap. Ce changement accompagne une refonte complète de la nomenclature, des catégories, des règles de prescription et de la prise en charge par l'Assurance Maladie.",
       },
       {
         type: "h2",
@@ -297,7 +297,7 @@ const piliers: Record<string, PilierData> = {
       },
       {
         type: "paragraph",
-        text: "Un VPH est défini réglementairement comme un dispositif médical équipé de roues, conçu pour assurer la mobilité et le soutien du corps d'une personne ne pouvant pas ou peu marcher. Cette définition couvre un champ plus large que le seul fauteuil roulant classique : elle inclut aussi les poussettes adaptées, les bases roulantes, les cycles à roues multiples et les scooters modulaires.",
+        text: "Un VPH est défini réglementairement comme un dispositif médical équipé de roues, conçu pour assurer la mobilité et le soutien du corps d'une personne ne pouvant pas ou peu marcher. Cette définition couvre un champ plus large que le seul fauteuil roulant classique : elle inclut aussi les poussettes adaptées, les bases roulantes, les cycles à roues multiples et les scooters modulaires.",
       },
       {
         type: "info",
@@ -333,15 +333,15 @@ const piliers: Record<string, PilierData> = {
       {
         type: "h2",
         id: "manuel-ou-electrique",
-        text: "Manuel ou électrique : ce que dit vraiment la réglementation",
+        text: "Manuel ou électrique : ce que dit vraiment la réglementation",
       },
       {
         type: "paragraph",
-        text: "L'idée reçue « manuel = handicap léger, électrique = handicap lourd » ne correspond pas à la logique clinique retenue par la nomenclature. Un fauteuil électrique (FRE) n'est pas indiqué du simple fait d'une difficulté à marcher : la prise en charge est assurée pour les personnes dans l'impossibilité de propulser elles-mêmes un fauteuil manuel — en raison de leur déficience ou de leur environnement — et qui ont par ailleurs les capacités cognitives, physiques et visuelles nécessaires pour le maîtriser en sécurité. Deux conditions cumulatives, pas une gradation automatique de sévérité.",
+        text: "L'idée reçue « manuel = handicap léger, électrique = handicap lourd » ne correspond pas à la logique clinique retenue par la nomenclature. Un fauteuil électrique (FRE) n'est pas indiqué du simple fait d'une difficulté à marcher : la prise en charge est assurée pour les personnes dans l'impossibilité de propulser elles-mêmes un fauteuil manuel — en raison de leur déficience ou de leur environnement — et qui ont par ailleurs les capacités cognitives, physiques et visuelles nécessaires pour le maîtriser en sécurité. Deux conditions cumulatives, pas une gradation automatique de sévérité.",
       },
       {
         type: "paragraph",
-        text: "À l'inverse, un fauteuil manuel actif (FRMA) n'est pas un choix de confort : il répond à un besoin fonctionnel précis d'autonomie de déplacement en intérieur et extérieur, pour un utilisateur expérimenté, avec un cahier des charges technique exigeant (châssis rigide non pliant, poids maximal 10 kg).",
+        text: "À l'inverse, un fauteuil manuel actif (FRMA) n'est pas un choix de confort : il répond à un besoin fonctionnel précis d'autonomie de déplacement en intérieur et extérieur, pour un utilisateur expérimenté, avec un cahier des charges technique exigeant (châssis rigide non pliant, poids maximal 10 kg).",
       },
       {
         type: "h2",
@@ -350,12 +350,12 @@ const piliers: Record<string, PilierData> = {
       },
       {
         type: "paragraph",
-        text: "Le parcours suit toujours la même architecture en trois temps : évaluation des besoins, préconisation, puis essai suivi d'une prescription définitive. Qui réalise l'évaluation dépend de la catégorie visée — un médecin ou ergothérapeute pour les catégories simples (FMP, FMPR, FRM), une équipe pluridisciplinaire complète pour les catégories les plus techniques (FRMS, FRMV, FRE, FREP, FREV, POU_MRE, SCO, CYC).",
+        text: "Le parcours suit toujours la même architecture en trois temps : évaluation des besoins, préconisation, puis essai suivi d'une prescription définitive. Qui réalise l'évaluation dépend de la catégorie visée — un médecin ou ergothérapeute pour les catégories simples (FMP, FMPR, FRM), une équipe pluridisciplinaire complète pour les catégories les plus techniques (FRMS, FRMV, FRE, FREP, FREV, POU_MRE, SCO, CYC).",
       },
       {
         type: "info",
         title: "L'essai est obligatoire",
-        text: "Pour la quasi-totalité des catégories, un essai pratique dans les conditions réelles d'utilisation est requis avant toute prescription définitive : 7 jours à compter de la livraison, réductible à la demande du patient mais jamais en dessous de 48 heures. Aucune facturation ne peut intervenir avant la fin de cette période.",
+        text: "Pour la quasi-totalité des catégories, un essai pratique dans les conditions réelles d'utilisation est requis avant toute prescription définitive : 7 jours à compter de la livraison, réductible à la demande du patient mais jamais en dessous de 48 heures. Aucune facturation ne peut intervenir avant la fin de cette période.",
       },
       {
         type: "h2",
@@ -398,7 +398,7 @@ const piliers: Record<string, PilierData> = {
           },
           {
             q: "Peut-on essayer plusieurs modèles avant de choisir ?",
-            a: "Oui, c'est une obligation réglementaire pour la quasi-totalité des catégories : le distributeur doit présenter au moins 4 modèles au catalogue et permettre l'essai d'au moins 2 modèles conformes à la prescription.",
+            a: "Oui, c'est une obligation réglementaire pour la quasi-totalité des catégories : le distributeur doit présenter au moins 4 modèles au catalogue et permettre l'essai d'au moins 2 modèles conformes à la prescription.",
           },
           {
             q: "Que se passe-t-il si le fauteuil livré ne convient pas après l'essai ?",

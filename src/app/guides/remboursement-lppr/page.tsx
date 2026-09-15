@@ -15,7 +15,7 @@ import LPPRSearchTool from '@/components/article/blocks/LPPRSearchTool'
 export const metadata: Metadata = {
   title: 'Remboursement LPPR - guide 2026',
   description:
-    'Comprendre le remboursement LPPR de votre appareillage : codes, tarifs, conditions, entente préalable. Recherchez un dispositif par mot-clé (genou, pied, main...) parmi les références vérifiées du site.',
+    'Comprendre le remboursement LPPR de votre appareillage : codes, tarifs, conditions, entente préalable. Recherchez un dispositif par mot-clé (genou, pied, main...) parmi les références vérifiées du site.',
   alternates: {
     canonical: '/guides/remboursement-lppr',
   },
@@ -117,14 +117,14 @@ export default function RemboursementLPPRPage() {
                              bg-white/10 px-3 py-1 font-mono uppercase tracking-widest text-white/80"
                   style={{ fontSize: '10px' }}
                 >
-                  Mis à jour : mars 2026
+                  Mis à jour : mars 2026
                 </span>
                 <span
                   className="inline-flex items-center rounded-full border border-white/20
                              bg-white/10 px-3 py-1 font-mono uppercase tracking-widest text-white/80"
                   style={{ fontSize: '10px' }}
                 >
-                  Source : LPPR officielle
+                  Source : LPPR officielle
                 </span>
               </div>
             </Reveal>

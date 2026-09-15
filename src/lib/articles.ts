@@ -31,7 +31,7 @@ export const articles: Article[] = [
     slug: 'prothese-tibiale-niveaux-activite',
     pilier: 'protheses',
     title: "Prothèse tibiale et niveaux d'activité K1 K2 K3 K4 - comment choisir",
-    metaTitle: "Prothèse tibiale : niveaux K1 à K4",
+    metaTitle: "Prothèse tibiale : niveaux K1 à K4",
     metaDescription: "Comprendre les niveaux d'activité K1 à K4 pour choisir la bonne prothèse tibiale. Guide complet avec remboursement LPPR.",
     badge: 'Prothèses',
     readingTime: '8 min',
@@ -46,7 +46,7 @@ export const articles: Article[] = [
     blocks: [
       {
         type: 'paragraph',
-        content: "Quand on parle de prothèse tibiale, le terme \"niveau d'activité\" revient systématiquement dans les échanges avec l'orthoprothésiste et le médecin prescripteur. Cette classification K - de K1 à K4 - n'est pas qu'un détail administratif : elle détermine directement quels composants vous sont prescrits, et ce que la Sécurité sociale accepte de rembourser.",
+        content: "Quand on parle de prothèse tibiale, le terme \"niveau d'activité\" revient systématiquement dans les échanges avec l'orthoprothésiste et le médecin prescripteur. Cette classification K - de K1 à K4 - n'est pas qu'un détail administratif : elle détermine directement quels composants vous sont prescrits, et ce que la Sécurité sociale accepte de rembourser.",
       },
       {
         type: 'h2',
@@ -135,7 +135,7 @@ export const articles: Article[] = [
   {
     slug: 'prothese-femorale-choisir-son-genou',
     pilier: 'protheses',
-    title: 'Prothèse fémorale : genou mécanique ou microprocesseur, comment choisir',
+    title: 'Prothèse fémorale : genou mécanique ou microprocesseur, comment choisir',
     metaTitle: 'Genou mécanique ou microprocesseur',
     metaDescription: "Comprendre la différence entre genou mécanique et genou à microprocesseur pour une prothèse fémorale. Indications, remboursement LPPR, critères de choix.",
     badge: 'Prothèses',
@@ -151,7 +151,7 @@ export const articles: Article[] = [
     blocks: [
       {
         type: 'paragraph',
-        content: "Pour une amputation fémorale (au-dessus du genou), le composant qui détermine le plus la qualité de marche - et souvent le budget - n'est pas le pied prothétique mais le genou. Contrairement à une prothèse tibiale où l'articulation du genou reste intacte, une prothèse fémorale doit recréer mécaniquement deux phases de marche : la phase d'appui (jambe légèrement pliée, portant le poids) et la phase d'oscillation (jambe qui se balance vers l'avant). C'est la façon dont chaque type de genou gère ces deux phases qui distingue le mécanique du microprocesseur.",
+        content: "Pour une amputation fémorale (au-dessus du genou), le composant qui détermine le plus la qualité de marche - et souvent le budget - n'est pas le pied prothétique mais le genou. Contrairement à une prothèse tibiale où l'articulation du genou reste intacte, une prothèse fémorale doit recréer mécaniquement deux phases de marche : la phase d'appui (jambe légèrement pliée, portant le poids) et la phase d'oscillation (jambe qui se balance vers l'avant). C'est la façon dont chaque type de genou gère ces deux phases qui distingue le mécanique du microprocesseur.",
       },
       {
         type: 'h2',
@@ -192,7 +192,7 @@ export const articles: Article[] = [
       {
         type: 'info_box',
         title: 'Un genou à microprocesseur n\'est pas automatique',
-        content: "L'accès à un genou à microprocesseur en prise en charge LPPR répond à des critères précis - profil fonctionnel du patient, capacité de rééducation, projet de vie. Ce n'est pas un choix par défaut même pour un amputé fémoral actif : l'orthoprothésiste et le médecin prescripteur évaluent l'indication au cas par cas.",
+        content: "L'accès à un genou à microprocesseur en prise en charge LPPR répond à des critères précis - profil fonctionnel du patient, capacité de rééducation, projet de vie. Ce n'est pas un choix par défaut même pour un amputé fémoral actif : l'orthoprothésiste et le médecin prescripteur évaluent l'indication au cas par cas.",
       },
       {
         type: 'h2',
@@ -201,7 +201,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Au-delà du niveau d'activité, plusieurs facteurs pèsent dans la décision : la capacité du patient à s'engager dans une rééducation qui exploite pleinement les capacités d'un genou avancé, la variabilité des terrains fréquentés au quotidien (un genou microprocesseur apporte le plus de valeur sur terrain irrégulier ou en descente), le risque de chute (particulièrement déterminant chez les patients âgés ou avec comorbidités), et le projet de vie global - activité professionnelle, pratique sportive, contraintes de déplacement.",
+        content: "Au-delà du niveau d'activité, plusieurs facteurs pèsent dans la décision : la capacité du patient à s'engager dans une rééducation qui exploite pleinement les capacités d'un genou avancé, la variabilité des terrains fréquentés au quotidien (un genou microprocesseur apporte le plus de valeur sur terrain irrégulier ou en descente), le risque de chute (particulièrement déterminant chez les patients âgés ou avec comorbidités), et le projet de vie global - activité professionnelle, pratique sportive, contraintes de déplacement.",
       },
       {
         type: 'h2',
@@ -210,7 +210,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Pour un genou à microprocesseur, une période d'essai encadrée par un centre prothétique agréé est la norme avant la prescription définitive - le patient teste un ou plusieurs modèles sous la direction d'un professionnel, qui peut ajuster les réglages via un logiciel dédié. Si la prothèse semble instable en cours d'essai, mieux vaut interrompre l'utilisation et le signaler immédiatement plutôt que de poursuivre : la sécurité prime toujours, en particulier avec un genou électronique.",
+        content: "Pour un genou à microprocesseur, une période d'essai encadrée par un centre prothétique agréé est la norme avant la prescription définitive - le patient teste un ou plusieurs modèles sous la direction d'un professionnel, qui peut ajuster les réglages via un logiciel dédié. Si la prothèse semble instable en cours d'essai, mieux vaut interrompre l'utilisation et le signaler immédiatement plutôt que de poursuivre : la sécurité prime toujours, en particulier avec un genou électronique.",
       },
       {
         type: 'faq',
@@ -239,7 +239,7 @@ export const articles: Article[] = [
       {
         type: 'cta_block',
         title: 'Curieux des genoux "bioniques" à microprocesseur ?',
-        subtitle: "C-Leg, Kenevo, Rheo Knee XC, SYNSYS : ce que couvre vraiment la LPPR, marque par marque.",
+        subtitle: "C-Leg, Kenevo, Rheo Knee XC, SYNSYS : ce que couvre vraiment la LPPR, marque par marque.",
         buttonText: 'Découvrir',
         buttonHref: '/protheses/genou-bionique-microprocesseur',
       },
@@ -249,7 +249,7 @@ export const articles: Article[] = [
   {
     slug: 'prothese-main-myoelectrique',
     pilier: 'protheses',
-    title: 'Prothèse de main myoélectrique : Michelangelo, i-Limb Ultra, comment ça marche',
+    title: 'Prothèse de main myoélectrique : Michelangelo, i-Limb Ultra, comment ça marche',
     metaTitle: 'Prothèse de main myoélectrique',
     metaDescription: "Comprendre le fonctionnement d'une prothèse de main myoélectrique, les principales technologies disponibles (Michelangelo, i-Limb Ultra) et les conditions de remboursement.",
     badge: 'Prothèses',
@@ -265,7 +265,7 @@ export const articles: Article[] = [
     blocks: [
       {
         type: 'paragraph',
-        content: "Une prothèse myoélectrique fonctionne à partir de la récupération d'un courant électrique généré par la contraction musculaire du membre résiduel, capté par des électrodes placées sur la peau. Ce signal commande l'ouverture, la fermeture et différents modes de préhension de la main prothétique. C'est une technologie fondamentalement différente d'une prothèse mécanique à câble : aucun mouvement corporel de compensation n'est nécessaire, la commande vient directement de l'intention musculaire.",
+        content: "Une prothèse myoélectrique fonctionne à partir de la récupération d'un courant électrique généré par la contraction musculaire du membre résiduel, capté par des électrodes placées sur la peau. Ce signal commande l'ouverture, la fermeture et différents modes de préhension de la main prothétique. C'est une technologie fondamentalement différente d'une prothèse mécanique à câble : aucun mouvement corporel de compensation n'est nécessaire, la commande vient directement de l'intention musculaire.",
       },
       {
         type: 'h2',
@@ -274,7 +274,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Deux fabricants dominent le marché français avec des références inscrites à la LPPR : Ottobock avec la gamme Michelangelo, et Össur (via sa filiale Touch Bionics) avec i-Limb Ultra et i-Digits. D'autres technologies comparables existent à l'international, notamment TASKA Prosthetics, distribuée en France par des orthoprothésistes spécialisés - mais sans inscription à la LPPR à ce jour : aucun tarif de responsabilité n'est fixé et la prise en charge par l'Assurance Maladie n'est pas automatique, quelle que soit la prescription. Une demande d'inscription semble avoir été engagée par le passé sans aboutir pour l'instant. Ce statut peut évoluer - à vérifier directement avec votre orthoprothésiste si cette option vous intéresse.",
+        content: "Deux fabricants dominent le marché français avec des références inscrites à la LPPR : Ottobock avec la gamme Michelangelo, et Össur (via sa filiale Touch Bionics) avec i-Limb Ultra et i-Digits. D'autres technologies comparables existent à l'international, notamment TASKA Prosthetics, distribuée en France par des orthoprothésistes spécialisés - mais sans inscription à la LPPR à ce jour : aucun tarif de responsabilité n'est fixé et la prise en charge par l'Assurance Maladie n'est pas automatique, quelle que soit la prescription. Une demande d'inscription semble avoir été engagée par le passé sans aboutir pour l'instant. Ce statut peut évoluer - à vérifier directement avec votre orthoprothésiste si cette option vous intéresse.",
       },
       {
         type: 'h3',
@@ -290,7 +290,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "i-Limb Ultra est une main myoélectrique complète, livrée avec un ensemble de gants de recouvrement esthétique (i-Limb Skin Natural et i-Limb Skin Active) permettant de personnaliser l'apparence. i-Digits est un dispositif distinct, pensé pour les amputations partielles de main : de 1 à 5 doigts prothétiques indépendants, avec batteries logées dans un bracelet-poignet plutôt que dans l'emboîture - une différence de conception notable par rapport à une main complète.",
+        content: "i-Limb Ultra est une main myoélectrique complète, livrée avec un ensemble de gants de recouvrement esthétique (i-Limb Skin Natural et i-Limb Skin Active) permettant de personnaliser l'apparence. i-Digits est un dispositif distinct, pensé pour les amputations partielles de main : de 1 à 5 doigts prothétiques indépendants, avec batteries logées dans un bracelet-poignet plutôt que dans l'emboîture - une différence de conception notable par rapport à une main complète.",
       },
       {
         type: 'h2',
@@ -328,7 +328,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "L'évaluation préalable est approfondie : niveau d'amputation, longueur du moignon, état de la peau, tests de commande musculaire par myotesteurs, motivation du patient et de son entourage, contraintes géographiques et socioprofessionnelles, et capacité à assimiler la technique d'utilisation du système myoélectrique - un apprentissage réel, pas un geste intuitif immédiat.",
+        content: "L'évaluation préalable est approfondie : niveau d'amputation, longueur du moignon, état de la peau, tests de commande musculaire par myotesteurs, motivation du patient et de son entourage, contraintes géographiques et socioprofessionnelles, et capacité à assimiler la technique d'utilisation du système myoélectrique - un apprentissage réel, pas un geste intuitif immédiat.",
       },
       {
         type: 'info_box',
@@ -374,7 +374,7 @@ export const articles: Article[] = [
   {
     slug: 'prothese-bras-systeme-corporel',
     pilier: 'protheses',
-    title: 'Prothèse de bras : comprendre le système corporel à câble et harnais',
+    title: 'Prothèse de bras : comprendre le système corporel à câble et harnais',
     metaTitle: 'Prothèse de bras mécanique',
     metaDescription: "Comment fonctionne une prothèse de bras mécanique à commande corporelle (câble et harnais), ses indications selon le niveau d'amputation et son remboursement LPPR.",
     badge: 'Prothèses',
@@ -386,7 +386,7 @@ export const articles: Article[] = [
       title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/2IuOQNc.png',
-    excerpt: "Avant le myoélectrique, il existe une solution éprouvée pour l'amputation de bras : le système corporel à câble et harnais. Robuste, sans batterie, avec un principe de fonctionnement radicalement différent d'une main myoélectrique.",
+    excerpt: "Avant le myoélectrique, il existe une solution éprouvée pour l'amputation de bras : le système corporel à câble et harnais. Robuste, sans batterie, avec un principe de fonctionnement radicalement différent d'une main myoélectrique.",
     blocks: [
       {
         type: 'paragraph',
@@ -413,7 +413,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "La nomenclature distingue précisément quatre grands niveaux, chacun avec sa propre configuration technique : la désarticulation scapulo-humérale et les moignons de bras très courts (nécessitant un corselet de fixation englobant l'épaule), l'amputation de bras à moignon court, l'amputation à moignon moyen ou long, et la désarticulation du coude ou moignon d'avant-bras très court assimilable.",
+        content: "La nomenclature distingue précisément quatre grands niveaux, chacun avec sa propre configuration technique : la désarticulation scapulo-humérale et les moignons de bras très courts (nécessitant un corselet de fixation englobant l'épaule), l'amputation de bras à moignon court, l'amputation à moignon moyen ou long, et la désarticulation du coude ou moignon d'avant-bras très court assimilable.",
       },
       {
         type: 'comparison_table',
@@ -459,7 +459,7 @@ export const articles: Article[] = [
           },
           {
             question: 'Peut-on faire du sport ou des activités salissantes avec ce système ?',
-            answer: "C'est un des atouts du système corporel : sans batterie ni électronique, il tolère mieux l'eau, la poussière et les environnements exigeants qu'une prothèse myoélectrique - c'est pour cela qu'il reste utilisé pour certaines activités professionnelles ou de loisirs même chez des patients équipés en myoélectrique au quotidien.",
+            answer: "C'est un des atouts du système corporel : sans batterie ni électronique, il tolère mieux l'eau, la poussière et les environnements exigeants qu'une prothèse myoélectrique - c'est pour cela qu'il reste utilisé pour certaines activités professionnelles ou de loisirs même chez des patients équipés en myoélectrique au quotidien.",
           },
           {
             question: 'Le dispositif terminal peut-il être une main plutôt qu\'un crochet ?',
@@ -484,9 +484,9 @@ export const articles: Article[] = [
   {
     slug: 'prothese-femorale-emboiture',
     pilier: 'protheses',
-    title: "Prothèse fémorale : comprendre l'emboîture, l'interface qui porte toute la prothèse",
+    title: "Prothèse fémorale : comprendre l'emboîture, l'interface qui porte toute la prothèse",
     metaTitle: "Emboîture de prothèse fémorale",
-    metaDescription: "Emboîture de contact, à suspension ou sub-ischiatique : comment fonctionne l'interface entre le moignon et la prothèse fémorale, les matériaux, et le remboursement LPPR.",
+    metaDescription: "Emboîture de contact, à suspension ou sub-ischiatique : comment fonctionne l'interface entre le moignon et la prothèse fémorale, les matériaux, et le remboursement LPPR.",
     badge: 'Prothèses',
     readingTime: '8 min',
     publishedAt: '2026-08-31',
@@ -512,7 +512,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "La forme la plus répandue et la plus universelle : le calage se fait au niveau du grand trochanter, et l'ischion est intégré dans la structure pour stabiliser le bassin. Elle convient à la majorité des morphologies et reste la référence par défaut.",
+        content: "La forme la plus répandue et la plus universelle : le calage se fait au niveau du grand trochanter, et l'ischion est intégré dans la structure pour stabiliser le bassin. Elle convient à la majorité des morphologies et reste la référence par défaut.",
       },
       {
         type: 'h3',
@@ -520,7 +520,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Une évolution historique, aujourd'hui moins utilisée : une tablette reprend l'appui sous l'ischion, complétée par un appui sur la face antérieure du moignon. Réservée à des morphologies particulières - son indication répond à des prérequis anatomiques précis, pas à une préférence esthétique.",
+        content: "Une évolution historique, aujourd'hui moins utilisée : une tablette reprend l'appui sous l'ischion, complétée par un appui sur la face antérieure du moignon. Réservée à des morphologies particulières - son indication répond à des prérequis anatomiques précis, pas à une préférence esthétique.",
       },
       {
         type: 'h3',
@@ -528,7 +528,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "La génération la plus récente déleste l'ischion au profit de la branche ischio-pubienne, libérant la mobilité du bassin et de la hanche. Plusieurs acteurs portent cette approche - le PROTEOR I-SUB, l'Access Socket et le FleXEO d'Ottobock, le Direct Socket TF d'Össur, ou l'I.S.S. développé par le prothésiste indépendant Pommier Orthopédie. Le principe commun : une paroi supérieure souple qui accompagne l'écrasement naturel de la cuisse en position assise, là où une structure rigide impose un point de pression fixe.",
+        content: "La génération la plus récente déleste l'ischion au profit de la branche ischio-pubienne, libérant la mobilité du bassin et de la hanche. Plusieurs acteurs portent cette approche - le PROTEOR I-SUB, l'Access Socket et le FleXEO d'Ottobock, le Direct Socket TF d'Össur, ou l'I.S.S. développé par le prothésiste indépendant Pommier Orthopédie. Le principe commun : une paroi supérieure souple qui accompagne l'écrasement naturel de la cuisse en position assise, là où une structure rigide impose un point de pression fixe.",
       },
       {
         type: 'h2',
@@ -569,7 +569,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Forme et suspension se combinent selon le profil : un moignon dont le volume fluctue s'accommode souvent mieux d'un accrochage distal que d'une dépression, qui exige un volume stable. Le gain du sub-ischiatique se lit surtout en position assise et dans la liberté de mouvement du bassin - pertinent pour une activité sédentaire ou la conduite. Le réseau de prothésistes formés aux techniques sub-ischiatiques reste plus restreint que celui des emboîtures classiques - un critère d'accès à vérifier avant de fixer ses attentes.",
+        content: "Forme et suspension se combinent selon le profil : un moignon dont le volume fluctue s'accommode souvent mieux d'un accrochage distal que d'une dépression, qui exige un volume stable. Le gain du sub-ischiatique se lit surtout en position assise et dans la liberté de mouvement du bassin - pertinent pour une activité sédentaire ou la conduite. Le réseau de prothésistes formés aux techniques sub-ischiatiques reste plus restreint que celui des emboîtures classiques - un critère d'accès à vérifier avant de fixer ses attentes.",
       },
       {
         type: 'faq',
@@ -601,9 +601,9 @@ export const articles: Article[] = [
   {
     slug: 'manchon-accroche',
     pilier: 'protheses',
-    title: "Manchon et systèmes d'accroche : silicone, copolymère, polyuréthane, comment choisir",
+    title: "Manchon et systèmes d'accroche : silicone, copolymère, polyuréthane, comment choisir",
     metaTitle: "Manchon et accroche de prothèse",
-    metaDescription: "Manchon préfabriqué ou sur moulage, accrochage distal ou dépression : comment choisir le manchon d'une prothèse de membre, les indications cliniques et le remboursement LPPR.",
+    metaDescription: "Manchon préfabriqué ou sur moulage, accrochage distal ou dépression : comment choisir le manchon d'une prothèse de membre, les indications cliniques et le remboursement LPPR.",
     badge: 'Prothèses',
     readingTime: '7 min',
     publishedAt: '2026-08-31',
@@ -613,7 +613,7 @@ export const articles: Article[] = [
       title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/DlHO0yB.jpeg',
-    excerpt: "Le manchon est la seule pièce de la prothèse en contact permanent avec la peau. Silicone, copolymère ou polyuréthane, accrochage distal ou dépression : le choix répond à des indications cliniques précises, pas à une préférence de confort.",
+    excerpt: "Le manchon est la seule pièce de la prothèse en contact permanent avec la peau. Silicone, copolymère ou polyuréthane, accrochage distal ou dépression : le choix répond à des indications cliniques précises, pas à une préférence de confort.",
     blocks: [
       {
         type: 'paragraph',
@@ -626,7 +626,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Le silicone et le copolymère de qualité médicale sont la référence de première intention, préfabriqués ou réalisés sur moulage. Le polyuréthane n'est pas une alternative de confort : la nomenclature LPPR conditionne sa prise en charge à l'échec médicalement constaté d'un manchon silicone ou copolymère - c'est une solution de second recours, pas un choix initial.",
+        content: "Le silicone et le copolymère de qualité médicale sont la référence de première intention, préfabriqués ou réalisés sur moulage. Le polyuréthane n'est pas une alternative de confort : la nomenclature LPPR conditionne sa prise en charge à l'échec médicalement constaté d'un manchon silicone ou copolymère - c'est une solution de second recours, pas un choix initial.",
       },
       {
         type: 'h2',
@@ -635,7 +635,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "L'accrochage distal reste le plus répandu : une goupille à l'extrémité du manchon se verrouille mécaniquement au fond de l'emboîture. L'anneau d'étanchéité intermédiaire suit une autre logique - il crée le joint nécessaire à une suspension par dépression plutôt qu'un verrouillage mécanique. C'est ce second système qu'exige par exemple l'I-SUB de PROTEOR, traité dans l'article sur l'emboîture fémorale.",
+        content: "L'accrochage distal reste le plus répandu : une goupille à l'extrémité du manchon se verrouille mécaniquement au fond de l'emboîture. L'anneau d'étanchéité intermédiaire suit une autre logique - il crée le joint nécessaire à une suspension par dépression plutôt qu'un verrouillage mécanique. C'est ce second système qu'exige par exemple l'I-SUB de PROTEOR, traité dans l'article sur l'emboîture fémorale.",
       },
       {
         type: 'h2',
@@ -644,12 +644,12 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Au-delà d'une simple valve d'expulsion d'air, certains systèmes gèrent la dépression activement. Le Harmony d'Ottobock utilise une pompe mécanique (P3, P4) ou électronique (E2) qui extrait l'air entre manchon et emboîture à chaque pas, maintenant un vide constant autour de -600 mbar - avec un amortisseur en élastomère intégré qui absorbe les chocs verticaux. Le Seal-In d'Össur inverse la logique : l'étanchéité vient d'une membrane intégrée directement au manchon, avec des anneaux de joint successifs, plutôt que d'une valve sur l'emboîture elle-même.",
+        content: "Au-delà d'une simple valve d'expulsion d'air, certains systèmes gèrent la dépression activement. Le Harmony d'Ottobock utilise une pompe mécanique (P3, P4) ou électronique (E2) qui extrait l'air entre manchon et emboîture à chaque pas, maintenant un vide constant autour de -600 mbar - avec un amortisseur en élastomère intégré qui absorbe les chocs verticaux. Le Seal-In d'Össur inverse la logique : l'étanchéité vient d'une membrane intégrée directement au manchon, avec des anneaux de joint successifs, plutôt que d'une valve sur l'emboîture elle-même.",
       },
       {
         type: 'info_box',
         title: 'Le manchon préfabriqué a des indications précises, pas génériques',
-        content: "La LPPR réserve le manchon fémoral préfabriqué à des situations cliniques identifiées : moignon court, moignon flasque, peau extrêmement fragile (patients brûlés ou greffés), cicatrices invaginées, ou amputation fémorale associée à une atteinte d'un ou des membres supérieurs. En dehors de ces indications, le manchon sur moulage reste la référence.",
+        content: "La LPPR réserve le manchon fémoral préfabriqué à des situations cliniques identifiées : moignon court, moignon flasque, peau extrêmement fragile (patients brûlés ou greffés), cicatrices invaginées, ou amputation fémorale associée à une atteinte d'un ou des membres supérieurs. En dehors de ces indications, le manchon sur moulage reste la référence.",
       },
       {
         type: 'h2',
@@ -696,7 +696,7 @@ export const articles: Article[] = [
   {
     slug: 'pied-prothetique',
     pilier: 'protheses',
-    title: "Pied prothétique : classe I, II ou III, ce que mesure vraiment la classification",
+    title: "Pied prothétique : classe I, II ou III, ce que mesure vraiment la classification",
     metaTitle: "Pied prothétique - classes I, II, III",
     metaDescription: "Comment fonctionne la classification des pieds à restitution d'énergie (classe I, II, III), les critères techniques mesurés, et le remboursement LPPR.",
     badge: 'Prothèses',
@@ -712,7 +712,7 @@ export const articles: Article[] = [
     blocks: [
       {
         type: 'paragraph',
-        content: "Un pied à restitution d'énergie emmagasine l'énergie de l'appui au sol et la restitue à la propulsion. La classe I, II ou III qui lui est attribuée n'est pas une gamme commerciale : c'est un résultat de laboratoire, mesuré, qui conditionne le remboursement.",
+        content: "Un pied à restitution d'énergie emmagasine l'énergie de l'appui au sol et la restitue à la propulsion. La classe I, II ou III qui lui est attribuée n'est pas une gamme commerciale : c'est un résultat de laboratoire, mesuré, qui conditionne le remboursement.",
       },
       {
         type: 'h2',
@@ -721,7 +721,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Chaque classe correspond à un profil de déplacement défini par la Classification internationale du fonctionnement (CIF), et à des seuils techniques vérifiés lors d'un essai en laboratoire indépendant : la propulsion (un score obtenu au relevé force-déformation) et la déformation permanente de l'avant-pied et du talon. La conformité est valable cinq ans, puis réévaluée sur un pied neuf.",
+        content: "Chaque classe correspond à un profil de déplacement défini par la Classification internationale du fonctionnement (CIF), et à des seuils techniques vérifiés lors d'un essai en laboratoire indépendant : la propulsion (un score obtenu au relevé force-déformation) et la déformation permanente de l'avant-pied et du talon. La conformité est valable cinq ans, puis réévaluée sur un pied neuf.",
       },
       {
         type: 'comparison_table',
@@ -735,7 +735,7 @@ export const articles: Article[] = [
       {
         type: 'info_box',
         title: 'La classe III ne se prescrit pas par défaut',
-        content: "La première prescription d'un pied à restitution d'énergie, ou tout changement de type de pied, relève obligatoirement d'un médecin spécialiste en médecine physique et de réadaptation (MPR) - un renouvellement à l'identique ne l'exige pas. Pour une classe III spécifiquement, le prescripteur doit préciser quelles activités motivent ce choix : ce n'est pas une case cochée par prudence.",
+        content: "La première prescription d'un pied à restitution d'énergie, ou tout changement de type de pied, relève obligatoirement d'un médecin spécialiste en médecine physique et de réadaptation (MPR) - un renouvellement à l'identique ne l'exige pas. Pour une classe III spécifiquement, le prescripteur doit préciser quelles activités motivent ce choix : ce n'est pas une case cochée par prudence.",
       },
       {
         type: 'h2',
@@ -744,7 +744,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Le BIOSTEP LP (ALPS South Europe) illustre ce que la classe III implique techniquement : deux lames dynamiques en fibre de carbone, une pyramide de connexion en titane, une charge supportée jusqu'à 147 kg selon la taille, une étanchéité permettant l'immersion jusqu'à trois mètres pendant une heure, et une tenue en température de -23°C à 93°C. Le module est garanti 36 mois, le revêtement esthétique 6 mois, la chaussette de protection 1 mois - trois durées de garantie distinctes pour trois pièces d'usure différentes.",
+        content: "Le BIOSTEP LP (ALPS South Europe) illustre ce que la classe III implique techniquement : deux lames dynamiques en fibre de carbone, une pyramide de connexion en titane, une charge supportée jusqu'à 147 kg selon la taille, une étanchéité permettant l'immersion jusqu'à trois mètres pendant une heure, et une tenue en température de -23°C à 93°C. Le module est garanti 36 mois, le revêtement esthétique 6 mois, la chaussette de protection 1 mois - trois durées de garantie distinctes pour trois pièces d'usure différentes.",
       },
       {
         type: 'h2',
@@ -798,9 +798,9 @@ export const articles: Article[] = [
   {
     slug: 'genou-bionique-microprocesseur',
     pilier: 'protheses',
-    title: "Genoux bioniques : ce que couvre vraiment la Sécu, marque par marque",
+    title: "Genoux bioniques : ce que couvre vraiment la Sécu, marque par marque",
     metaTitle: "Genou bionique à microprocesseur",
-    metaDescription: "C-Leg, Kenevo, Rheo Knee XC, Orion3, HYBRID-1P360, SYNSYS : quelles conditions d'attribution, quel remboursement LPPR réel pour les genoux prothétiques à microprocesseur.",
+    metaDescription: "C-Leg, Kenevo, Rheo Knee XC, Orion3, HYBRID-1P360, SYNSYS : quelles conditions d'attribution, quel remboursement LPPR réel pour les genoux prothétiques à microprocesseur.",
     badge: 'Prothèses',
     readingTime: '10 min',
     publishedAt: '2026-08-31',
@@ -814,7 +814,7 @@ export const articles: Article[] = [
     blocks: [
       {
         type: 'paragraph',
-        content: "Un genou prothétique \"bionique\" ne se limite pas à contenir un microprocesseur - une large partie de la nomenclature LPPR le fait déjà, sans jamais faire les gros titres. Ce qui distingue vraiment les six marques que le grand public connaît, c'est ce que ce microprocesseur contrôle réellement : la sécurité de la phase d'appui, le moment où le genou doit porter tout le poids du corps sans se dérober. C'est cette fonction-là, pas le mot \"microprocesseur\" en soi, qui définit un genou bionique au sens plein.",
+        content: "Un genou prothétique \"bionique\" ne se limite pas à contenir un microprocesseur - une large partie de la nomenclature LPPR le fait déjà, sans jamais faire les gros titres. Ce qui distingue vraiment les six marques que le grand public connaît, c'est ce que ce microprocesseur contrôle réellement : la sécurité de la phase d'appui, le moment où le genou doit porter tout le poids du corps sans se dérober. C'est cette fonction-là, pas le mot \"microprocesseur\" en soi, qui définit un genou bionique au sens plein.",
       },
       {
         type: 'h2',
@@ -823,7 +823,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "La majorité des genoux réellement prescrits en France sont purement mécaniques - stabilité obtenue par la géométrie de l'articulation ou par un frein mécanique, aucune électronique, souvent sous les 2 000 €. Un second palier existe, moins connu : des genoux où le microprocesseur assiste uniquement la phase pendulaire - le réglage de la cadence de marche - sans piloter la sécurité de l'appui. Ils coûtent entre 3 400 € et 5 500 € environ. Le troisième palier, celui dont il est question ici, pilote électroniquement les deux phases à la fois : c'est le seul qui corresponde à ce que le grand public appelle un genou bionique.",
+        content: "La majorité des genoux réellement prescrits en France sont purement mécaniques - stabilité obtenue par la géométrie de l'articulation ou par un frein mécanique, aucune électronique, souvent sous les 2 000 €. Un second palier existe, moins connu : des genoux où le microprocesseur assiste uniquement la phase pendulaire - le réglage de la cadence de marche - sans piloter la sécurité de l'appui. Ils coûtent entre 3 400 € et 5 500 € environ. Le troisième palier, celui dont il est question ici, pilote électroniquement les deux phases à la fois : c'est le seul qui corresponde à ce que le grand public appelle un genou bionique.",
       },
       {
         type: 'h2',
@@ -852,7 +852,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Kenevo est le seul des six à cibler explicitement un profil à risque de chute élevé plutôt qu'un profil actif : score au test TGUG (Timed Get Up and Go) supérieur à 19 secondes, et surtout une interdiction d'utiliser des béquilles axillaires ou un déambulateur - la canne simple ou la canne anglaise restent autorisées. Les trois modes d'activité du dispositif ne sont réglables que par le prothésiste, jamais par le patient. La prescription initiale exige déjà une équipe pluridisciplinaire (MPR ou orthopédiste, kinésithérapeute, orthoprothésiste), avant même l'essai.",
+        content: "Kenevo est le seul des six à cibler explicitement un profil à risque de chute élevé plutôt qu'un profil actif : score au test TGUG (Timed Get Up and Go) supérieur à 19 secondes, et surtout une interdiction d'utiliser des béquilles axillaires ou un déambulateur - la canne simple ou la canne anglaise restent autorisées. Les trois modes d'activité du dispositif ne sont réglables que par le prothésiste, jamais par le patient. La prescription initiale exige déjà une équipe pluridisciplinaire (MPR ou orthopédiste, kinésithérapeute, orthoprothésiste), avant même l'essai.",
       },
       {
         type: 'h3',
@@ -860,7 +860,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Les cinq autres dispositifs fixent un seuil de poids unique. Rheo Knee XC distingue deux seuils selon le niveau d'activité réel du patient : 110 kg pour un niveau d'activité élevé, 136 kg pour un niveau faible à modéré - une même limite physique du dispositif, mais une tolérance différente selon l'usage prévu.",
+        content: "Les cinq autres dispositifs fixent un seuil de poids unique. Rheo Knee XC distingue deux seuils selon le niveau d'activité réel du patient : 110 kg pour un niveau d'activité élevé, 136 kg pour un niveau faible à modéré - une même limite physique du dispositif, mais une tolérance différente selon l'usage prévu.",
       },
       {
         type: 'h3',
@@ -868,7 +868,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "SYNSYS n'est pas qu'un genou : c'est un ensemble genou-cheville-pied dont la synergie articulaire (une flexion de genou entraîne une dorsiflexion automatique de la cheville) exige un cadre de prescription différent des cinq autres. La prescription initiale et tout renouvellement doivent venir d'une équipe exerçant au sein d'un établissement de santé titulaire d'une autorisation \"locomoteur\" spécifique, et l'appareillage ne peut être réalisé que par un orthoprothésiste certifié par un expert clinique PROTEOR après formation dédiée au produit et à son logiciel de réglage.",
+        content: "SYNSYS n'est pas qu'un genou : c'est un ensemble genou-cheville-pied dont la synergie articulaire (une flexion de genou entraîne une dorsiflexion automatique de la cheville) exige un cadre de prescription différent des cinq autres. La prescription initiale et tout renouvellement doivent venir d'une équipe exerçant au sein d'un établissement de santé titulaire d'une autorisation \"locomoteur\" spécifique, et l'appareillage ne peut être réalisé que par un orthoprothésiste certifié par un expert clinique PROTEOR après formation dédiée au produit et à son logiciel de réglage.",
       },
       {
         type: 'info_box',
@@ -882,7 +882,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Les six dispositifs nominatifs s'échelonnent entre 15 750 € et 38 546 € TTC - contre environ 3 400 à 6 500 € pour un genou générique à assistance microprocesseur limitée à la phase pendulaire. Le facteur de prix entre les deux paliers dépasse souvent 5, pour une différence technique précise : le contrôle électronique de la phase d'appui, pas simplement la présence d'un microprocesseur.",
+        content: "Les six dispositifs nominatifs s'échelonnent entre 15 750 € et 38 546 € TTC - contre environ 3 400 à 6 500 € pour un genou générique à assistance microprocesseur limitée à la phase pendulaire. Le facteur de prix entre les deux paliers dépasse souvent 5, pour une différence technique précise : le contrôle électronique de la phase d'appui, pas simplement la présence d'un microprocesseur.",
       },
       {
         type: 'comparison_table',
@@ -903,7 +903,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Malgré la place que ces six dispositifs occupent dans les médias et les vitrines des fabricants, la majorité des patients amputés fémoraux portent un genou du premier palier - purement mécanique. L'accès au troisième palier dépend d'un profil fonctionnel documenté, pas d'une simple demande : vitesse de marche, périmètre continu, risque de chute, et pour SYNSYS, un encadrement hospitalier spécifique. Le remboursement n'est pas la barrière - l'éligibilité l'est.",
+        content: "Malgré la place que ces six dispositifs occupent dans les médias et les vitrines des fabricants, la majorité des patients amputés fémoraux portent un genou du premier palier - purement mécanique. L'accès au troisième palier dépend d'un profil fonctionnel documenté, pas d'une simple demande : vitesse de marche, périmètre continu, risque de chute, et pour SYNSYS, un encadrement hospitalier spécifique. Le remboursement n'est pas la barrière - l'éligibilité l'est.",
       },
       {
         type: 'faq',
@@ -935,9 +935,9 @@ export const articles: Article[] = [
   {
     slug: 'futur-prothese-bionique-innovation',
     pilier: 'protheses',
-    title: "Le futur de la prothèse : la nouvelle vague des acteurs bioniques",
+    title: "Le futur de la prothèse : la nouvelle vague des acteurs bioniques",
     metaTitle: "Le futur de la prothèse bionique",
-    metaDescription: "TASKA, Psyonic, Phantom Neuro, BrainCo, Axiles Bionics, BionicM et 10 autres acteurs : le tour complet des start-ups qui réinventent la prothèse externe, du contrôle neuronal au genou motorisé.",
+    metaDescription: "TASKA, Psyonic, Phantom Neuro, BrainCo, Axiles Bionics, BionicM et 10 autres acteurs : le tour complet des start-ups qui réinventent la prothèse externe, du contrôle neuronal au genou motorisé.",
     badge: 'Prothèses',
     readingTime: '14 min',
     publishedAt: '2026-08-31',
@@ -947,16 +947,16 @@ export const articles: Article[] = [
       title: 'Expert appareillage',
     },
     heroImage: 'https://i.imgur.com/HFWYOjh.png',
-    excerpt: "Ottobock qui mène lui-même la levée de fonds d'une start-up d'interface neuronale, un genou japonais qui pousse au lieu de freiner, une main indienne à 4 gestes conçue pour coûter six fois moins cher : tour complet de la nouvelle vague bionique, membre par membre et tendance par tendance.",
+    excerpt: "Ottobock qui mène lui-même la levée de fonds d'une start-up d'interface neuronale, un genou japonais qui pousse au lieu de freiner, une main indienne à 4 gestes conçue pour coûter six fois moins cher : tour complet de la nouvelle vague bionique, membre par membre et tendance par tendance.",
     blocks: [
       {
         type: 'paragraph',
-        content: "En avril 2025, Ottobock - le numéro un mondial historique de la prothèse - a mené lui-même une levée de fonds de 19 millions de dollars pour Phantom Neuro, une start-up d'interface neuronale née dans les laboratoires de médecine de Johns Hopkins. Ce n'est pas un fonds de capital-risque anonyme qui investit dans un concurrent lointain : c'est le leader historique du secteur qui rejoint le conseil d'administration d'une entreprise qui pourrait redéfinir la façon dont on pilote une prothèse. Ce signal résume assez bien où en est la prothèse externe en 2026 - une vague d'acteurs qui ne se contentent plus d'améliorer la mécanique, mais qui attaquent simultanément le contrôle neuronal, le confort de chaussage, la robustesse du quotidien et l'accessibilité économique.",
+        content: "En avril 2025, Ottobock - le numéro un mondial historique de la prothèse - a mené lui-même une levée de fonds de 19 millions de dollars pour Phantom Neuro, une start-up d'interface neuronale née dans les laboratoires de médecine de Johns Hopkins. Ce n'est pas un fonds de capital-risque anonyme qui investit dans un concurrent lointain : c'est le leader historique du secteur qui rejoint le conseil d'administration d'une entreprise qui pourrait redéfinir la façon dont on pilote une prothèse. Ce signal résume assez bien où en est la prothèse externe en 2026 - une vague d'acteurs qui ne se contentent plus d'améliorer la mécanique, mais qui attaquent simultanément le contrôle neuronal, le confort de chaussage, la robustesse du quotidien et l'accessibilité économique.",
       },
       {
         type: 'h2',
         id: 'mains-etablies',
-        content: 'Mains bioniques établies : la course à la robustesse',
+        content: 'Mains bioniques établies : la course à la robustesse',
       },
       {
         type: 'paragraph',
@@ -964,11 +964,11 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Psyonic (États-Unis) reste le concurrent le plus direct : son Ability Hand revendique la vitesse de fermeture la plus rapide du marché, avec des doigts en silicone et caoutchouc conçus pour absorber les chocs, et surtout un retour haptique - des capteurs de pression en bout de doigt qui transmettent une vibration à l'utilisateur au contact d'un objet. Fondée par le Dr Aadeel Akhtar, inspiré à 7 ans par la rencontre d'une amputée au Pakistan, l'entreprise est aujourd'hui prise en charge par Medicare aux États-Unis - avec une étanchéité IP64, moins poussée que celle de TASKA. Aether Biomedical (Pologne) mise sur la réparabilité : sa main Zeus se démonte en sept modules interchangeables, remplaçables par le clinicien en moins de 10 minutes, pour une force de préhension allant jusqu'à 152 N et une capacité de levage de 35 kg sur la version V1.",
+        content: "Psyonic (États-Unis) reste le concurrent le plus direct : son Ability Hand revendique la vitesse de fermeture la plus rapide du marché, avec des doigts en silicone et caoutchouc conçus pour absorber les chocs, et surtout un retour haptique - des capteurs de pression en bout de doigt qui transmettent une vibration à l'utilisateur au contact d'un objet. Fondée par le Dr Aadeel Akhtar, inspiré à 7 ans par la rencontre d'une amputée au Pakistan, l'entreprise est aujourd'hui prise en charge par Medicare aux États-Unis - avec une étanchéité IP64, moins poussée que celle de TASKA. Aether Biomedical (Pologne) mise sur la réparabilité : sa main Zeus se démonte en sept modules interchangeables, remplaçables par le clinicien en moins de 10 minutes, pour une force de préhension allant jusqu'à 152 N et une capacité de levage de 35 kg sur la version V1.",
       },
       {
         type: 'paragraph',
-        content: "Open Bionics (Royaume-Uni) joue une autre partition : l'accessibilité plutôt que la performance brute. Son Hero Arm, premier bras bionique imprimé 3D à obtenir une approbation clinique pour enfants dès 8 ans, se fabrique par scan et impression 3D en une quarantaine d'heures, avec un socket réimprimable tous les 12 à 18 mois à mesure que l'enfant grandit. Le partenariat avec Disney, en place depuis 2015 sans versement de royalties, permet des coques personnalisables Star Wars, Marvel ou La Reine des Neiges - une approche qui a fait d'Open Bionics une référence sur le segment pédiatrique, loin de la course aux Newtons de préhension.",
+        content: "Open Bionics (Royaume-Uni) joue une autre partition : l'accessibilité plutôt que la performance brute. Son Hero Arm, premier bras bionique imprimé 3D à obtenir une approbation clinique pour enfants dès 8 ans, se fabrique par scan et impression 3D en une quarantaine d'heures, avec un socket réimprimable tous les 12 à 18 mois à mesure que l'enfant grandit. Le partenariat avec Disney, en place depuis 2015 sans versement de royalties, permet des coques personnalisables Star Wars, Marvel ou La Reine des Neiges - une approche qui a fait d'Open Bionics une référence sur le segment pédiatrique, loin de la course aux Newtons de préhension.",
       },
       {
         type: 'h2',
@@ -981,7 +981,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Phantom Neuro mise sur une interface qualifiée de \"peu invasive\" : un dispositif de type bracelet, implanté sous la peau, qui capte les signaux nerveux périphériques plutôt que les seuls signaux musculaires de surface. L'entreprise revendique 94% de précision sur la reconnaissance de 11 mouvements de main et de poignet, et jusqu'à 85% de fonctionnalité naturelle retrouvée après seulement 10 minutes de calibration une fois le dispositif implanté. Sa Série A de 19 millions de dollars, menée par Ottobock en avril 2025, porte son financement total à 28 millions de dollars. Basée à Austin, la start-up est également soutenue par la DARPA à hauteur d'environ 300 000 dollars, signe d'un intérêt à double usage, civil et militaire.",
+        content: "Phantom Neuro mise sur une interface qualifiée de \"peu invasive\" : un dispositif de type bracelet, implanté sous la peau, qui capte les signaux nerveux périphériques plutôt que les seuls signaux musculaires de surface. L'entreprise revendique 94% de précision sur la reconnaissance de 11 mouvements de main et de poignet, et jusqu'à 85% de fonctionnalité naturelle retrouvée après seulement 10 minutes de calibration une fois le dispositif implanté. Sa Série A de 19 millions de dollars, menée par Ottobock en avril 2025, porte son financement total à 28 millions de dollars. Basée à Austin, la start-up est également soutenue par la DARPA à hauteur d'environ 300 000 dollars, signe d'un intérêt à double usage, civil et militaire.",
       },
       {
         type: 'h3',
@@ -989,29 +989,29 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Morph Labs et BrainCo empruntent une voie entièrement non invasive : l'électroencéphalographie (EEG), qui lit l'activité cérébrale à travers le cuir chevelu, sans aucune chirurgie. Fondée en 2024 par Pranai Reddy, Nikola Cadavid et Soham Mehra, Morph Labs vise jusqu'à 19 degrés de liberté - contre 5 à 10 pour la plupart des mains myoélectriques du marché - et espère ses premières ventes commerciales autour de mars 2026, après son admission au programme Y Combinator de l'été 2026. Le stade reste précoce : le prototype actuel ne classifie que 5 gestes distincts avec un casque que son fondateur qualifie lui-même de \"bricolé\". BrainCo a huit ans d'avance : fondée en 2015 et incubée à la Harvard Innovation Lab, l'entreprise chinoise a dévoilé sa main bionique aux Jeux Para-Asiatiques de Hangzhou en 2023. Sa main Intelligent Bionic Hand pèse 383 g et revendique un contrôle indépendant des cinq doigts avec une précision de 0,1 degré, en combinant signaux neuronaux et électromyographiques captés par électrodes sèches.",
+        content: "Morph Labs et BrainCo empruntent une voie entièrement non invasive : l'électroencéphalographie (EEG), qui lit l'activité cérébrale à travers le cuir chevelu, sans aucune chirurgie. Fondée en 2024 par Pranai Reddy, Nikola Cadavid et Soham Mehra, Morph Labs vise jusqu'à 19 degrés de liberté - contre 5 à 10 pour la plupart des mains myoélectriques du marché - et espère ses premières ventes commerciales autour de mars 2026, après son admission au programme Y Combinator de l'été 2026. Le stade reste précoce : le prototype actuel ne classifie que 5 gestes distincts avec un casque que son fondateur qualifie lui-même de \"bricolé\". BrainCo a huit ans d'avance : fondée en 2015 et incubée à la Harvard Innovation Lab, l'entreprise chinoise a dévoilé sa main bionique aux Jeux Para-Asiatiques de Hangzhou en 2023. Sa main Intelligent Bionic Hand pèse 383 g et revendique un contrôle indépendant des cinq doigts avec une précision de 0,1 degré, en combinant signaux neuronaux et électromyographiques captés par électrodes sèches.",
       },
       {
         type: 'h2',
         id: 'confort-ajustement',
-        content: "Le confort réinventé : quand le problème n'est pas la main, mais le socket",
+        content: "Le confort réinventé : quand le problème n'est pas la main, mais le socket",
       },
       {
         type: 'paragraph',
-        content: "Deux jeunes entreprises partent d'un constat identique : la première cause d'abandon d'une prothèse n'est pas la mécanique de la main, c'est l'inconfort du socket qui la relie au moignon. Vessl Prosthetics (Ontario, Canada), fondée par Sydney Robinson et Oleksiy Zaika, développe l'Isoform, un système de socket à ajustement automatique qui compense en temps réel les variations de volume du moignon au cours de la journée - sans changer manuellement de chaussettes de compensation. La start-up a bouclé un tour de pré-amorçage sursouscrit en janvier 2025 et vise l'enregistrement FDA. Meablex, spin-off de l'Université de Melbourne fondée par le Dr Alireza Mohammadi après avoir interrogé 60 amputés, cliniciens et fournisseurs, associe un socket ajustable manuellement par l'utilisateur à des capteurs magnétiques - moins sensibles à la transpiration que les électrodes cutanées classiques. Objectif affiché : un prix autour de 10 000 dollars australiens, environ un tiers du prix habituel du marché, avec des essais cliniques prévus fin 2026 et un lancement commercial visé début 2027.",
+        content: "Deux jeunes entreprises partent d'un constat identique : la première cause d'abandon d'une prothèse n'est pas la mécanique de la main, c'est l'inconfort du socket qui la relie au moignon. Vessl Prosthetics (Ontario, Canada), fondée par Sydney Robinson et Oleksiy Zaika, développe l'Isoform, un système de socket à ajustement automatique qui compense en temps réel les variations de volume du moignon au cours de la journée - sans changer manuellement de chaussettes de compensation. La start-up a bouclé un tour de pré-amorçage sursouscrit en janvier 2025 et vise l'enregistrement FDA. Meablex, spin-off de l'Université de Melbourne fondée par le Dr Alireza Mohammadi après avoir interrogé 60 amputés, cliniciens et fournisseurs, associe un socket ajustable manuellement par l'utilisateur à des capteurs magnétiques - moins sensibles à la transpiration que les électrodes cutanées classiques. Objectif affiché : un prix autour de 10 000 dollars australiens, environ un tiers du prix habituel du marché, avec des essais cliniques prévus fin 2026 et un lancement commercial visé début 2027.",
       },
       {
         type: 'h2',
         id: 'jambes-chevilles-actives',
-        content: 'Jambes et chevilles actives : motoriser plutôt que freiner',
+        content: 'Jambes et chevilles actives : motoriser plutôt que freiner',
       },
       {
         type: 'paragraph',
-        content: "La plupart des pieds prothétiques restent passifs : ils restituent l'énergie emmagasinée à l'appui, sans jamais en ajouter. Axiles Bionics (Belgique), spin-off de la Vrije Universiteit Brussel fondée en 2019 par le Dr Pierre Cherelle, part d'un constat simple : la plupart des pieds du marché n'ont aucune véritable articulation de cheville, une architecture héritée des années 1970-1980. Sa prothèse Lunaris intègre une vraie articulation et un tendon élastique adaptatif, avec marquage CE et FDA déjà obtenus, une distribution en Belgique, France, Luxembourg et Pays-Bas, et une Série A de 6 millions d'euros (sur 8 visés) close en juin 2025.",
+        content: "La plupart des pieds prothétiques restent passifs : ils restituent l'énergie emmagasinée à l'appui, sans jamais en ajouter. Axiles Bionics (Belgique), spin-off de la Vrije Universiteit Brussel fondée en 2019 par le Dr Pierre Cherelle, part d'un constat simple : la plupart des pieds du marché n'ont aucune véritable articulation de cheville, une architecture héritée des années 1970-1980. Sa prothèse Lunaris intègre une vraie articulation et un tendon élastique adaptatif, avec marquage CE et FDA déjà obtenus, une distribution en Belgique, France, Luxembourg et Pays-Bas, et une Série A de 6 millions d'euros (sur 8 visés) close en juin 2025.",
       },
       {
         type: 'paragraph',
-        content: "Toutes les start-ups de cette vague ne survivent pas jusqu'à la commercialisation. Revival Bionics (France), fondée en 2021 par deux ingénieurs de l'UTC Compiègne et lauréate du Grand Prix i-Lab 2022 pour sa cheville motorisée à tendon d'Achille artificiel développée avec le motoriste suisse maxon, a été placée en procédure de sauvegarde en mai 2025 puis en liquidation judiciaire en septembre 2025. Un rappel utile : la biomécatronique de pointe reste un secteur capitalistiquement exigeant, où l'innovation technique ne suffit pas toujours à franchir le cap de la commercialisation.",
+        content: "Toutes les start-ups de cette vague ne survivent pas jusqu'à la commercialisation. Revival Bionics (France), fondée en 2021 par deux ingénieurs de l'UTC Compiègne et lauréate du Grand Prix i-Lab 2022 pour sa cheville motorisée à tendon d'Achille artificiel développée avec le motoriste suisse maxon, a été placée en procédure de sauvegarde en mai 2025 puis en liquidation judiciaire en septembre 2025. Un rappel utile : la biomécatronique de pointe reste un secteur capitalistiquement exigeant, où l'innovation technique ne suffit pas toujours à franchir le cap de la commercialisation.",
       },
       {
         type: 'paragraph',
@@ -1020,11 +1020,11 @@ export const articles: Article[] = [
       {
         type: 'h2',
         id: 'accessibilite',
-        content: "Accessibilité : l'autre course, loin des Newtons et des degrés de liberté",
+        content: "Accessibilité : l'autre course, loin des Newtons et des degrés de liberté",
       },
       {
         type: 'paragraph',
-        content: "Toutes les start-ups de ce panorama ne visent pas la performance de pointe. En Inde, Dee Dee Labs - née en 2016 après qu'un des fondateurs a assisté à une conférence de Nicolas Huchet, amputé français qui avait développé sa propre main imprimée en 3D - propose une main myoélectrique limitée à 4 gestes essentiels (poing, pointage, pince, relâchement), disponible en trois tailles avec gant en silicone teinté peau. L'ambition n'est pas de rivaliser avec Psyonic ou Aether sur le nombre de préhensions, mais de rendre la prothèse accessible dans un marché où les dispositifs importés coûtent souvent plus de six fois le revenu mensuel moyen d'une famille rurale. Social Hardware, également indienne, pousse la logique plus loin : ses prothèses, conçues avec des outils agricoles interchangeables pour des amputés ruraux (souvent victimes d'accidents agricoles ou de morsures de serpent), sont distribuées gratuitement via un modèle non lucratif appuyé sur des ONG et six centres de réadaptation répartis dans le pays.",
+        content: "Toutes les start-ups de ce panorama ne visent pas la performance de pointe. En Inde, Dee Dee Labs - née en 2016 après qu'un des fondateurs a assisté à une conférence de Nicolas Huchet, amputé français qui avait développé sa propre main imprimée en 3D - propose une main myoélectrique limitée à 4 gestes essentiels (poing, pointage, pince, relâchement), disponible en trois tailles avec gant en silicone teinté peau. L'ambition n'est pas de rivaliser avec Psyonic ou Aether sur le nombre de préhensions, mais de rendre la prothèse accessible dans un marché où les dispositifs importés coûtent souvent plus de six fois le revenu mensuel moyen d'une famille rurale. Social Hardware, également indienne, pousse la logique plus loin : ses prothèses, conçues avec des outils agricoles interchangeables pour des amputés ruraux (souvent victimes d'accidents agricoles ou de morsures de serpent), sont distribuées gratuitement via un modèle non lucratif appuyé sur des ONG et six centres de réadaptation répartis dans le pays.",
       },
       {
         type: 'info_box',
@@ -1038,7 +1038,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "Trois lignes de force traversent ce panorama de 15 acteurs. La première : le contrôle ne se limite plus à l'électromyographie de surface - interfaces peu invasives, EEG, capteurs magnétiques, chacun cherchant à contourner les limites du signal musculaire classique. La deuxième : la robustesse et la réparabilité sont devenues des arguments de vente à part entière, pas des détails techniques - étanchéité totale, modules remplaçables en clinique en quelques minutes. La troisième, souvent négligée dans la couverture médiatique de ces innovations : la course à la performance n'est pas la seule qui compte, et toutes les start-ups n'atteignent pas la commercialisation. Des acteurs comme Dee Dee Labs ou Social Hardware, en visant un tout autre marché, adressent une population d'amputés bien plus large que celle qui aura jamais accès à une main à 152 N de force de préhension.",
+        content: "Trois lignes de force traversent ce panorama de 15 acteurs. La première : le contrôle ne se limite plus à l'électromyographie de surface - interfaces peu invasives, EEG, capteurs magnétiques, chacun cherchant à contourner les limites du signal musculaire classique. La deuxième : la robustesse et la réparabilité sont devenues des arguments de vente à part entière, pas des détails techniques - étanchéité totale, modules remplaçables en clinique en quelques minutes. La troisième, souvent négligée dans la couverture médiatique de ces innovations : la course à la performance n'est pas la seule qui compte, et toutes les start-ups n'atteignent pas la commercialisation. Des acteurs comme Dee Dee Labs ou Social Hardware, en visant un tout autre marché, adressent une population d'amputés bien plus large que celle qui aura jamais accès à une main à 152 N de force de préhension.",
       },
       {
         type: 'faq',
