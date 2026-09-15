@@ -140,6 +140,11 @@ export const pathologies: Pathologie[] = [
         content: "Un AVC peut entraîner des séquelles très variées - hémiplégie, troubles sensitifs, difficultés de communication ou de déglutition. La récupération fonctionnelle dépend de nombreux facteurs, mais l'appareillage joue un rôle central dès les premières semaines : maintenir les bonnes positions, compenser les déficits moteurs, et accompagner la rééducation.",
       },
       {
+        type: 'info_box',
+        title: 'Spasticité partagée avec la paralysie cérébrale',
+        content: "Le releveur de pied et les orthèses AFO utilisées après un AVC sont aussi prescrits en cas de [paralysie cérébrale](/pathologie/paralysie-cerebrale), pour des mécanismes de spasticité comparables.",
+      },
+      {
         type: 'h2',
         id: 'ortheses-avc',
         content: 'Les orthèses après AVC - à quoi servent-elles ?',
@@ -206,6 +211,11 @@ export const pathologies: Pathologie[] = [
         content: "La sclérose en plaques évolue par poussées ou de façon progressive, avec des besoins d'appareillage qui changent au fil du temps. L'anticipation est ici aussi importante que la réaction - se préparer aux prochaines étapes évite les ruptures de mobilité.",
       },
       {
+        type: 'info_box',
+        title: 'Évolution partagée avec la lésion médullaire',
+        content: "Quand la sclérose en plaques évolue vers une perte de mobilité plus marquée, les besoins d'appareillage rejoignent ceux des patients atteints de [lésion médullaire](/pathologie/lesion-medullaire), notamment pour le fauteuil électrique.",
+      },
+      {
         type: 'h2',
         id: 'fauteuil-electrique-sep',
         content: 'Le fauteuil électrique - quand et comment y passer ?',
@@ -257,6 +267,11 @@ export const pathologies: Pathologie[] = [
         content: "Pour les orthèses pédiatriques, la nomenclature LPPR prévoit un renouvellement tous les 6 mois pendant la période de croissance. Ne pas attendre que l'orthèse soit trop petite - un dispositif mal ajusté peut aggraver les déformations plutôt que les corriger.",
       },
       {
+        type: 'info_box',
+        title: "Spasticité partagée avec l'AVC",
+        content: "Les orthèses releveur de pied utilisées en paralysie cérébrale sont les mêmes dispositifs que ceux prescrits après un [AVC](/pathologie/avc), pour des raisons de spasticité comparables.",
+      },
+      {
         type: 'cta_block',
         title: "Trouver un centre d'appareillage pédiatrique",
         subtitle: "L'appareillage pédiatrique requiert une expertise spécifique. Certains centres sont spécialisés enfant.",
@@ -294,6 +309,12 @@ export const pathologies: Pathologie[] = [
         type: 'paragraph',
         content: "Dans la gonarthrose fémoro-tibiale interne (la plus fréquente), l'orthèse de décharge transfère les contraintes du compartiment arthrosique vers le compartiment sain. L'effet antalgique peut être très significatif - plusieurs études montrent une réduction notable de la douleur et une amélioration du périmètre de marche.",
       },
+      // TODO(maillage interne - prompt "graphe de liens réel du site" / Niveau 5) :
+      // ajouter ici un info_box vers /ortheses/guide-achat/genouillere-ligamentaire
+      // ("option de confort pour les formes légères, en complément de l'appareillage
+      // sur prescription" - pas un remplacement) dès que cet article guide-achat sera
+      // en ligne. Pas de lien créé maintenant : la page n'existe pas encore
+      // (vérifié dans src/lib/guides-achat.ts).
       {
         type: 'faq',
         items: [
@@ -334,6 +355,11 @@ export const pathologies: Pathologie[] = [
       {
         type: 'paragraph',
         content: "Une lésion médullaire - traumatique ou non - entraîne des besoins d'appareillage complexes et évolutifs. Le niveau lésionnel (cervical, thoracique, lombaire) et le caractère complet ou incomplet de la lésion déterminent les capacités fonctionnelles résiduelles et donc les dispositifs appropriés.",
+      },
+      {
+        type: 'info_box',
+        title: 'Besoins partagés avec la sclérose en plaques',
+        content: "Les fauteuils électriques haute performance décrits ici concernent aussi les patients atteints de [sclérose en plaques](/pathologie/sep) dont la maladie évolue vers une perte de mobilité importante.",
       },
       {
         type: 'h2',
