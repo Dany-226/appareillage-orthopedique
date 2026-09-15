@@ -34,7 +34,7 @@ export async function generateMetadata({
     title: data.metaTitle,
     description:
       data.slug === "ortheses"
-        ? "Genouillère, corset, orthèse sur mesure : comprendre les 3 familles d'orthèses (traitement, immobilisation, positionnement), le remboursement LPPR à 100% et comment bien choisir."
+        ? "Genouillère, corset, orthèse sur mesure : comprendre les 3 familles d'orthèses (traitement, immobilisation, positionnement), le remboursement LPPR à 100% et comment bien choisir."
         : `Guide complet sur les ${data.category.toLowerCase()} — remboursement LPPR, types de dispositifs, questions fréquentes.`,
     alternates: {
       canonical: `/${data.slug}`,

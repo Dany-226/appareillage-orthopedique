@@ -170,7 +170,7 @@ export default function GuideAchatPage({
               <GuideAchatBody blocks={guide.blocks} />
 
               <InfoBox
-                title="Transparence : liens Amazon"
+                title="Transparence : liens Amazon"
                 text="Cet article contient des liens vers des produits disponibles sur Amazon.fr. Ces liens ne sont pas encore des liens d'affiliation - aucune commission n'est perçue à ce jour. Cette page sera mise à jour dès l'activation du programme Partenaires Amazon."
               />
 

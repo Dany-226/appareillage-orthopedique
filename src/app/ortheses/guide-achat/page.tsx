@@ -11,7 +11,7 @@ import { guidesAchat } from '@/lib/guides-achat'
 const SITE_URL = 'https://appareillageorthopedique.fr'
 
 export const metadata: Metadata = {
-  title: "Orthèses de maintien : nos guides d'achat comparatifs",
+  title: "Orthèses de maintien : nos guides d'achat comparatifs",
   description:
     "Poignet, pouce, genou, cheville... nos guides comparatifs pour choisir la bonne orthèse de soutien selon votre douleur, sans ordonnance.",
   alternates: {
@@ -54,7 +54,7 @@ export default function GuideAchatHubPage() {
                          tracking-tight mb-6"
               style={{ fontSize: 'clamp(2rem, 3.5vw, 3.5rem)' }}
             >
-              Orthèses de maintien et de protection articulaire : nos guides d&rsquo;achat
+              Orthèses de maintien et de protection articulaire&nbsp;: nos guides d&rsquo;achat
             </h1>
             <p
               className="font-sans text-on-surface-variant leading-[1.8]"

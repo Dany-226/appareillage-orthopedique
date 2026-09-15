@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s - Appareillage Ortho",
   },
   description:
-    "Ressources et conseils sur les appareillages orthopédiques : prothèses, orthèses et fauteuils roulants, pour les patients et leurs proches.",
+    "Ressources et conseils sur les appareillages orthopédiques : prothèses, orthèses et fauteuils roulants, pour les patients et leurs proches.",
   metadataBase: new URL("https://appareillageorthopedique.fr"),
   alternates: {
     canonical: "/",

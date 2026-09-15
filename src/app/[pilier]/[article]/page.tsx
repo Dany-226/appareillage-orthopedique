@@ -59,7 +59,7 @@ export default function ArticlePage({
     extraCardsList.push({
       variant: 'internal',
       title: 'Les genoux "bioniques" à microprocesseur',
-      subtitle: 'C-Leg, Kenevo, Rheo Knee XC : ce que couvre vraiment la LPPR.',
+      subtitle: 'C-Leg, Kenevo, Rheo Knee XC : ce que couvre vraiment la LPPR.',
       buttonText: 'Découvrir',
       href: '/protheses/genou-bionique-microprocesseur',
     })

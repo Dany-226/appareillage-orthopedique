@@ -23,7 +23,7 @@ export const pillars = [
     num:  "03",
     title: "Fauteuils roulants",
     description:
-      "Véhicules pour personne handicapée (VPH) : nouvelle nomenclature 2025. Catégories manuelles et électriques, comprendre les options.",
+      "Véhicules pour personne handicapée (VPH) : nouvelle nomenclature 2025. Catégories manuelles et électriques, comprendre les options.",
     href: "/fauteuils",
   },
 ];
