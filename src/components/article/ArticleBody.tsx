@@ -233,16 +233,15 @@ export default function ArticleBody({ blocks }: { blocks: AnyBlock[] }) {
             const b = block as Extract<ArticleBlock, { type: "image" }>;
             return (
               <Block key={i}>
-                <figure className="my-8 rounded-xl overflow-hidden">
-                  <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
-                    <Image
-                      src={b.src}
-                      alt={b.alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 800px"
-                    />
-                  </div>
+                <figure className="my-8">
+                  <Image
+                    src={b.src}
+                    alt={b.alt}
+                    width={1200}
+                    height={675}
+                    className="w-full h-auto rounded-xl"
+                    sizes="(max-width: 768px) 100vw, 800px"
+                  />
                   {b.caption && (
                     <figcaption
                       className="mt-2 text-center font-mono uppercase tracking-wide

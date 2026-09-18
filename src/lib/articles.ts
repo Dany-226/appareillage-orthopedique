@@ -355,6 +355,106 @@ export const articles: Article[] = [
         content: "Les mains myoélectriques Michelangelo et i-Limb Ultra bénéficient d'une garantie de 5 ans, avec une maintenance préventive biennale (après le 24e et le 48e mois) prise en charge par le fabricant, frais d'expédition compris. Une main de prêt est mise à disposition gratuitement pendant toute réparation, y compris au-delà de la période de garantie - le patient n'est jamais laissé sans solution de préhension pendant un entretien technique.",
       },
       {
+        type: 'h2',
+        id: 'budget-lppr-mains-remboursees',
+        content: "Combien coûte une main myoélectrique, et que rembourse la Sécu ?",
+      },
+      {
+        type: 'paragraph',
+        content: "Quatre mains myoélectriques sont aujourd'hui inscrites à la LPPR (Liste des Produits et Prestations Remboursables) et donc prises en charge par la Sécurité sociale en France : MYOBOCK d'Otto Bock (la référence historique, à partir de 4 679,68 €), I-DIGITS d'Össur pour les amputations partielles (24 600 € pour un kit pouce et un doigt), I-LIMB ULTRA d'Össur (27 270,37 € le pack complet) et MICHELANGELO d'Otto Bock (32 275 € pour la main, hors options).",
+      },
+      {
+        type: 'paragraph',
+        content: "Ces prix correspondent au tarif LPPR en vigueur, intégralement pris en charge dans le cadre du parcours de soins (voir plus bas les conditions de prescription). Ils n'incluent pas les options comme le gant de recouvrement esthétique ou la pronosupination motorisée, facturées séparément.",
+      },
+      {
+        type: 'image',
+        src: '/images/protheses/remboursement-lppr-main-myoelectrique.svg',
+        alt: "Prix LPPR des mains myoélectriques remboursées en France",
+        caption: "Comparatif des prix de prise en charge Sécurité sociale, chapitre 7 de la LPPR, révision du 3 novembre 2025.",
+      },
+      {
+        type: 'paragraph',
+        content: "D'autres mains, dont on parle beaucoup dans la presse spécialisée internationale (TASKA, Hero Arm, Ability Hand, VINCENTevolution, COVVI), ne sont à ce jour inscrites à aucune ligne du chapitre 7 de la LPPR. Elles ne sont donc pas remboursées en France : leur accès passe uniquement par des cliniques privées, souvent à l'étranger. Le détail de ces mains figure plus bas, dans un registre volontairement distinct.",
+      },
+      {
+        type: 'h2',
+        id: 'parcours-prescription-lppr',
+        content: "Le parcours pour en obtenir une",
+      },
+      {
+        type: 'paragraph',
+        content: "L'inscription à la LPPR s'accompagne de conditions de prescription strictes, identiques pour MICHELANGELO et I-LIMB ULTRA :",
+      },
+      {
+        type: 'image',
+        src: '/images/protheses/parcours-prescription-main-myoelectrique.svg',
+        alt: "Parcours de prescription d'une main myoélectrique remboursée",
+        caption: "Les quatre étapes obligatoires prévues par la LPPR, de la consultation à la garantie.",
+      },
+      {
+        type: 'paragraph',
+        content: "La prescription initiale, comme tout renouvellement, doit être réalisée par une équipe pluridisciplinaire : un médecin spécialiste de médecine physique et de réadaptation ou en orthopédie, un masseur-kinésithérapeute ou un ergothérapeute, et un orthoprothésiste au libre choix du patient. Un psychologue peut également en faire partie.",
+      },
+      {
+        type: 'paragraph',
+        content: "Un essai préalable d'au moins quatre semaines est obligatoire avant toute prescription définitive, avec une rééducation prescrite dès le début de l'essai. À l'issue de cet essai, un compte-rendu documente la tolérance cutanée, les types de prise réellement utilisés, la motivation et la satisfaction du patient.",
+      },
+      {
+        type: 'paragraph',
+        content: "Une fois la prothèse prescrite, la garantie court sur cinq ans, avec une maintenance préventive obligatoire aux 24e et 48e mois, prise en charge par le fabricant (frais d'expédition compris). Une main de prêt est mise à disposition gratuitement pendant toute réparation.",
+      },
+      {
+        type: 'h2',
+        id: 'avis-has-cnedimts',
+        content: "Ce qu'en dit la Haute Autorité de Santé",
+      },
+      {
+        type: 'paragraph',
+        content: "Au-delà de la LPPR elle-même, la Haute Autorité de Santé (CNEDiMTS) publie pour chaque main un avis médico-économique qui documente son service rendu et les données cliniques disponibles. Deux avis récents éclairent utilement le choix entre les deux mains complètes remboursées :",
+      },
+      {
+        type: 'paragraph',
+        content: "Pour I-LIMB ULTRA (avis du 22 octobre 2024), le service rendu est jugé suffisant, avec une amélioration modérée (ASR III) par rapport à la référence MYOBOCK, portée par ses 18 modes de préhension. L'étude clinique PROMISE, menée sur 22 patients, a mesuré une progression du score fonctionnel OPUS de 58,5 à 64,7 points et une satisfaction globale passée de 5,9 à 8 sur 10, pour un port quotidien moyen de 7,8 heures.",
+      },
+      {
+        type: 'paragraph',
+        content: "Pour MICHELANGELO (avis du 26 avril 2022), le service rendu est également jugé suffisant, avec la même amélioration modérée (ASR III). La Haute Autorité de Santé note toutefois qu'aucune nouvelle donnée clinique n'a été produite depuis l'avis initial de 2016, les deux études disponibles portant sur de petites cohortes (6 et 16 patients). Aucun incident de matériovigilance n'a en revanche été rapporté entre 2017 et 2021.",
+      },
+      {
+        type: 'paragraph',
+        content: "Cette transparence sur les limites des données disponibles, plutôt qu'un discours uniformément promotionnel, correspond à ce qu'un patient ou un aidant a besoin de savoir pour se projeter dans le choix d'un appareillage.",
+      },
+      {
+        type: 'h2',
+        id: 'mains-internationales-non-remboursees',
+        content: "Les innovations internationales, hors remboursement en France",
+      },
+      {
+        type: 'paragraph',
+        content: "Ces mains ne sont pas prises en charge par la Sécurité sociale française à ce jour. Elles sont présentées ici à titre informatif, pour les lecteurs qui les rencontrent dans la presse spécialisée ou envisagent un accès privé.",
+      },
+      {
+        type: 'paragraph',
+        content: "TASKA Hand (TASKA Prosthetics, Nouvelle-Zélande) : revendiquée comme la première main entièrement étanche du marché (certification IP67), pensée pour un usage quotidien sans précaution particulière face à l'eau.",
+      },
+      {
+        type: 'paragraph',
+        content: "Hero Arm (Open Bionics, Royaume-Uni) : la seule main de ce comparatif pensée dès l'origine pour les enfants, accessible dès 8 ans, avec des coques personnalisables sous licence (Star Wars, Marvel, Disney). Distribuée en France via des cliniques privées partenaires, en dehors de tout circuit de remboursement public.",
+      },
+      {
+        type: 'paragraph',
+        content: "VINCENTevolution4 (Vincent Systems, Allemagne) : la plus légère des mains à 6 moteurs du marché (environ 390 g dans sa version la plus petite), avec une pince fine capable de saisir un objet d'1 mm.",
+      },
+      {
+        type: 'paragraph',
+        content: "Ability Hand (Psyonic, États-Unis) : dotée de capteurs de retour tactile au bout de chaque doigt et d'une résistance aux chocs mise en avant par le fabricant, commercialisée autour de 20 000 dollars aux États-Unis.",
+      },
+      {
+        type: 'paragraph',
+        content: "COVVI Hand (COVVI, Royaume-Uni) : parmi les plus rapides du marché (moins d'une seconde pour une prise complète), avec un index compatible écran tactile.",
+      },
+      {
         type: 'faq',
         items: [
           {

@@ -7,6 +7,8 @@ const nextConfig = {
         hostname: "i.imgur.com",
       },
     ],
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
   },
   async redirects() {
     return [
