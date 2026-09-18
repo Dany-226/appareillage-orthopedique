@@ -394,15 +394,7 @@ export const articles: Article[] = [
       },
       {
         type: 'paragraph',
-        content: "La prescription initiale, comme tout renouvellement, doit être réalisée par une équipe pluridisciplinaire : un médecin spécialiste de médecine physique et de réadaptation ou en orthopédie, un masseur-kinésithérapeute ou un ergothérapeute, et un orthoprothésiste au libre choix du patient. Un psychologue peut également en faire partie.",
-      },
-      {
-        type: 'paragraph',
-        content: "Un essai préalable d'au moins quatre semaines est obligatoire avant toute prescription définitive, avec une rééducation prescrite dès le début de l'essai. À l'issue de cet essai, un compte-rendu documente la tolérance cutanée, les types de prise réellement utilisés, la motivation et la satisfaction du patient.",
-      },
-      {
-        type: 'paragraph',
-        content: "Une fois la prothèse prescrite, la garantie court sur cinq ans, avec une maintenance préventive obligatoire aux 24e et 48e mois, prise en charge par le fabricant (frais d'expédition compris). Une main de prêt est mise à disposition gratuitement pendant toute réparation.",
+        content: "L'équipe pluridisciplinaire qui prescrit une main myoélectrique (composition détaillée plus haut) encadre ensuite un essai préalable d'au moins quatre semaines, obligatoire avant toute prescription définitive, avec une rééducation prescrite dès le début de l'essai. Ce parcours se conclut par un bilan qui valide la prescription, puis par la garantie de cinq ans qui court à compter de la mise à disposition de la prothèse.",
       },
       {
         type: 'h2',
