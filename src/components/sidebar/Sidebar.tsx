@@ -10,15 +10,54 @@ import type { TocHeading } from "@/lib/piliers";
 import { motionVariants } from "@/components/ui/design-tokens";
 
 export type SidebarExtraCard = {
-  variant: "stumpr" | "aidant" | "internal";
+  variant: "stumpr" | "aidant" | "internal" | "produit";
   title: string;
   subtitle: string;
   buttonText: string;
   href: string;
+  image?: string;
+  imageAlt?: string;
 };
 
 function ExtraCard({ card, delay }: { card: SidebarExtraCard; delay: number }) {
   const isStumpr = card.variant === "stumpr";
+
+  if (card.variant === "produit") {
+    return (
+      <motion.div
+        variants={motionVariants.fadeUp}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay }}
+        className="rounded-xl border border-border bg-card shadow-card overflow-hidden"
+      >
+        <Image
+          src={card.image!}
+          alt={card.imageAlt!}
+          width={340}
+          height={255}
+          className="w-full h-auto object-cover"
+        />
+        <div className="p-5">
+          <p className="text-sm font-semibold text-brand-dark mb-1.5 leading-snug">
+            {card.title}
+          </p>
+          <p className="text-xs text-muted-foreground leading-relaxed mb-4">
+            {card.subtitle}
+          </p>
+          <Button
+            asChild
+            size="sm"
+            className="w-full bg-brand-teal hover:bg-brand-teal-light text-white text-xs"
+          >
+            <Link href={card.href}>
+              {card.buttonText} <ArrowRight size={12} />
+            </Link>
+          </Button>
+        </div>
+      </motion.div>
+    );
+  }
 
   if (card.variant === "internal") {
     return (
@@ -176,7 +215,7 @@ export default function Sidebar({
 
         {/* ── Extra promotional cards (Stumpr / guide-aidant) */}
         {extraCards?.map((card, i) => (
-          <ExtraCard key={card.variant} card={card} delay={0.3 + i * 0.1} />
+          <ExtraCard key={card.href} card={card} delay={0.3 + i * 0.1} />
         ))}
       </div>
     </aside>

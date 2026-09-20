@@ -69,6 +69,27 @@ export default function PilierPage({
             href: "https://stumpr.app/",
           },
         ]
+      : data.slug === "ortheses"
+      ? [
+          {
+            variant: "produit" as const,
+            title: "Attelle de poignet",
+            subtitle: "Entorse, tendinite, canal carpien : identifier la douleur et choisir la bonne attelle.",
+            buttonText: "Voir le guide d'achat",
+            href: "/ortheses/guide-achat/attelle-poignet",
+            image: "https://i.imgur.com/XQBJNcI.png",
+            imageAlt: "Attelle de poignet",
+          },
+          {
+            variant: "produit" as const,
+            title: "Orthèse de pouce",
+            subtitle: "Rhizarthrose, De Quervain, entorse : reconnaître la cause et choisir la bonne orthèse.",
+            buttonText: "Voir le guide d'achat",
+            href: "/ortheses/guide-achat/orthese-pouce",
+            image: "https://i.imgur.com/baOwTJR.png",
+            imageAlt: "Orthèse de pouce",
+          },
+        ]
       : undefined;
 
   return (
