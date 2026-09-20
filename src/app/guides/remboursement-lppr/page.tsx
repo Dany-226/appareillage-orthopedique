@@ -102,7 +102,8 @@ export default function RemboursementLPPRPage() {
                 className="font-heading font-bold text-white leading-tight mb-4"
                 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}
               >
-                Remboursement de l&rsquo;appareillage orthopédique
+                Remboursement LPPR : comprendre la prise en charge de l&rsquo;appareillage
+                orthopédique
               </h1>
               <p
                 className="font-sans leading-relaxed max-w-2xl mb-6"
@@ -140,6 +141,10 @@ export default function RemboursementLPPRPage() {
 
               {/* Intro */}
               <Reveal>
+                <InfoBox
+                  title="Qu'est-ce que la LPPR ?"
+                  text="La LPPR (Liste des Produits et Prestations Remboursables) est la nomenclature qui fixe les dispositifs médicaux et prestations pris en charge par l'Assurance Maladie : leur code, leur tarif de remboursement et leurs conditions de prescription. Chaque orthèse, prothèse, fauteuil roulant ou dispositif d'appareillage remboursable y figure sous un code unique."
+                />
                 <P>
                   La prise en charge de l&rsquo;appareillage orthopédique par la Sécurité sociale
                   est encadrée par la Liste des Produits et Prestations Remboursables (LPPR). Elle
