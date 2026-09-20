@@ -3,6 +3,7 @@ import { getAllPilierSlugs } from '@/lib/piliers'
 import { articles } from '@/lib/articles'
 import { pathologies } from '@/lib/pathologies'
 import { guidesAchat } from '@/lib/guides-achat'
+import { FAMILLES } from '@/lib/lppr-familles'
 
 const BASE_URL = 'https://appareillageorthopedique.fr'
 
@@ -71,6 +72,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
+  const produitPages = Object.keys(FAMILLES).map(slug => ({
+    url: `${BASE_URL}/protheses/produits/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
   return [
     homepage,
     ...staticPages,
@@ -78,5 +86,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articlePages,
     ...pathologiePages,
     ...guideAchatPages,
+    ...produitPages,
   ]
 }
