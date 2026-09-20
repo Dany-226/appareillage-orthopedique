@@ -6,6 +6,7 @@ import ScrollProgressBar from "@/components/article/ScrollProgressBar";
 import Breadcrumb from "@/components/article/Breadcrumb";
 import { Reveal } from "@/components/ui/Reveal";
 import LPPRTable from "@/components/article/blocks/LPPRTable";
+import AnchorPills from "@/components/article/blocks/AnchorPills";
 import { lpprProtheseItems } from "@/lib/lppr-protheses";
 import { FAMILLES } from "@/lib/lppr-familles";
 
@@ -94,18 +95,8 @@ export default function FamilleProduitPage({
           </Reveal>
 
           {sections.length > 1 && (
-            <Reveal className="mt-8 flex flex-wrap gap-2">
-              {sections.map((section) => (
-                <a
-                  key={section.id}
-                  href={`#${section.id}`}
-                  className="rounded-full border border-border bg-white px-3 py-1 font-mono text-xs
-                             uppercase tracking-wide text-on-surface-variant transition-colors
-                             duration-150 hover:border-brand-teal/50 focus-ring"
-                >
-                  {section.title}
-                </a>
-              ))}
+            <Reveal>
+              <AnchorPills sections={sections.map(({ id, title }) => ({ id, title }))} />
             </Reveal>
           )}
 
