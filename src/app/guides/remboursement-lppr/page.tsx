@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ExternalLink, ArrowRight, Dna, Puzzle, type LucideIcon } from 'lucide-react'
+import { ExternalLink, ArrowRight } from 'lucide-react'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import ScrollProgressBar from '@/components/article/ScrollProgressBar'
@@ -13,21 +13,7 @@ import InfoBox from '@/components/article/blocks/InfoBox'
 import FaqAccordion from '@/components/article/blocks/FaqAccordion'
 import CtaBlock from '@/components/article/blocks/CtaBlock'
 import LPPRSearchTool from '@/components/article/blocks/LPPRSearchTool'
-import { FAMILLES } from '@/lib/lppr-familles'
-
-type FamilleMedia =
-  | { type: 'image'; src: string }
-  | { type: 'icon'; Icon: LucideIcon }
-
-const FAMILLE_MEDIA: Record<string, FamilleMedia> = {
-  genoux: { type: 'image', src: 'https://i.imgur.com/cPqvCdB.png' },
-  pieds: { type: 'image', src: 'https://i.imgur.com/VmO2fBd.png' },
-  'emboitures-et-articulations': { type: 'image', src: 'https://i.imgur.com/eNgsm2u.png' },
-  manchons: { type: 'image', src: 'https://i.imgur.com/4bcuGg0.png' },
-  'mains-bras-myoelectriques': { type: 'image', src: 'https://i.imgur.com/vr7w9i1.png' },
-  'malformations-congenitales': { type: 'icon', Icon: Dna },
-  'adjonctions-et-accessoires': { type: 'icon', Icon: Puzzle },
-}
+import { FAMILLES, FAMILLE_MEDIA } from '@/lib/lppr-familles'
 
 export const metadata: Metadata = {
   title: 'Remboursement LPPR - guide 2026',

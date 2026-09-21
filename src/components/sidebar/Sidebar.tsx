@@ -147,9 +147,9 @@ export default function Sidebar({
   currentFamilySlug?: string;
 }) {
   return (
-    <aside className="hidden lg:block">
-      <div className="sticky top-[88px] max-h-[calc(100vh-108px)] overflow-y-auto
-                      space-y-6 pr-1 scrollbar-none"
+    <aside>
+      <div className="space-y-6 pr-1 scrollbar-none lg:sticky lg:top-[88px]
+                      lg:max-h-[calc(100vh-108px)] lg:overflow-y-auto"
            style={{ scrollbarWidth: "none" }}
       >
         {/* ── Table of contents */}
