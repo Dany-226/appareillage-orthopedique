@@ -255,63 +255,9 @@ export default function RemboursementLPPRPage() {
                 <H2 id="nomenclature-complete">Voir la nomenclature complète par famille</H2>
                 <P>
                   L&rsquo;outil ci-dessus couvre une sélection de 24 références parmi les plus
-                  recherchées. Les 180 références complètes de la LPPR (chapitre 7) sont classées
-                  par famille de produits, chacune avec sa page dédiée.
+                  recherchées. Retrouvez les 7 familles de produits avec leurs codes et tarifs
+                  complets ci-contre.
                 </P>
-                <div className="mb-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {Object.entries(FAMILLES).map(([slug, famille]) => {
-                    const media = FAMILLE_MEDIA[slug]
-                    return (
-                      <Link
-                        key={slug}
-                        href={`/protheses/produits/${slug}`}
-                        className="group flex h-full flex-col overflow-hidden rounded-xl border
-                                   border-surface-container-high bg-white shadow-card
-                                   transition-all duration-200 hover:-translate-y-0.5
-                                   hover:shadow-card-hover focus-ring"
-                      >
-                        <div className="relative aspect-[4/3] w-full bg-surface-container-low">
-                          {media?.type === 'image' ? (
-                            <Image
-                              src={media.src}
-                              alt={famille.cardTitle}
-                              fill
-                              sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
-                              className="object-cover"
-                            />
-                          ) : media ? (
-                            <div className="flex h-full items-center justify-center">
-                              <media.Icon size={40} className="text-brand-teal" aria-hidden />
-                            </div>
-                          ) : null}
-                        </div>
-                        <div className="flex flex-1 flex-col p-5">
-                          <h3
-                            className="mb-1.5 font-heading font-semibold text-on-surface
-                                       transition-colors group-hover:text-brand-teal"
-                            style={{ fontSize: '18px' }}
-                          >
-                            {famille.cardTitle}
-                          </h3>
-                          <p
-                            className="mb-4 font-sans text-on-surface-variant leading-relaxed"
-                            style={{ fontSize: '14px' }}
-                          >
-                            {famille.cardDescription}
-                          </p>
-                          <span
-                            className="mt-auto inline-flex items-center gap-1.5 font-sans
-                                       font-semibold text-brand-teal"
-                            style={{ fontSize: '14px' }}
-                          >
-                            Voir les codes et tarifs
-                            <ArrowRight size={14} aria-hidden />
-                          </span>
-                        </div>
-                      </Link>
-                    )
-                  })}
-                </div>
               </Reveal>
 
               {/* ── Entente préalable ─────────────────────────────────────── */}
@@ -382,14 +328,11 @@ export default function RemboursementLPPRPage() {
             </article>
 
             {/* ── Right: sidebar ────────────────────────────────────────── */}
-            <aside className="hidden lg:block">
+            <aside>
               <div
-                className="sticky space-y-4 overflow-y-auto pr-1"
-                style={{
-                  top: '88px',
-                  maxHeight: 'calc(100vh - 108px)',
-                  scrollbarWidth: 'none',
-                }}
+                className="space-y-4 pr-1 lg:sticky lg:top-[88px] lg:max-h-[calc(100vh-108px)]
+                           lg:overflow-y-auto"
+                style={{ scrollbarWidth: 'none' }}
               >
                 {/* TOC */}
                 <div className="rounded-xl border border-border bg-card p-5 shadow-card">
@@ -424,6 +367,61 @@ export default function RemboursementLPPRPage() {
                     >
                       Mis à jour mars 2026
                     </span>
+                  </div>
+                </div>
+
+                {/* Nomenclature complète par famille */}
+                <div className="rounded-xl border border-border bg-card p-4 shadow-card">
+                  <p
+                    className="font-sans font-semibold text-on-surface mb-2 px-2"
+                    style={{ fontSize: '13px' }}
+                  >
+                    Nomenclature complète
+                  </p>
+                  <div className="space-y-0.5">
+                    {Object.entries(FAMILLES).map(([slug, famille]) => {
+                      const media = FAMILLE_MEDIA[slug]
+                      return (
+                        <Link
+                          key={slug}
+                          href={`/protheses/produits/${slug}`}
+                          className="group flex items-center gap-3 rounded-md px-2 py-2
+                                     transition-colors duration-150 hover:bg-brand-teal-muted/30
+                                     focus-ring"
+                        >
+                          <div className="relative h-10 w-10 flex-none overflow-hidden rounded-lg
+                                          bg-surface-container-low">
+                            {media?.type === 'image' ? (
+                              <Image
+                                src={media.src}
+                                alt={famille.cardTitle}
+                                fill
+                                sizes="40px"
+                                className="object-cover"
+                              />
+                            ) : media ? (
+                              <div className="flex h-full items-center justify-center">
+                                <media.Icon size={18} className="text-brand-teal" aria-hidden />
+                              </div>
+                            ) : null}
+                          </div>
+                          <span
+                            className="flex-1 font-sans text-on-surface transition-colors
+                                       group-hover:text-brand-teal"
+                            style={{ fontSize: '13px' }}
+                          >
+                            {famille.cardTitle}
+                          </span>
+                          <ArrowRight
+                            size={13}
+                            className="flex-none -translate-x-1 text-brand-teal opacity-0
+                                       transition-all duration-150 group-hover:translate-x-0
+                                       group-hover:opacity-100"
+                            aria-hidden
+                          />
+                        </Link>
+                      )
+                    })}
                   </div>
                 </div>
               </div>
