@@ -1,3 +1,4 @@
+import { Dna, Puzzle, type LucideIcon } from "lucide-react";
 import type { LPPRProtheseItem } from "@/lib/lppr-protheses";
 
 export type FamilleSection = {
@@ -136,4 +137,18 @@ export const FAMILLES: Record<string, FamilleConfig> = {
       { id: "membre-superieur", title: "Membre supérieur", filter: (i) => i.membre === "superieur" },
     ],
   },
+};
+
+export type FamilleMedia =
+  | { type: "image"; src: string }
+  | { type: "icon"; Icon: LucideIcon };
+
+export const FAMILLE_MEDIA: Record<string, FamilleMedia> = {
+  genoux: { type: "image", src: "https://i.imgur.com/cPqvCdB.png" },
+  pieds: { type: "image", src: "https://i.imgur.com/VmO2fBd.png" },
+  "emboitures-et-articulations": { type: "image", src: "https://i.imgur.com/eNgsm2u.png" },
+  manchons: { type: "image", src: "https://i.imgur.com/4bcuGg0.png" },
+  "mains-bras-myoelectriques": { type: "image", src: "https://i.imgur.com/vr7w9i1.png" },
+  "malformations-congenitales": { type: "icon", Icon: Dna },
+  "adjonctions-et-accessoires": { type: "icon", Icon: Puzzle },
 };

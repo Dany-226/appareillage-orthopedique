@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import ScrollProgressBar from "@/components/article/ScrollProgressBar";
 import Breadcrumb from "@/components/article/Breadcrumb";
 import { Reveal } from "@/components/ui/Reveal";
+import Sidebar from "@/components/sidebar/Sidebar";
 import LPPRTable from "@/components/article/blocks/LPPRTable";
 import AnchorPills from "@/components/article/blocks/AnchorPills";
 import { lpprProtheseItems } from "@/lib/lppr-protheses";
@@ -45,6 +46,8 @@ export default function FamilleProduitPage({
     .map((section) => ({ ...section, items: items.filter(section.filter) }))
     .filter((section) => section.items.length > 0);
 
+  const headings = sections.map(({ id, title }) => ({ id, text: title }));
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -78,41 +81,47 @@ export default function FamilleProduitPage({
             ]}
           />
 
-          <Reveal eager className="mt-8 max-w-3xl">
-            <h1
-              className="font-heading font-semibold text-on-surface leading-[1.12]
-                         tracking-tight mb-6"
-              style={{ fontSize: "clamp(2rem, 3.5vw, 3.5rem)" }}
-            >
-              {config.h1}
-            </h1>
-            <p
-              className="font-sans text-on-surface-variant leading-[1.8]"
-              style={{ fontSize: "18px" }}
-            >
-              {config.intro}
-            </p>
-          </Reveal>
-
-          {sections.length > 1 && (
-            <Reveal>
-              <AnchorPills sections={sections.map(({ id, title }) => ({ id, title }))} />
-            </Reveal>
-          )}
-
-          <div className="mt-12 max-w-[1000px]">
-            {sections.map((section) => (
-              <Reveal key={section.id} className="mb-4">
-                <h2
-                  id={section.id}
-                  className="mt-12 mb-4 pl-4 font-heading font-semibold border-l-4 border-brand-amber leading-tight scroll-mt-24"
-                  style={{ fontSize: "28px", color: "#00374e" }}
+          <div className="mt-8 grid gap-12 pb-8 lg:grid-cols-[1fr_320px] lg:items-stretch">
+            <article>
+              <Reveal eager>
+                <h1
+                  className="font-heading font-semibold text-on-surface leading-[1.12]
+                             tracking-tight mb-6"
+                  style={{ fontSize: "clamp(2rem, 3.5vw, 3.5rem)" }}
                 >
-                  {section.title}
-                </h2>
-                <LPPRTable items={section.items} />
+                  {config.h1}
+                </h1>
+                <p
+                  className="font-sans text-on-surface-variant leading-[1.8]"
+                  style={{ fontSize: "18px" }}
+                >
+                  {config.intro}
+                </p>
               </Reveal>
-            ))}
+
+              {sections.length > 1 && (
+                <Reveal>
+                  <AnchorPills sections={sections.map(({ id, title }) => ({ id, title }))} />
+                </Reveal>
+              )}
+
+              <div className="mt-12">
+                {sections.map((section) => (
+                  <Reveal key={section.id} className="mb-4">
+                    <h2
+                      id={section.id}
+                      className="mt-12 mb-4 pl-4 font-heading font-semibold border-l-4 border-brand-amber leading-tight scroll-mt-24"
+                      style={{ fontSize: "28px", color: "#00374e" }}
+                    >
+                      {section.title}
+                    </h2>
+                    <LPPRTable items={section.items} />
+                  </Reveal>
+                ))}
+              </div>
+            </article>
+
+            <Sidebar headings={headings} currentFamilySlug={params.famille} />
           </div>
         </div>
       </main>

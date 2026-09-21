@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { BookOpen, ThumbsUp, ArrowRight, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TableOfContents from "./TableOfContents";
+import FamilyLinksCard from "./FamilyLinksCard";
 import type { TocHeading } from "@/lib/piliers";
 import { motionVariants } from "@/components/ui/design-tokens";
 
@@ -136,9 +137,14 @@ function ExtraCard({ card, delay }: { card: SidebarExtraCard; delay: number }) {
 export default function Sidebar({
   headings,
   extraCards,
+  currentFamilySlug,
 }: {
   headings: TocHeading[];
   extraCards?: SidebarExtraCard[];
+  /** LPPR family slug of the current page (e.g. "genoux"). When set, renders
+   *  a compact link list to the sibling /protheses/produits/[famille] pages,
+   *  excluding the current one. */
+  currentFamilySlug?: string;
 }) {
   return (
     <aside className="hidden lg:block">
@@ -155,6 +161,9 @@ export default function Sidebar({
         >
           <TableOfContents headings={headings} />
         </motion.div>
+
+        {/* ── LPPR family links */}
+        {currentFamilySlug && <FamilyLinksCard currentSlug={currentFamilySlug} />}
 
         {/* ── Guide remboursement card (amber) */}
         <motion.div
