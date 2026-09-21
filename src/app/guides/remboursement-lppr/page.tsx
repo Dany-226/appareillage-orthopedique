@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { ExternalLink, ArrowRight, Dna, Puzzle, type LucideIcon } from 'lucide-react'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import ScrollProgressBar from '@/components/article/ScrollProgressBar'
@@ -11,6 +13,21 @@ import InfoBox from '@/components/article/blocks/InfoBox'
 import FaqAccordion from '@/components/article/blocks/FaqAccordion'
 import CtaBlock from '@/components/article/blocks/CtaBlock'
 import LPPRSearchTool from '@/components/article/blocks/LPPRSearchTool'
+import { FAMILLES } from '@/lib/lppr-familles'
+
+type FamilleMedia =
+  | { type: 'image'; src: string }
+  | { type: 'icon'; Icon: LucideIcon }
+
+const FAMILLE_MEDIA: Record<string, FamilleMedia> = {
+  genoux: { type: 'image', src: 'https://i.imgur.com/cPqvCdB.png' },
+  pieds: { type: 'image', src: 'https://i.imgur.com/VmO2fBd.png' },
+  'emboitures-et-articulations': { type: 'image', src: 'https://i.imgur.com/eNgsm2u.png' },
+  manchons: { type: 'image', src: 'https://i.imgur.com/4bcuGg0.png' },
+  'mains-bras-myoelectriques': { type: 'image', src: 'https://i.imgur.com/vr7w9i1.png' },
+  'malformations-congenitales': { type: 'icon', Icon: Dna },
+  'adjonctions-et-accessoires': { type: 'icon', Icon: Puzzle },
+}
 
 export const metadata: Metadata = {
   title: 'Remboursement LPPR - guide 2026',
@@ -25,6 +42,7 @@ const headings = [
   { id: 'principes',          text: 'Principes généraux' },
   { id: 'renouvellement',     text: 'Droit au renouvellement' },
   { id: 'tarifs',             text: 'Tarifs par dispositif' },
+  { id: 'nomenclature-complete', text: 'Nomenclature complète' },
   { id: 'entente-prealable',  text: 'Entente préalable' },
   { id: 'changer-praticien',  text: "Changer d'orthoprothésiste" },
 ]
@@ -230,6 +248,70 @@ export default function RemboursementLPPRPage() {
                   par catégorie.
                 </P>
                 <LPPRSearchTool />
+              </Reveal>
+
+              {/* ── Nomenclature complète par famille ────────────────────── */}
+              <Reveal>
+                <H2 id="nomenclature-complete">Voir la nomenclature complète par famille</H2>
+                <P>
+                  L&rsquo;outil ci-dessus couvre une sélection de 24 références parmi les plus
+                  recherchées. Les 180 références complètes de la LPPR (chapitre 7) sont classées
+                  par famille de produits, chacune avec sa page dédiée.
+                </P>
+                <div className="mb-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {Object.entries(FAMILLES).map(([slug, famille]) => {
+                    const media = FAMILLE_MEDIA[slug]
+                    return (
+                      <Link
+                        key={slug}
+                        href={`/protheses/produits/${slug}`}
+                        className="group flex h-full flex-col overflow-hidden rounded-xl border
+                                   border-surface-container-high bg-white shadow-card
+                                   transition-all duration-200 hover:-translate-y-0.5
+                                   hover:shadow-card-hover focus-ring"
+                      >
+                        <div className="relative aspect-[4/3] w-full bg-surface-container-low">
+                          {media?.type === 'image' ? (
+                            <Image
+                              src={media.src}
+                              alt={famille.cardTitle}
+                              fill
+                              sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
+                              className="object-cover"
+                            />
+                          ) : media ? (
+                            <div className="flex h-full items-center justify-center">
+                              <media.Icon size={40} className="text-brand-teal" aria-hidden />
+                            </div>
+                          ) : null}
+                        </div>
+                        <div className="flex flex-1 flex-col p-5">
+                          <h3
+                            className="mb-1.5 font-heading font-semibold text-on-surface
+                                       transition-colors group-hover:text-brand-teal"
+                            style={{ fontSize: '18px' }}
+                          >
+                            {famille.cardTitle}
+                          </h3>
+                          <p
+                            className="mb-4 font-sans text-on-surface-variant leading-relaxed"
+                            style={{ fontSize: '14px' }}
+                          >
+                            {famille.cardDescription}
+                          </p>
+                          <span
+                            className="mt-auto inline-flex items-center gap-1.5 font-sans
+                                       font-semibold text-brand-teal"
+                            style={{ fontSize: '14px' }}
+                          >
+                            Voir les codes et tarifs
+                            <ArrowRight size={14} aria-hidden />
+                          </span>
+                        </div>
+                      </Link>
+                    )
+                  })}
+                </div>
               </Reveal>
 
               {/* ── Entente préalable ─────────────────────────────────────── */}
