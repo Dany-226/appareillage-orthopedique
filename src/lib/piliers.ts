@@ -5,7 +5,7 @@
 export type ContentBlock =
   | { type: "paragraph"; text: string }
   | { type: "h2"; id: string; text: string }
-  | { type: "h3"; text: string }
+  | { type: "h3"; text: string; href?: string }
   | { type: "stat"; value: string; label: string; source?: string }
   | { type: "info"; title?: string; text: string }
   | { type: "table"; headers: string[]; rows: string[][] }
@@ -59,6 +59,7 @@ const piliers: Record<string, PilierData> = {
       {
         type: "h3",
         text: "Prothèses tibiales (trans-tibiales)",
+        href: "/protheses/prothese-tibiale-niveaux-activite",
       },
       {
         type: "paragraph",
@@ -67,10 +68,20 @@ const piliers: Record<string, PilierData> = {
       {
         type: "h3",
         text: "Prothèses fémorales (trans-fémorales)",
+        href: "/protheses/prothese-femorale-emboiture",
       },
       {
         type: "paragraph",
         text: "Les prothèses fémorales s'adressent aux amputations au-dessus du genou. Elles intègrent un genou prothétique — mécanique, hydraulique ou électronique. Les genoux à microprocesseur (C-Leg d'Ottobock, Rheo Knee d'Össur) offrent une adaptation en temps réel aux variations de terrain et un contrôle amélioré en descente.",
+      },
+      {
+        type: "h3",
+        text: "Prothèses de membre supérieur (transradiales / transhumérales)",
+        href: "/protheses/prothese-main-myoelectrique",
+      },
+      {
+        type: "paragraph",
+        text: "Les prothèses de membre supérieur concernent les amputations du bras ou de l'avant-bras. Deux technologies principales coexistent : les prothèses myoélectriques, pilotées par les signaux électriques des muscles résiduels captés par des électrodes de surface, et les prothèses à [système corporel](/protheses/prothese-bras-systeme-corporel), actionnées mécaniquement par un harnais et un câble. Le choix dépend du niveau d'amputation, de la force musculaire résiduelle et des objectifs fonctionnels du patient.",
       },
       {
         type: "stat",

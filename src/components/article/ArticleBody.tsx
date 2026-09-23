@@ -77,17 +77,28 @@ export default function ArticleBody({ blocks }: { blocks: AnyBlock[] }) {
             );
 
           // ── H3
-          case "h3":
+          case "h3": {
+            const href = (block as { href?: string }).href;
             return (
               <Block key={i}>
                 <h3
                   className="mt-8 mb-3 font-sans font-semibold text-on-surface"
                   style={{ fontSize: "22px" }}
                 >
-                  {getText(block)}
+                  {href ? (
+                    <Link
+                      href={href}
+                      className="transition-colors duration-150 hover:text-brand-teal focus-ring rounded"
+                    >
+                      {getText(block)}
+                    </Link>
+                  ) : (
+                    getText(block)
+                  )}
                 </h3>
               </Block>
             );
+          }
 
           // ── Stat (old ContentBlock format)
           case "stat": {
