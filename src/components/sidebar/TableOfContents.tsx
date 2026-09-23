@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import type { TocHeading } from "@/lib/piliers";
+import { smoothScrollToId } from "@/lib/smoothScrollTo";
 
 function useActiveHeading(ids: string[]) {
   const [activeId, setActiveId] = useState<string>(ids[0] ?? "");
@@ -41,10 +42,7 @@ export default function TableOfContents({ headings }: { headings: TocHeading[] }
     id: string
   ) => {
     e.preventDefault();
-    const el = document.getElementById(id);
-    if (!el) return;
-    const top = el.getBoundingClientRect().top + window.scrollY - 96;
-    window.scrollTo({ top, behavior: "smooth" });
+    smoothScrollToId(id);
   };
 
   return (
